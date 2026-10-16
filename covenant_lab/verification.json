@@ -1,0 +1,239 @@
+{
+  "self_review": "Bellman residuals; symmetry; symbolic/numerical agreement; root and derivative certificates; full-state deviations; terminal credible selection; finite-horizon failure; stationary distributions; source label existence plus manual statement/grade inspection",
+  "stationary": [
+    {
+      "k": 1,
+      "stationary_law": [
+        "399/440",
+        "1/22",
+        "1/22",
+        "1/440"
+      ],
+      "GG_mass": "399/440",
+      "mean_payoff": "20/11"
+    },
+    {
+      "k": 2,
+      "stationary_law": [
+        "60654859/73455200",
+        "152361/3672760",
+        "160019/3672760",
+        "152361/3672760",
+        "137541/73455200",
+        "19/183638",
+        "160019/3672760",
+        "19/183638",
+        "381/183638"
+      ],
+      "GG_mass": "60654859/73455200",
+      "mean_payoff": "160399/91819"
+    }
+  ],
+  "finite_horizon_negative": {
+    "horizon": 4,
+    "delta": "3/4",
+    "minimum_slacks_by_remaining_rounds": [
+      "-9/10",
+      "-9/10",
+      "2010411/6400000",
+      "1706435433/5120000000"
+    ],
+    "equilibrium": false,
+    "terminal_V": "0"
+  },
+  "grim_threshold": "80/209",
+  "stage_split": [
+    {
+      "history": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "state": [
+        1,
+        0
+      ],
+      "next_CC_probability": "19/400"
+    },
+    {
+      "history": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "state": [
+        0,
+        0
+      ],
+      "next_CC_probability": "361/400"
+    }
+  ],
+  "binary_label_not_Markov": true,
+  "source_manifest": [
+    {
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Institutions_Are_Strict_Extensions_of_the_Game.tex",
+      "labels": [
+        "prop:carrier-nondefinability",
+        "prop:formation-formed",
+        "prop:material-forcing",
+        "prop:washout-mechanism",
+        "prop:coercion-null-probe",
+        "prop:self-dual-obstruction",
+        "prop:self-dual-breaker",
+        "prop:away-from-self-duality-selection",
+        "subsec:run-only-no-shortcut",
+        "prop:promotion-certificate"
+      ],
+      "sha256": "7aec7d5a05b21a8f0e381e0473a4ddc5201c5cbe33093051f8e6d3740f309bc9"
+    },
+    {
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_A_Closure_Architecture_for_Consciousness.tex",
+      "labels": [
+        "thm:t17o",
+        "def:cpackage",
+        "thm:t5",
+        "sec:selfaudit",
+        "sec:boundaries"
+      ],
+      "sha256": "527e1422c5095ac1018cc7bbb3120e692822a23a5f6ae14cc36c0c71d4ed5b44"
+    },
+    {
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_III_A_Finite_Audited_Interaction_Calculus_for_SBT.tex",
+      "labels": [
+        "cl:thm:24",
+        "cl:thm:25",
+        "sn:15.2"
+      ],
+      "sha256": "eeef6d730074815adae701b0d51ffec4da4727e90724a233c5fb916b4c05b87d"
+    },
+    {
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+      "labels": [
+        "thm:F15a"
+      ],
+      "sha256": "7ec3e11d5b7d6ce9993c561623cd260eeaffe745c469c6127fe7f7c616af0472"
+    },
+    {
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_V_Endogenous_Closure_A_Catalog_of_Structural_Laws_for_Living_Cognitive_and_Social_Systems.tex",
+      "labels": [
+        "thm:e13-chain",
+        "prop:e13-flat",
+        "tmpl:e13"
+      ],
+      "sha256": "f850ebd032357af6d08663ac5310dd7faa258140803ea5912d3cce882c3320d6"
+    },
+    {
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_I_Layer_Receipts_and_Purchase_Laundering.tex",
+      "labels": [
+        "thm:R6",
+        "thm:R7",
+        "cm:m14"
+      ],
+      "sha256": "556e3b94e1a0c8ec10d8a79d08d2fb7d6cc574c9f51867b75f048f37bcd9b0c0"
+    },
+    {
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_X_Wholes_That_Grow_Each_Other.tex",
+      "labels": [
+        "thm:MOT5"
+      ],
+      "sha256": "e96e187b809ff32dc7dd5ed22b3a3e48a4ef40eef77f41ee0e3210faf912b44a"
+    },
+    {
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XI_Self_Carried_Closure.tex",
+      "labels": [
+        "thm:null-bootstrap",
+        "thm:carriage",
+        "thm:siphon",
+        "thm:transversal",
+        "thm:audit-boundary"
+      ],
+      "sha256": "6d9fc666c5dcc0e9588a8a4367e9457237c1d4cda46df09c820396b6845cb35c"
+    },
+    {
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XIII_Time_Charge_and_Currency.tex",
+      "labels": [
+        "thm:atlas"
+      ],
+      "sha256": "73c42bfe773c741255f118870371aa3411c50d1afee34de9498a6317e61a25d0"
+    },
+    {
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XIV_Objectivity_Without_Finality.tex",
+      "labels": [
+        "thm:corruption",
+        "thm:identifiable",
+        "ex:blind"
+      ],
+      "sha256": "6a8023162b55ee434aac96cbfb41c72a4e4fda50170ade2990dcf6709c573797"
+    },
+    {
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex",
+      "labels": [
+        "thm:NG_LADDER_IDEM"
+      ],
+      "sha256": "014d6edcacd103a5448627a98e55b825546db6c32490ce48b82a6134c0f56748"
+    },
+    {
+      "path": "/home/repos/six-birds-foundations-v/paper/supplement/supp_templates.tex",
+      "labels": [
+        "def:e8",
+        "lem:e8"
+      ],
+      "sha256": "1f193e08f4018c1268c8c3228f9875d236f2e0ae95f1a9af814bdcfe9c658e71"
+    },
+    {
+      "path": "/home/repos/six-birds-transcendence/cst-tt/registries/FINAL_THEOREM_STATUS.csv",
+      "labels": [],
+      "sha256": "1e3c2763259313060d690043ccb8cc48ee72e65cf8deba6f7af942dc9fcba798"
+    },
+    {
+      "path": "/home/repos/six-birds-transcendence/cst-tt/handoff/CST-TT-08_SCIENCE_HANDOFF.md",
+      "labels": [],
+      "sha256": "e5a8cb9a0896d8c898d8d0f6973267de33d7daac0a3581d430261fe59797259b"
+    }
+  ],
+  "unmodified_draft_hashes": {
+    "SYNTHESIS.md": "a81fd6c3f79c3c7c7d379927e85082cd72429f8eb4ea24687dd7e5096e07e0b4",
+    "COVENANT.md": "a23b496bbb2d90b3de841f9a15847e10097b5cbdf3be25bc6fd2b4406eb3e47d"
+  },
+  "hosting_negative": "Plain donation H costs h and only benefits partner; strictly dominated by N for h>0",
+  "corrigibility_negative": {
+    "accept_payoff": "0",
+    "resist_payoff": "1",
+    "standing_after_resist": "marked",
+    "consciousness_variable": false
+  },
+  "coercion_information_negative": {
+    "worlds": [
+      "theta=0",
+      "theta=1"
+    ],
+    "free_action": [
+      0,
+      0
+    ],
+    "informed_enforcer_forced_action": [
+      0,
+      1
+    ],
+    "information_bits_free": "0",
+    "information_bits_forced": "1"
+  }
+}

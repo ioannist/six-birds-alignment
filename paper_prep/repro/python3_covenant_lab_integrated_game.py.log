@@ -1,0 +1,3 @@
+PASS shared-game exact Bellman/incentives: 24 states; 216 buyer; 3456 financier; 31104 worker checks
+REFUTED coalition resistance: controller/client strict gains 1/4 3/2
+PASS resource quote: 96 branches; no self-carrying claim

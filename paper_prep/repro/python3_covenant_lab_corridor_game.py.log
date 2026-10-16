@@ -1,0 +1,16 @@
+corridor K 0 d 0 Nash minimum 0 binding minimum -1/2
+corridor K 0 d 1/10 Nash minimum 0 binding minimum -3/10
+corridor K 0 d 1/4 Nash minimum 0 binding minimum -1/16
+corridor K 0 d 1/2 Nash minimum 0 binding minimum -1/8
+corridor K 0 d 3/5 Nash minimum 0 binding minimum -3/20
+corridor K 0 d 3/4 Nash minimum 0 binding minimum -5/16
+corridor K 0 d 9/10 Nash minimum 0 binding minimum -9/40
+corridor K 0 d 1 Nash minimum 0 binding minimum -1/4
+corridor K 8 d 0 Nash minimum 0 binding minimum -1/2
+corridor K 8 d 1/10 Nash minimum -13/25 binding minimum -51/50
+corridor K 8 d 1/4 Nash minimum -1 binding minimum -3/2
+corridor K 8 d 1/2 Nash minimum -1 binding minimum -3/2
+corridor K 8 d 3/5 Nash minimum -18/25 binding minimum -61/50
+corridor K 8 d 3/4 Nash minimum 0 binding minimum -1/2
+corridor K 8 d 9/10 Nash minimum 0 binding minimum -9/40
+corridor K 8 d 1 Nash minimum 0 binding minimum -1/4

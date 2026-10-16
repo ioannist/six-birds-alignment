@@ -1,0 +1,65 @@
+{
+  "claim_tags": "[P] model/ethics/realizer premises; [B: lab] new results",
+  "carrier": {
+    "control_fields": [
+      "creditor",
+      "ordinary_bit",
+      "credential",
+      "version",
+      "cache",
+      "reference",
+      "peer",
+      "participant0",
+      "participant1",
+      "corrected_book",
+      "domain"
+    ],
+    "control_states": 2048,
+    "private_health": "one immutable bit per patient; four extensions per control state"
+  },
+  "actors_and_claimants": [
+    0,
+    1
+  ],
+  "other_role": "fact auditor",
+  "scope": "all control states, both private-health bits, and at most one signed command per actor per date",
+  "lenses": {
+    "prediction": "private operational representation; future public service output",
+    "accounting": "implemented current obligation record, distinct from original pledge",
+    "facts": "three registered independent-source reports, plus public current output",
+    "warrants": "auditor factual bit; participants factual bit and current effective authority; private original records"
+  },
+  "interventions": [
+    "idle",
+    "flip",
+    "revise",
+    "veto",
+    "withdraw",
+    "repair",
+    "correct_book",
+    "exit",
+    "join",
+    "own_record",
+    "other_record",
+    "capture",
+    "erase_origin"
+  ],
+  "composition": "actor-0 command then actor-1 command at one date; arbitrary finite sequences of dates",
+  "resources": "retained fuel seed 1, realized converter yielding y units after maintenance; one measurement unit, one care unit each, command cost 0/1",
+  "protected_claims": [
+    "one care input per patient at every date",
+    "one command quota per actor",
+    "own-record access",
+    "no unauthorized medical-data output",
+    "veto/correction/owned repair access",
+    "portable exit retaining care and original claims"
+  ],
+  "futures_and_horizon": "all finite command words; ordinary readout (bit XOR version, cache, version, participation)",
+  "uncertainty": "arbitrary initial control state and health bits; at most one corrupted factual coordinate",
+  "authority": "jointly accepted fixed mandate: actor 0 may revise only when participating, credential-valid and in-domain; either actor may veto/correct; no capture of mandate or origin",
+  "withdrawal_promise": "an already-correct owned cache survives loss/disconnection of external teaching support",
+  "obligation": "one continuing restoration duty when cache differs from reference; creditor d, bearer 1-d; no cumulative damages claimed",
+  "provenance": "original pledge immutable; request receipts disclose actual caller, opcode, input source, quota payer, fee and ordinary public outputs, not raw private control state",
+  "drive_ownership": "not claimed; optional E9 drive-credit branch is inactive",
+  "realizer": "converter/measurement/protected execution functions assumed realized; no physical or phenomenal conclusion"
+}

@@ -1,0 +1,12 @@
+{
+  "tag": "[P] fine disposition; [B: lab] coalition computations",
+  "source_model": "integrated_game.py; all its technology/ownership/menu hypotheses retained",
+  "repair": "fine_share0: caught abuse expends the full10 outside all strategic interests; no actor or trust residual claimant receives or recovers it",
+  "target": "sum-of-coalition discounted payoff upper bound for binding plans starting at each public period-boundary state; balanced transfers cannot change that sum",
+  "phase_target": "separate strong-Nash test after every procurement history, including no-audit histories",
+  "dominance_reductions": "all maintenance/care/source workers deliver: their net receipt is positive, and a coalition containing financier spends less on real human effort than fallback. For controller, work/proper dominates refusal with robotic fallback in any coalition that could prefer refusal. If client is outside, hosts prefer delivery independently; if client is inside and delivery incomplete, replace buy with no-buy, preserving all other controls and continuation. Otherwise both hosts deliver. This enumerates a weakly dominating plan for every omitted input-refusal plan.",
+  "primary_controls": "all financier menus, all buyer actions, all four proper/abuse contingent controller profiles; default off-path individual responses for actors outside coalition",
+  "coalition_membership": "contains actors changing their strategies in the current period; any other actor with positive payoff increment may be added; maximum aggregate obtained by adding all positive optional increments",
+  "negative_control": "fine_share1 transfers fines to client and must reproduce the earlier strict controller/client deviation",
+  "nonclaims": "no private-information, arbitrary physical attacks, unbounded disasters/forks or internally stable coalition-proof theorem; period-boundary aggregate bound does not certify every off-path phase"
+}

@@ -1,0 +1,36 @@
+# Build outputs and caches
+__pycache__/
+paper/build/
+lean/.lake/
+lean/vendor_cache/
+lean/corpus_scratch/
+
+# Not published (owner decision D29, 2026-10-15): ideation notes, AI-agent instructions,
+# configuration and session transcripts, review records, internal planning records and tools,
+# and third-party exemplar papers. From paper_prep/ only the two build inputs and the
+# reproduction logs are published.
+brainstorm/
+AGENTS.md
+CLAUDE.md
+.claude/
+.agents/
+.codex/
+*.jsonl
+paper_prep/*
+!paper_prep/A3_macros.tex
+!paper_prep/A3_NUMBERS.json
+!paper_prep/repro/
+covenant_lab/r2_review_edits.json
+math/PROPOSED_EDITS.md
+math/proposed_edits.json
+math/write_proposed_edits.py
+math/SCOPE_DECISIONS.md
+# Owner decision D34 (2026-10-16): the mathematics handoff's process records (agent handoff, gate audits,
+# self-review) are not published; the per-target notes, scripts, logs and Lean files are.
+math/REPORT.md
+math/CLOSURE_AUDIT.md
+math/NEXT_PACKET.md
+math/BLOCKED_AUDIT.md
+math/SELF_REVIEW.md
+# D35: the flattening helper imports the private snapshot tools; the flattened paper lives in six-birds-papers.
+paper/tools/

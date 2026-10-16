@@ -1,0 +1,31 @@
+{
+  "tag": "[P] atomicity/calibration/care premises; [B: lab] mathematics",
+  "roles": "two service actors; any passive protected interests have action-independent funded baseline utility",
+  "action": "exit gives executed-offer probability0; participating D probability epsilon; C probability1-epsilon",
+  "timing": "history-dependent intended offers before fresh independent implementation errors; verified matching only after both executed offers known; no coalition sees future errors before choosing",
+  "atomic_execution": "elective service runs iff both executed offers are1; net matched output to actor i is b_i-c_i; its own executed offer incurs preparation a_i even if match fails",
+  "payoffs": "actual realized payoff (b_i-c_i)*x_i*x_j-a_i*x_i; exact expectation p_i*((b_i-c_i)*p_j-a_i)",
+  "parameters": {
+    "b": [
+      3,
+      3
+    ],
+    "c": [
+      1,
+      1
+    ],
+    "epsilon": [
+      "1/20",
+      "1/20"
+    ],
+    "preparation": [
+      "1/4",
+      "1/4"
+    ],
+    "discount": "3/4"
+  },
+  "scope": "arbitrary bounded history-dependent/randomized offers and binding coalition plans, balanced transfers internal to coalition only; actual matching/noise/care/title are premises; no attacks or outside subsidies outside declared actions",
+  "exit_care": "exit cancels elective preparation/service and retains fixed care, record, debt and appeal claims; funding of that baseline is purchased, not derived here",
+  "target": "all-C maximizes each actor stage expectation; written discounted cap rules out every profitable binding coalition and therefore any internally stable such deviation",
+  "nonclaims": "changes ordinary service mechanism from original donation game; equilibrium selection, full covenant finance and physical atomic realization not established"
+}

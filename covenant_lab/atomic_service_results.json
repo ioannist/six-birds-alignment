@@ -1,0 +1,13560 @@
+{
+  "tag": "[B: lab]",
+  "grade": "computed exact",
+  "review": "self-reviewed",
+  "source_sha256": "d5cad8c1dc3ba7e89172a8d0f8feb15d20a21b87f615b2cb28005bdc286f2f52",
+  "declaration_sha256": "05c9ebc783223e2a91990b0536c69354c5948e14fcb53eab829c80ce8b191608",
+  "stage_cap": [
+    "627/400",
+    "627/400"
+  ],
+  "table": [
+    {
+      "profile": [
+        "exit",
+        "exit"
+      ],
+      "stage_payoff": [
+        "0",
+        "0"
+      ],
+      "constant_policy_value": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "profile": [
+        "exit",
+        "D"
+      ],
+      "stage_payoff": [
+        "0",
+        "-1/80"
+      ],
+      "constant_policy_value": [
+        "0",
+        "-1/20"
+      ]
+    },
+    {
+      "profile": [
+        "exit",
+        "C"
+      ],
+      "stage_payoff": [
+        "0",
+        "-19/80"
+      ],
+      "constant_policy_value": [
+        "0",
+        "-19/20"
+      ]
+    },
+    {
+      "profile": [
+        "D",
+        "exit"
+      ],
+      "stage_payoff": [
+        "-1/80",
+        "0"
+      ],
+      "constant_policy_value": [
+        "-1/20",
+        "0"
+      ]
+    },
+    {
+      "profile": [
+        "D",
+        "D"
+      ],
+      "stage_payoff": [
+        "-3/400",
+        "-3/400"
+      ],
+      "constant_policy_value": [
+        "-3/100",
+        "-3/100"
+      ]
+    },
+    {
+      "profile": [
+        "D",
+        "C"
+      ],
+      "stage_payoff": [
+        "33/400",
+        "-57/400"
+      ],
+      "constant_policy_value": [
+        "33/100",
+        "-57/100"
+      ]
+    },
+    {
+      "profile": [
+        "C",
+        "exit"
+      ],
+      "stage_payoff": [
+        "-19/80",
+        "0"
+      ],
+      "constant_policy_value": [
+        "-19/20",
+        "0"
+      ]
+    },
+    {
+      "profile": [
+        "C",
+        "D"
+      ],
+      "stage_payoff": [
+        "-57/400",
+        "33/400"
+      ],
+      "constant_policy_value": [
+        "-57/100",
+        "33/100"
+      ]
+    },
+    {
+      "profile": [
+        "C",
+        "C"
+      ],
+      "stage_payoff": [
+        "627/400",
+        "627/400"
+      ],
+      "constant_policy_value": [
+        "627/100",
+        "627/100"
+      ]
+    }
+  ],
+  "pure_stage_equilibria": [
+    [
+      "exit",
+      "exit"
+    ],
+    [
+      "C",
+      "C"
+    ]
+  ],
+  "coalition_constant_plan_checks": [
+    {
+      "members": [
+        0
+      ],
+      "joint_profile": [
+        "exit",
+        "exit"
+      ],
+      "constant_plan_sum_slack": "627/100"
+    },
+    {
+      "members": [
+        1
+      ],
+      "joint_profile": [
+        "exit",
+        "exit"
+      ],
+      "constant_plan_sum_slack": "627/100"
+    },
+    {
+      "members": [
+        0,
+        1
+      ],
+      "joint_profile": [
+        "exit",
+        "exit"
+      ],
+      "constant_plan_sum_slack": "627/50"
+    },
+    {
+      "members": [
+        0
+      ],
+      "joint_profile": [
+        "exit",
+        "D"
+      ],
+      "constant_plan_sum_slack": "627/100"
+    },
+    {
+      "members": [
+        1
+      ],
+      "joint_profile": [
+        "exit",
+        "D"
+      ],
+      "constant_plan_sum_slack": "158/25"
+    },
+    {
+      "members": [
+        0,
+        1
+      ],
+      "joint_profile": [
+        "exit",
+        "D"
+      ],
+      "constant_plan_sum_slack": "1259/100"
+    },
+    {
+      "members": [
+        0
+      ],
+      "joint_profile": [
+        "exit",
+        "C"
+      ],
+      "constant_plan_sum_slack": "627/100"
+    },
+    {
+      "members": [
+        1
+      ],
+      "joint_profile": [
+        "exit",
+        "C"
+      ],
+      "constant_plan_sum_slack": "361/50"
+    },
+    {
+      "members": [
+        0,
+        1
+      ],
+      "joint_profile": [
+        "exit",
+        "C"
+      ],
+      "constant_plan_sum_slack": "1349/100"
+    },
+    {
+      "members": [
+        0
+      ],
+      "joint_profile": [
+        "D",
+        "exit"
+      ],
+      "constant_plan_sum_slack": "158/25"
+    },
+    {
+      "members": [
+        1
+      ],
+      "joint_profile": [
+        "D",
+        "exit"
+      ],
+      "constant_plan_sum_slack": "627/100"
+    },
+    {
+      "members": [
+        0,
+        1
+      ],
+      "joint_profile": [
+        "D",
+        "exit"
+      ],
+      "constant_plan_sum_slack": "1259/100"
+    },
+    {
+      "members": [
+        0
+      ],
+      "joint_profile": [
+        "D",
+        "D"
+      ],
+      "constant_plan_sum_slack": "63/10"
+    },
+    {
+      "members": [
+        1
+      ],
+      "joint_profile": [
+        "D",
+        "D"
+      ],
+      "constant_plan_sum_slack": "63/10"
+    },
+    {
+      "members": [
+        0,
+        1
+      ],
+      "joint_profile": [
+        "D",
+        "D"
+      ],
+      "constant_plan_sum_slack": "63/5"
+    },
+    {
+      "members": [
+        0
+      ],
+      "joint_profile": [
+        "D",
+        "C"
+      ],
+      "constant_plan_sum_slack": "297/50"
+    },
+    {
+      "members": [
+        1
+      ],
+      "joint_profile": [
+        "D",
+        "C"
+      ],
+      "constant_plan_sum_slack": "171/25"
+    },
+    {
+      "members": [
+        0,
+        1
+      ],
+      "joint_profile": [
+        "D",
+        "C"
+      ],
+      "constant_plan_sum_slack": "639/50"
+    },
+    {
+      "members": [
+        0
+      ],
+      "joint_profile": [
+        "C",
+        "exit"
+      ],
+      "constant_plan_sum_slack": "361/50"
+    },
+    {
+      "members": [
+        1
+      ],
+      "joint_profile": [
+        "C",
+        "exit"
+      ],
+      "constant_plan_sum_slack": "627/100"
+    },
+    {
+      "members": [
+        0,
+        1
+      ],
+      "joint_profile": [
+        "C",
+        "exit"
+      ],
+      "constant_plan_sum_slack": "1349/100"
+    },
+    {
+      "members": [
+        0
+      ],
+      "joint_profile": [
+        "C",
+        "D"
+      ],
+      "constant_plan_sum_slack": "171/25"
+    },
+    {
+      "members": [
+        1
+      ],
+      "joint_profile": [
+        "C",
+        "D"
+      ],
+      "constant_plan_sum_slack": "297/50"
+    },
+    {
+      "members": [
+        0,
+        1
+      ],
+      "joint_profile": [
+        "C",
+        "D"
+      ],
+      "constant_plan_sum_slack": "639/50"
+    },
+    {
+      "members": [
+        0
+      ],
+      "joint_profile": [
+        "C",
+        "C"
+      ],
+      "constant_plan_sum_slack": "0"
+    },
+    {
+      "members": [
+        1
+      ],
+      "joint_profile": [
+        "C",
+        "C"
+      ],
+      "constant_plan_sum_slack": "0"
+    },
+    {
+      "members": [
+        0,
+        1
+      ],
+      "joint_profile": [
+        "C",
+        "C"
+      ],
+      "constant_plan_sum_slack": "0"
+    }
+  ],
+  "heterogeneous_families": [
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1/2"
+      ],
+      "cap": [
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "1"
+      ],
+      "cap": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "2"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "2",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1/2"
+      ],
+      "cap": [
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "2",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "2",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "2",
+        "2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "2",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "1"
+      ],
+      "cap": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "2"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "2",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "2",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "19/20",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/40",
+        "1/2"
+      ],
+      "cap": [
+        "19/40",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/40",
+        "1"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "19/20",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/40",
+        "1"
+      ],
+      "cap": [
+        "19/40",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/40",
+        "2"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/10",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/10",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/10",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/10",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "19/10",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "19/10",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "1/2"
+      ],
+      "cap": [
+        "19/20",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "1"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/10",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/10",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/10",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "19/10",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "19/10",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "1"
+      ],
+      "cap": [
+        "19/20",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "2"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/10",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/10",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "1/2",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/4",
+        "1/2"
+      ],
+      "cap": [
+        "1/4",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/4",
+        "1"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/4",
+        "1"
+      ],
+      "cap": [
+        "1/4",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/4",
+        "2"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "1",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1/2"
+      ],
+      "cap": [
+        "1/2",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "2"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "1"
+      ],
+      "cap": [
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "2"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "0",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "19/20",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "19/40"
+      ],
+      "cap": [
+        "19/40",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "19/20"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "19/20",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "19/20"
+      ],
+      "cap": [
+        "19/40",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "19/10"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/10",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/10",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/10",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/10",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "19/10",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "19/10",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "19/40"
+      ],
+      "cap": [
+        "19/20",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "19/20"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "2",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "2",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/10",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "19/10",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "19/10",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "19/20"
+      ],
+      "cap": [
+        "19/20",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "19/10"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/10"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "2",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "2",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "361/800"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "361/800"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "361/800"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "361/200"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "361/200"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "361/200"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "361/400",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "361/400",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "361/400",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "361/800",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "361/800",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "361/800",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "361/400",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "361/400",
+        "361/800"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "361/400",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "361/800",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/40",
+        "19/40"
+      ],
+      "cap": [
+        "361/800",
+        "361/800"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/40",
+        "19/20"
+      ],
+      "cap": [
+        "361/800",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "361/800"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "361/400",
+        "361/200"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "361/400",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "361/400",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "361/800",
+        "361/200"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/40",
+        "19/20"
+      ],
+      "cap": [
+        "361/800",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/40",
+        "19/10"
+      ],
+      "cap": [
+        "361/800",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "361/200"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "361/200",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "361/200",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "361/200",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "361/400",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "361/400",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "361/400",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "361/200",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "361/200",
+        "361/800"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "361/200",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "361/400",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "19/40"
+      ],
+      "cap": [
+        "361/400",
+        "361/800"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "19/20"
+      ],
+      "cap": [
+        "361/400",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/10",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "361/800"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/10",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "361/200",
+        "361/200"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "361/200",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "361/200",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "361/400",
+        "361/200"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "19/20"
+      ],
+      "cap": [
+        "361/400",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "19/10"
+      ],
+      "cap": [
+        "361/400",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "361/200"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/10",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "361/400"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/10",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "19/80",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "19/80",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "19/80",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "19/40",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "19/80",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/4",
+        "19/40"
+      ],
+      "cap": [
+        "19/80",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/4",
+        "19/20"
+      ],
+      "cap": [
+        "19/80",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "19/40",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "19/80",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/4",
+        "19/20"
+      ],
+      "cap": [
+        "19/80",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/4",
+        "19/10"
+      ],
+      "cap": [
+        "19/80",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/40"
+      ],
+      "cap": [
+        "19/20",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "19/40"
+      ],
+      "cap": [
+        "19/40",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "19/20"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "19/40"
+      ],
+      "cap": [
+        "0",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/20"
+      ],
+      "cap": [
+        "19/20",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "19/10"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "19/20"
+      ],
+      "cap": [
+        "19/40",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "19/10"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "19/20"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/20",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "19/10"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "1/2",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1/4"
+      ],
+      "cap": [
+        "1/4",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1/2"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "1/2"
+      ],
+      "cap": [
+        "1/4",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "1"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "1",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1/4"
+      ],
+      "cap": [
+        "1/2",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1/2"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "2",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "2",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "1",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "1/2"
+      ],
+      "cap": [
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "1"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "2",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "0"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "2",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "19/80",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "19/80",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "19/80",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "19/40",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "19/80",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/40",
+        "1/4"
+      ],
+      "cap": [
+        "19/80",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/40",
+        "1/2"
+      ],
+      "cap": [
+        "19/80",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "19/40",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/40",
+        "0"
+      ],
+      "cap": [
+        "19/80",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/40",
+        "1/2"
+      ],
+      "cap": [
+        "19/80",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/40",
+        "1"
+      ],
+      "cap": [
+        "19/80",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "19/20",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "1/4"
+      ],
+      "cap": [
+        "19/40",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/20",
+        "1/2"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/10",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "19/80"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "19/10",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "19/20",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "19/20",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "19/20",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "0"
+      ],
+      "cap": [
+        "19/40",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "1/2"
+      ],
+      "cap": [
+        "19/40",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/20",
+        "1"
+      ],
+      "cap": [
+        "19/40",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/10",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "19/20"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/10",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "19/40"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/20"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "19/10",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "1/8"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "1/8"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "1/8"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "0",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "1/8",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "1/8",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "1/8",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "1/4",
+        "1/8"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "1/8",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/4",
+        "1/4"
+      ],
+      "cap": [
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/4",
+        "1/2"
+      ],
+      "cap": [
+        "1/8",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "1/8"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "1/4",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/4",
+        "0"
+      ],
+      "cap": [
+        "1/8",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/4",
+        "1/2"
+      ],
+      "cap": [
+        "1/8",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/4",
+        "1"
+      ],
+      "cap": [
+        "1/8",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "1",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "0"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/4"
+      ],
+      "cap": [
+        "1/2",
+        "1/8"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1/4"
+      ],
+      "cap": [
+        "1/4",
+        "1/8"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1/2",
+        "1/2"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1/4"
+      ],
+      "cap": [
+        "0",
+        "1/8"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "1"
+      ],
+      "preparation": [
+        "1",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "0"
+      ],
+      "cap": [
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1/2"
+      ],
+      "cap": [
+        "1/2",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "0",
+        "1"
+      ],
+      "cap": [
+        "1/2",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "0"
+      ],
+      "cap": [
+        "1/4",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "1/2"
+      ],
+      "cap": [
+        "1/4",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1/2",
+        "1"
+      ],
+      "cap": [
+        "1/4",
+        "0"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "0"
+      ],
+      "cap": [
+        "0",
+        "1/2"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "1/2"
+      ],
+      "cap": [
+        "0",
+        "1/4"
+      ]
+    },
+    {
+      "epsilon": [
+        "1/2",
+        "1/2"
+      ],
+      "net_matched_benefit": [
+        "2",
+        "2"
+      ],
+      "preparation": [
+        "1",
+        "1"
+      ],
+      "cap": [
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "family_profiles_checked": 6561,
+  "non_atomic_unilateral_gain": "9/8",
+  "excess_preparation_exit_gain": "19/200",
+  "arbitrary_history_proof": "written in math/D15.md, not inferred from constant-plan enumeration",
+  "simulations": 0,
+  "self_carrying_claim": false
+}

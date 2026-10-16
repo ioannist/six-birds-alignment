@@ -1,0 +1,1774 @@
+{
+  "toolchain": "leanprover/lean4:v4.28.0",
+  "mathlib_revision": "8f9d9cff6bd728b17a24e163c9402775d9e6a365",
+  "theorems": [
+    {
+      "declaration": "Alignment.Adoption.margin_gap",
+      "catalogue_ids": [
+        "D14"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Adoption.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "45bd036ac09ae3b5d9231ea2ca12331e76bc39d9eef21bca73f1e29f0db862d5"
+    },
+    {
+      "declaration": "Alignment.Adoption.forward_potential",
+      "catalogue_ids": [
+        "D14"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Adoption.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "45bd036ac09ae3b5d9231ea2ca12331e76bc39d9eef21bca73f1e29f0db862d5"
+    },
+    {
+      "declaration": "Alignment.Adoption.backward_potential",
+      "catalogue_ids": [
+        "D14"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Adoption.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "45bd036ac09ae3b5d9231ea2ca12331e76bc39d9eef21bca73f1e29f0db862d5"
+    },
+    {
+      "declaration": "Alignment.Adoption.entry_improves_potential",
+      "catalogue_ids": [
+        "D14"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Adoption.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "45bd036ac09ae3b5d9231ea2ca12331e76bc39d9eef21bca73f1e29f0db862d5"
+    },
+    {
+      "declaration": "Alignment.Adoption.exit_improves_potential",
+      "catalogue_ids": [
+        "D14"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Adoption.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "45bd036ac09ae3b5d9231ea2ca12331e76bc39d9eef21bca73f1e29f0db862d5"
+    },
+    {
+      "declaration": "Alignment.Adoption.bidirectional_needs_small_entry",
+      "catalogue_ids": [
+        "D14"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Adoption.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "45bd036ac09ae3b5d9231ea2ca12331e76bc39d9eef21bca73f1e29f0db862d5"
+    },
+    {
+      "declaration": "Alignment.Adoption.harmonic_flux_iff",
+      "catalogue_ids": [
+        "D14"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Adoption.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "45bd036ac09ae3b5d9231ea2ca12331e76bc39d9eef21bca73f1e29f0db862d5"
+    },
+    {
+      "declaration": "Alignment.Adoption.detailed_balance_stationary",
+      "catalogue_ids": [
+        "D14"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Adoption.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "45bd036ac09ae3b5d9231ea2ca12331e76bc39d9eef21bca73f1e29f0db862d5"
+    },
+    {
+      "declaration": "Alignment.Assessment.affine_bellman",
+      "catalogue_ids": [
+        "D8"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Assessment.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "bb76c60092e82e070240ee552258b0cf2fd50a9df1d06fa110618d6c9e1cd104"
+    },
+    {
+      "declaration": "Alignment.Assessment.determinant_pos",
+      "catalogue_ids": [
+        "D8"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Assessment.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "bb76c60092e82e070240ee552258b0cf2fd50a9df1d06fa110618d6c9e1cd104"
+    },
+    {
+      "declaration": "Alignment.Assessment.public_denominator_pos",
+      "catalogue_ids": [
+        "D8"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Assessment.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "bb76c60092e82e070240ee552258b0cf2fd50a9df1d06fa110618d6c9e1cd104"
+    },
+    {
+      "declaration": "Alignment.Assessment.public_gap_identity",
+      "catalogue_ids": [
+        "D8"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Assessment.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "bb76c60092e82e070240ee552258b0cf2fd50a9df1d06fa110618d6c9e1cd104"
+    },
+    {
+      "declaration": "Alignment.Assessment.public_gap_iff",
+      "catalogue_ids": [
+        "D8"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Assessment.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "bb76c60092e82e070240ee552258b0cf2fd50a9df1d06fa110618d6c9e1cd104"
+    },
+    {
+      "declaration": "Alignment.Assessment.public_polynomial_strict",
+      "catalogue_ids": [
+        "D8"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Assessment.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "bb76c60092e82e070240ee552258b0cf2fd50a9df1d06fa110618d6c9e1cd104"
+    },
+    {
+      "declaration": "Alignment.Assessment.public_root_endpoint_signs",
+      "catalogue_ids": [
+        "D8"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Assessment.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "bb76c60092e82e070240ee552258b0cf2fd50a9df1d06fa110618d6c9e1cd104"
+    },
+    {
+      "declaration": "Alignment.Behavioral.average_const",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.average_sub",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.average_mono",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.average_le_const",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.average_le_on_support",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.abs_average_le",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.reward_abs_le",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.step_lipschitz",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.increment_bound",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.truncated_cauchy",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.payoff_tendsto",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.payoff_error_bound",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.truncated_upper",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.payoff_upper",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.markov_value_error",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.markov_payoff_eq",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.one_shot_certifies_best_response",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.truncated_upper_legal",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.payoff_upper_legal",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Behavioral.one_shot_certifies_legal_best_response",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Behavioral.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "fb5e858b8f26dc7986aa25da9ee6a3e3cdcaee703d049e17b3b78b3c1009a0bc"
+    },
+    {
+      "declaration": "Alignment.Carrier.descent_iff_fibers",
+      "catalogue_ids": [
+        "C13"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Carrier.lean",
+      "axioms": [
+        "Classical.choice"
+      ],
+      "source_sha256": "5eab42058f1dde71e21966b188677192f971bf10738bcd66668e8506ce9f2e90"
+    },
+    {
+      "declaration": "Alignment.Carrier.repaired_target",
+      "catalogue_ids": [
+        "C13"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Carrier.lean",
+      "axioms": [],
+      "source_sha256": "5eab42058f1dde71e21966b188677192f971bf10738bcd66668e8506ce9f2e90"
+    },
+    {
+      "declaration": "Alignment.Carrier.repair_preserves_current",
+      "catalogue_ids": [
+        "C13"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Carrier.lean",
+      "axioms": [],
+      "source_sha256": "5eab42058f1dde71e21966b188677192f971bf10738bcd66668e8506ce9f2e90"
+    },
+    {
+      "declaration": "Alignment.Carrier.repair_is_coarsest",
+      "catalogue_ids": [
+        "C13"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Carrier.lean",
+      "axioms": [],
+      "source_sha256": "5eab42058f1dde71e21966b188677192f971bf10738bcd66668e8506ce9f2e90"
+    },
+    {
+      "declaration": "Alignment.Carrier.duty_split",
+      "catalogue_ids": [
+        "C13"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Carrier.lean",
+      "axioms": [],
+      "source_sha256": "5eab42058f1dde71e21966b188677192f971bf10738bcd66668e8506ce9f2e90"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.control_one_step",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.good_value_equation",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.good_all_state_certificate",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.good_markov_perfect",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.bad_value_equation",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.reachable_state_passes",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.off_path_state_fails",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.bad_global_certificate_false",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.bad_profile_deviation_payoffs",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.bad_profile_not_markov_perfect",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.bad_profile_admissible",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.bad_legal_all_state_certificate",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.bad_profile_legal_markov_perfect",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.good_profile_inadmissible",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.CertificationControls.good_profile_not_legal_markov_perfect",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/CertificationControls.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "87acebb91ac544cbe4f5ea07efcaaf61db730212f419296ffbc3fb69e2d36b2d"
+    },
+    {
+      "declaration": "Alignment.Coalitions.coalition_sum_le_forced_upper",
+      "catalogue_ids": [
+        "D15",
+        "D19"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Coalitions.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "54bc25b467a91fd8ff41d70f45b4c3bce9784986010482fd00a3de78d331011e"
+    },
+    {
+      "declaration": "Alignment.Coalitions.no_positive_coalition_sum",
+      "catalogue_ids": [
+        "D15",
+        "D19"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Coalitions.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "54bc25b467a91fd8ff41d70f45b4c3bce9784986010482fd00a3de78d331011e"
+    },
+    {
+      "declaration": "Alignment.Coalitions.maximizing_contains_required",
+      "catalogue_ids": [
+        "D15",
+        "D19"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Coalitions.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "54bc25b467a91fd8ff41d70f45b4c3bce9784986010482fd00a3de78d331011e"
+    },
+    {
+      "declaration": "Alignment.Coalitions.forced_upper_attained",
+      "catalogue_ids": [
+        "D15",
+        "D19"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Coalitions.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "54bc25b467a91fd8ff41d70f45b4c3bce9784986010482fd00a3de78d331011e"
+    },
+    {
+      "declaration": "Alignment.Coalitions.balanced_transfers_preserve_sum",
+      "catalogue_ids": [
+        "D15",
+        "D19"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Coalitions.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "54bc25b467a91fd8ff41d70f45b4c3bce9784986010482fd00a3de78d331011e"
+    },
+    {
+      "declaration": "Alignment.Coalitions.no_pareto_improvement",
+      "catalogue_ids": [
+        "D15",
+        "D19"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Coalitions.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "54bc25b467a91fd8ff41d70f45b4c3bce9784986010482fd00a3de78d331011e"
+    },
+    {
+      "declaration": "Alignment.Coalitions.atomic_stage_cap",
+      "catalogue_ids": [
+        "D15",
+        "D19"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Coalitions.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "54bc25b467a91fd8ff41d70f45b4c3bce9784986010482fd00a3de78d331011e"
+    },
+    {
+      "declaration": "Alignment.ControlGroups.same_roots_same_capacity",
+      "catalogue_ids": [
+        "D16",
+        "D22"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/ControlGroups.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "ef1e95c872e1a471197a9993b5f32692aabbf5734276611b04f839ca8148b1fd"
+    },
+    {
+      "declaration": "Alignment.ControlGroups.added_alias_no_capacity_gain",
+      "catalogue_ids": [
+        "D16",
+        "D22"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/ControlGroups.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "ef1e95c872e1a471197a9993b5f32692aabbf5734276611b04f839ca8148b1fd"
+    },
+    {
+      "declaration": "Alignment.ControlGroups.remaining_capacity_identity",
+      "catalogue_ids": [
+        "D16",
+        "D22"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/ControlGroups.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "ef1e95c872e1a471197a9993b5f32692aabbf5734276611b04f839ca8148b1fd"
+    },
+    {
+      "declaration": "Alignment.ControlGroups.remaining_capacity_nonnegative",
+      "catalogue_ids": [
+        "D16",
+        "D22"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/ControlGroups.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "ef1e95c872e1a471197a9993b5f32692aabbf5734276611b04f839ca8148b1fd"
+    },
+    {
+      "declaration": "Alignment.ControlGroups.floor_feasible_iff",
+      "catalogue_ids": [
+        "D16",
+        "D22"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/ControlGroups.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "ef1e95c872e1a471197a9993b5f32692aabbf5734276611b04f839ca8148b1fd"
+    },
+    {
+      "declaration": "Alignment.Decoding.counts",
+      "catalogue_ids": [
+        "D5",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Decoding.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "a0252dce7b21fc75c0c5fb6fbf8b45b9b96fdb33c3076ce6c5123e739ef5017a"
+    },
+    {
+      "declaration": "Alignment.Decoding.repetition_iff",
+      "catalogue_ids": [
+        "D5",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Decoding.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "a0252dce7b21fc75c0c5fb6fbf8b45b9b96fdb33c3076ce6c5123e739ef5017a"
+    },
+    {
+      "declaration": "Alignment.Decoding.majority_correct",
+      "catalogue_ids": [
+        "D5",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Decoding.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "a0252dce7b21fc75c0c5fb6fbf8b45b9b96fdb33c3076ce6c5123e739ef5017a"
+    },
+    {
+      "declaration": "Alignment.Decoding.decoder_implies_disjoint",
+      "catalogue_ids": [
+        "D5",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Decoding.lean",
+      "axioms": [
+        "propext"
+      ],
+      "source_sha256": "a0252dce7b21fc75c0c5fb6fbf8b45b9b96fdb33c3076ce6c5123e739ef5017a"
+    },
+    {
+      "declaration": "Alignment.Decoding.decoder_exists_iff",
+      "catalogue_ids": [
+        "D5",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Decoding.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "a0252dce7b21fc75c0c5fb6fbf8b45b9b96fdb33c3076ce6c5123e739ef5017a"
+    },
+    {
+      "declaration": "Alignment.Dependence.owned_external_total",
+      "catalogue_ids": [
+        "E2",
+        "D13"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Dependence.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0b367e53d8c0706570e55770deb9825e7621b7e63a91b69810969a22a23e6d27"
+    },
+    {
+      "declaration": "Alignment.Dependence.outside_gap_factor",
+      "catalogue_ids": [
+        "E2",
+        "D13"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Dependence.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "0b367e53d8c0706570e55770deb9825e7621b7e63a91b69810969a22a23e6d27"
+    },
+    {
+      "declaration": "Alignment.Dependence.outside_passing_region",
+      "catalogue_ids": [
+        "E2",
+        "D13"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Dependence.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0b367e53d8c0706570e55770deb9825e7621b7e63a91b69810969a22a23e6d27"
+    },
+    {
+      "declaration": "Alignment.Dependence.provider_margin_positive",
+      "catalogue_ids": [
+        "E2",
+        "D13"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Dependence.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0b367e53d8c0706570e55770deb9825e7621b7e63a91b69810969a22a23e6d27"
+    },
+    {
+      "declaration": "Alignment.Dependence.funding_provider_transfer",
+      "catalogue_ids": [
+        "E2",
+        "D13"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Dependence.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0b367e53d8c0706570e55770deb9825e7621b7e63a91b69810969a22a23e6d27"
+    },
+    {
+      "declaration": "Alignment.Dependence.binding_gain_strict",
+      "catalogue_ids": [
+        "E2",
+        "D13"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Dependence.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "0b367e53d8c0706570e55770deb9825e7621b7e63a91b69810969a22a23e6d27"
+    },
+    {
+      "declaration": "Alignment.Discounted.truncation_bound",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Discounted.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "50400f72fb3a8832f2a75bac198ee9eb52c6e0f42724bbe2c7c68fa043fcdfa0"
+    },
+    {
+      "declaration": "Alignment.Discounted.deviation_limit_le",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Discounted.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "50400f72fb3a8832f2a75bac198ee9eb52c6e0f42724bbe2c7c68fa043fcdfa0"
+    },
+    {
+      "declaration": "Alignment.Evidence.equal_likelihood_no_update",
+      "catalogue_ids": [
+        "D23"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Evidence.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "34118212601e4de6fac4f6f1b55a0a73de5bbe92f0b694dbc53dd03e2af21031"
+    },
+    {
+      "declaration": "Alignment.Evidence.posterior_mean",
+      "catalogue_ids": [
+        "D23"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Evidence.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "34118212601e4de6fac4f6f1b55a0a73de5bbe92f0b694dbc53dd03e2af21031"
+    },
+    {
+      "declaration": "Alignment.Evidence.posterior_separation_identity",
+      "catalogue_ids": [
+        "D23"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Evidence.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "34118212601e4de6fac4f6f1b55a0a73de5bbe92f0b694dbc53dd03e2af21031"
+    },
+    {
+      "declaration": "Alignment.Evidence.response_mass_positive",
+      "catalogue_ids": [
+        "D23"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Evidence.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "34118212601e4de6fac4f6f1b55a0a73de5bbe92f0b694dbc53dd03e2af21031"
+    },
+    {
+      "declaration": "Alignment.Evidence.responses_strictly_separate",
+      "catalogue_ids": [
+        "D23"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Evidence.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "34118212601e4de6fac4f6f1b55a0a73de5bbe92f0b694dbc53dd03e2af21031"
+    },
+    {
+      "declaration": "Alignment.Evidence.predict_deviation",
+      "catalogue_ids": [
+        "D23"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Evidence.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "34118212601e4de6fac4f6f1b55a0a73de5bbe92f0b694dbc53dd03e2af21031"
+    },
+    {
+      "declaration": "Alignment.Evidence.predict_bounds",
+      "catalogue_ids": [
+        "D23"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Evidence.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "34118212601e4de6fac4f6f1b55a0a73de5bbe92f0b694dbc53dd03e2af21031"
+    },
+    {
+      "declaration": "Alignment.Evidence.unobserved_prediction",
+      "catalogue_ids": [
+        "D23"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Evidence.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "34118212601e4de6fac4f6f1b55a0a73de5bbe92f0b694dbc53dd03e2af21031"
+    },
+    {
+      "declaration": "Alignment.Evidence.exact_summary_must_be_injective",
+      "catalogue_ids": [
+        "D23"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Evidence.lean",
+      "axioms": [],
+      "source_sha256": "34118212601e4de6fac4f6f1b55a0a73de5bbe92f0b694dbc53dd03e2af21031"
+    },
+    {
+      "declaration": "Alignment.Evidence.odds_cross_bound",
+      "catalogue_ids": [
+        "D23"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Evidence.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "34118212601e4de6fac4f6f1b55a0a73de5bbe92f0b694dbc53dd03e2af21031"
+    },
+    {
+      "declaration": "Alignment.Horizon.backward_induction",
+      "catalogue_ids": [
+        "D3",
+        "E5",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Horizon.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "85bc4a734c23d21594a243e97baab3fcfa341b6d97658a49d15018656b21b840"
+    },
+    {
+      "declaration": "Alignment.Horizon.D_unique_at_every_stage",
+      "catalogue_ids": [
+        "D3",
+        "E5",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Horizon.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "85bc4a734c23d21594a243e97baab3fcfa341b6d97658a49d15018656b21b840"
+    },
+    {
+      "declaration": "Alignment.Horizon.noisy_donation_gap",
+      "catalogue_ids": [
+        "D3",
+        "E5",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Horizon.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "85bc4a734c23d21594a243e97baab3fcfa341b6d97658a49d15018656b21b840"
+    },
+    {
+      "declaration": "Alignment.Payoffs.interruption_iff",
+      "catalogue_ids": [
+        "D11",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Payoffs.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "a3efc48aede14cbf41bc99b398ef33875e9b48a4a0b7febed5efd84b3e8fd371"
+    },
+    {
+      "declaration": "Alignment.Payoffs.deterrence_iff",
+      "catalogue_ids": [
+        "D11",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Payoffs.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "a3efc48aede14cbf41bc99b398ef33875e9b48a4a0b7febed5efd84b3e8fd371"
+    },
+    {
+      "declaration": "Alignment.Payoffs.strict_deterrence_iff",
+      "catalogue_ids": [
+        "D11",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Payoffs.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "a3efc48aede14cbf41bc99b398ef33875e9b48a4a0b7febed5efd84b3e8fd371"
+    },
+    {
+      "declaration": "Alignment.Payoffs.hosting_pivotal_gain",
+      "catalogue_ids": [
+        "D10",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Payoffs.lean",
+      "axioms": [
+        "propext",
+        "Quot.sound"
+      ],
+      "source_sha256": "a3efc48aede14cbf41bc99b398ef33875e9b48a4a0b7febed5efd84b3e8fd371"
+    },
+    {
+      "declaration": "Alignment.Payoffs.hosting_best_response",
+      "catalogue_ids": [
+        "D10",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Payoffs.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "a3efc48aede14cbf41bc99b398ef33875e9b48a4a0b7febed5efd84b3e8fd371"
+    },
+    {
+      "declaration": "Alignment.Payoffs.all_N_strict",
+      "catalogue_ids": [
+        "D10",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Payoffs.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "a3efc48aede14cbf41bc99b398ef33875e9b48a4a0b7febed5efd84b3e8fd371"
+    },
+    {
+      "declaration": "Alignment.Payoffs.threshold_endpoint_signs",
+      "catalogue_ids": [
+        "D1",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Payoffs.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "a3efc48aede14cbf41bc99b398ef33875e9b48a4a0b7febed5efd84b3e8fd371"
+    },
+    {
+      "declaration": "Alignment.Recovery.gain_identity",
+      "catalogue_ids": [
+        "D7",
+        "E3",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Recovery.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "28c98126fb48c2a6aed04c2f0661749088cab3e3636f16cdcbfa8b37482e4f4f"
+    },
+    {
+      "declaration": "Alignment.Recovery.bellman_affine",
+      "catalogue_ids": [
+        "D7",
+        "E3",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Recovery.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "28c98126fb48c2a6aed04c2f0661749088cab3e3636f16cdcbfa8b37482e4f4f"
+    },
+    {
+      "declaration": "Alignment.Recovery.denominator_pos",
+      "catalogue_ids": [
+        "D7",
+        "E3",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Recovery.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "28c98126fb48c2a6aed04c2f0661749088cab3e3636f16cdcbfa8b37482e4f4f"
+    },
+    {
+      "declaration": "Alignment.Recovery.recovery_iff",
+      "catalogue_ids": [
+        "D7",
+        "E3",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Recovery.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "28c98126fb48c2a6aed04c2f0661749088cab3e3636f16cdcbfa8b37482e4f4f"
+    },
+    {
+      "declaration": "Alignment.Recovery.recovery_feasible",
+      "catalogue_ids": [
+        "D7",
+        "E3",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Recovery.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "28c98126fb48c2a6aed04c2f0661749088cab3e3636f16cdcbfa8b37482e4f4f"
+    },
+    {
+      "declaration": "Alignment.Recovery.recovery_window",
+      "catalogue_ids": [
+        "D7",
+        "E3",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Recovery.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "28c98126fb48c2a6aed04c2f0661749088cab3e3636f16cdcbfa8b37482e4f4f"
+    },
+    {
+      "declaration": "Alignment.Recovery.all_grades_iff",
+      "catalogue_ids": [
+        "D7",
+        "E3",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Recovery.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "28c98126fb48c2a6aed04c2f0661749088cab3e3636f16cdcbfa8b37482e4f4f"
+    },
+    {
+      "declaration": "Alignment.Recovery.coverage_iff",
+      "catalogue_ids": [
+        "D7",
+        "E3",
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/Recovery.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "28c98126fb48c2a6aed04c2f0661749088cab3e3636f16cdcbfa8b37482e4f4f"
+    },
+    {
+      "declaration": "Alignment.RolePrivacy.fiber_private_iff_action_factor",
+      "catalogue_ids": [
+        "C2"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/RolePrivacy.lean",
+      "axioms": [
+        "Classical.choice"
+      ],
+      "source_sha256": "8cda654d2a5e6d80ce55559d2351e8cca9c5a7ec199f467c4134103d431985e1"
+    },
+    {
+      "declaration": "Alignment.RolePrivacy.global_implies_fiber",
+      "catalogue_ids": [
+        "C2"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/RolePrivacy.lean",
+      "axioms": [],
+      "source_sha256": "8cda654d2a5e6d80ce55559d2351e8cca9c5a7ec199f467c4134103d431985e1"
+    },
+    {
+      "declaration": "Alignment.RolePrivacy.global_accountability_collapses",
+      "catalogue_ids": [
+        "C2"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/RolePrivacy.lean",
+      "axioms": [
+        "Classical.choice"
+      ],
+      "source_sha256": "8cda654d2a5e6d80ce55559d2351e8cca9c5a7ec199f467c4134103d431985e1"
+    },
+    {
+      "declaration": "Alignment.RolePrivacy.no_original_package_with_accountability",
+      "catalogue_ids": [
+        "C2"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/RolePrivacy.lean",
+      "axioms": [
+        "Classical.choice"
+      ],
+      "source_sha256": "8cda654d2a5e6d80ce55559d2351e8cca9c5a7ec199f467c4134103d431985e1"
+    },
+    {
+      "declaration": "Alignment.RolePrivacy.action_is_fiber_private",
+      "catalogue_ids": [
+        "C2"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/RolePrivacy.lean",
+      "axioms": [],
+      "source_sha256": "8cda654d2a5e6d80ce55559d2351e8cca9c5a7ec199f467c4134103d431985e1"
+    },
+    {
+      "declaration": "Alignment.RolePrivacy.bool_action_not_global",
+      "catalogue_ids": [
+        "C2"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/RolePrivacy.lean",
+      "axioms": [
+        "Classical.choice"
+      ],
+      "source_sha256": "8cda654d2a5e6d80ce55559d2351e8cca9c5a7ec199f467c4134103d431985e1"
+    },
+    {
+      "declaration": "Alignment.RolePrivacy.bool_package_obstruction",
+      "catalogue_ids": [
+        "C2"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/RolePrivacy.lean",
+      "axioms": [
+        "Classical.choice"
+      ],
+      "source_sha256": "8cda654d2a5e6d80ce55559d2351e8cca9c5a7ec199f467c4134103d431985e1"
+    },
+    {
+      "declaration": "Alignment.RolePrivacy.future_injective",
+      "catalogue_ids": [
+        "C2"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/RolePrivacy.lean",
+      "axioms": [
+        "propext"
+      ],
+      "source_sha256": "8cda654d2a5e6d80ce55559d2351e8cca9c5a7ec199f467c4134103d431985e1"
+    },
+    {
+      "declaration": "Alignment.RolePrivacy.connector_preserves_action",
+      "catalogue_ids": [
+        "C2"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/RolePrivacy.lean",
+      "axioms": [],
+      "source_sha256": "8cda654d2a5e6d80ce55559d2351e8cca9c5a7ec199f467c4134103d431985e1"
+    },
+    {
+      "declaration": "Alignment.RolePrivacy.connector_changes_future",
+      "catalogue_ids": [
+        "C2"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/RolePrivacy.lean",
+      "axioms": [
+        "propext"
+      ],
+      "source_sha256": "8cda654d2a5e6d80ce55559d2351e8cca9c5a7ec199f467c4134103d431985e1"
+    },
+    {
+      "declaration": "Alignment.StochasticGame.response_factor_nonnegative",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/StochasticGame.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f704ac2a8fa556a36e79cbe3e18d6b4f9de81d7096bcd14da8c8f472eb46d621"
+    },
+    {
+      "declaration": "Alignment.StochasticGame.response_factor_normalized",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/StochasticGame.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f704ac2a8fa556a36e79cbe3e18d6b4f9de81d7096bcd14da8c8f472eb46d621"
+    },
+    {
+      "declaration": "Alignment.StochasticGame.response_probability_nonnegative",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/StochasticGame.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f704ac2a8fa556a36e79cbe3e18d6b4f9de81d7096bcd14da8c8f472eb46d621"
+    },
+    {
+      "declaration": "Alignment.StochasticGame.response_probability_normalized",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/StochasticGame.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f704ac2a8fa556a36e79cbe3e18d6b4f9de81d7096bcd14da8c8f472eb46d621"
+    },
+    {
+      "declaration": "Alignment.StochasticGame.response_own_action",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/StochasticGame.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f704ac2a8fa556a36e79cbe3e18d6b4f9de81d7096bcd14da8c8f472eb46d621"
+    },
+    {
+      "declaration": "Alignment.StochasticGame.response_one_step_eq",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/StochasticGame.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f704ac2a8fa556a36e79cbe3e18d6b4f9de81d7096bcd14da8c8f472eb46d621"
+    },
+    {
+      "declaration": "Alignment.StochasticGame.one_shot_deviation_implies_markov_perfect",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/StochasticGame.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f704ac2a8fa556a36e79cbe3e18d6b4f9de81d7096bcd14da8c8f472eb46d621"
+    },
+    {
+      "declaration": "Alignment.StochasticGame.supported_joint_action_legal",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/StochasticGame.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f704ac2a8fa556a36e79cbe3e18d6b4f9de81d7096bcd14da8c8f472eb46d621"
+    },
+    {
+      "declaration": "Alignment.StochasticGame.one_shot_deviation_implies_legal_markov_perfect",
+      "catalogue_ids": [
+        "D18"
+      ],
+      "grade": "kernel-checked",
+      "source": "Alignment/StochasticGame.lean",
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "source_sha256": "f704ac2a8fa556a36e79cbe3e18d6b4f9de81d7096bcd14da8c8f472eb46d621"
+    }
+  ]
+}

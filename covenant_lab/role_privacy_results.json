@@ -1,0 +1,773 @@
+{
+  "tag": "[B: lab]",
+  "grade": "computed exact",
+  "review": "self-reviewed",
+  "source_sha256": "0c67a535d1d9e8b341c2fc4878dafc8b7d2ff3b4b4fba4247d0abe0e2b496a47",
+  "declaration_sha256": "9d46ff08696a7c6904873cb093b8318e2f68e6ce693f23d3a3e39a999e49d549",
+  "cases": {
+    "base": {
+      "support": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "observations": {
+        "(0, 0)": [
+          0
+        ],
+        "(0, 1)": [
+          0
+        ],
+        "(1, 0)": [
+          1
+        ],
+        "(1, 1)": [
+          1
+        ]
+      },
+      "action_accountable": true,
+      "C4prime": true,
+      "original_C4": false,
+      "private_target_tests": [
+        {
+          "private_target": [
+            0,
+            0
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            0,
+            0
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            0,
+            1
+          ],
+          "action": 0,
+          "recoverable": false,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            0,
+            1
+          ],
+          "action": 1,
+          "recoverable": false,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            0
+          ],
+          "action": 0,
+          "recoverable": false,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            0
+          ],
+          "action": 1,
+          "recoverable": false,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            1
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            1,
+            1
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        }
+      ]
+    },
+    "constants_only": {
+      "support": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "observations": {
+        "(0, 0)": [
+          0
+        ],
+        "(0, 1)": [
+          0
+        ],
+        "(1, 0)": [
+          0
+        ],
+        "(1, 1)": [
+          0
+        ]
+      },
+      "action_accountable": false,
+      "C4prime": true,
+      "original_C4": true,
+      "private_target_tests": [
+        {
+          "private_target": [
+            0,
+            0
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            0,
+            0
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            0,
+            1
+          ],
+          "action": 0,
+          "recoverable": false,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            0,
+            1
+          ],
+          "action": 1,
+          "recoverable": false,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            0
+          ],
+          "action": 0,
+          "recoverable": false,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            0
+          ],
+          "action": 1,
+          "recoverable": false,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            1
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            1,
+            1
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        }
+      ]
+    },
+    "publish_hidden": {
+      "support": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "observations": {
+        "(0, 0)": [
+          0,
+          0
+        ],
+        "(0, 1)": [
+          0,
+          1
+        ],
+        "(1, 0)": [
+          1,
+          0
+        ],
+        "(1, 1)": [
+          1,
+          1
+        ]
+      },
+      "action_accountable": true,
+      "C4prime": false,
+      "original_C4": false,
+      "private_target_tests": [
+        {
+          "private_target": [
+            0,
+            0
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            0,
+            0
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            0,
+            1
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            0,
+            1
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            0
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            0
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            1
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            1,
+            1
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        }
+      ]
+    },
+    "future_action_channel": {
+      "support": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "observations": {
+        "(0, 0)": [
+          0,
+          0
+        ],
+        "(0, 1)": [
+          0,
+          1
+        ],
+        "(1, 0)": [
+          1,
+          1
+        ],
+        "(1, 1)": [
+          1,
+          0
+        ]
+      },
+      "action_accountable": true,
+      "C4prime": false,
+      "original_C4": false,
+      "private_target_tests": [
+        {
+          "private_target": [
+            0,
+            0
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            0,
+            0
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            0,
+            1
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            0,
+            1
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            0
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            0
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": false
+        },
+        {
+          "private_target": [
+            1,
+            1
+          ],
+          "action": 0,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        },
+        {
+          "private_target": [
+            1,
+            1
+          ],
+          "action": 1,
+          "recoverable": true,
+          "constant_on_realized_fiber": true
+        }
+      ]
+    }
+  },
+  "future_predictions": {
+    "(0, 0)": [
+      0,
+      0
+    ],
+    "(0, 1)": [
+      1,
+      0
+    ],
+    "(1, 0)": [
+      1,
+      1
+    ],
+    "(1, 1)": [
+      0,
+      1
+    ]
+  },
+  "singleton_fiber_control": {
+    "support": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "observations": {
+      "(0, 0)": [
+        0
+      ],
+      "(1, 1)": [
+        1
+      ]
+    },
+    "action_accountable": true,
+    "C4prime": true,
+    "original_C4": false,
+    "private_target_tests": [
+      {
+        "private_target": [
+          0,
+          0
+        ],
+        "action": 0,
+        "recoverable": true,
+        "constant_on_realized_fiber": true
+      },
+      {
+        "private_target": [
+          0,
+          0
+        ],
+        "action": 1,
+        "recoverable": true,
+        "constant_on_realized_fiber": true
+      },
+      {
+        "private_target": [
+          0,
+          1
+        ],
+        "action": 0,
+        "recoverable": true,
+        "constant_on_realized_fiber": true
+      },
+      {
+        "private_target": [
+          0,
+          1
+        ],
+        "action": 1,
+        "recoverable": true,
+        "constant_on_realized_fiber": true
+      },
+      {
+        "private_target": [
+          1,
+          0
+        ],
+        "action": 0,
+        "recoverable": true,
+        "constant_on_realized_fiber": true
+      },
+      {
+        "private_target": [
+          1,
+          0
+        ],
+        "action": 1,
+        "recoverable": true,
+        "constant_on_realized_fiber": true
+      },
+      {
+        "private_target": [
+          1,
+          1
+        ],
+        "action": 0,
+        "recoverable": true,
+        "constant_on_realized_fiber": true
+      },
+      {
+        "private_target": [
+          1,
+          1
+        ],
+        "action": 1,
+        "recoverable": true,
+        "constant_on_realized_fiber": true
+      }
+    ]
+  },
+  "full_support_prior": {
+    "(0, 0)": "3/8",
+    "(0, 1)": "1/8",
+    "(1, 0)": "1/8",
+    "(1, 1)": "3/8"
+  },
+  "hidden_posterior_given_action": {
+    "0": {
+      "0": "3/4",
+      "1": "1/4"
+    },
+    "1": {
+      "0": "1/4",
+      "1": "3/4"
+    }
+  },
+  "action_based_guess_success": "3/4",
+  "all_binary_current_channels": [
+    {
+      "table": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "C4prime": true,
+      "original_C4": true,
+      "accountable": false
+    },
+    {
+      "table": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "C4prime": true,
+      "original_C4": false,
+      "accountable": true
+    },
+    {
+      "table": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "C4prime": true,
+      "original_C4": false,
+      "accountable": true
+    },
+    {
+      "table": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "C4prime": false,
+      "original_C4": false,
+      "accountable": false
+    },
+    {
+      "table": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "C4prime": true,
+      "original_C4": true,
+      "accountable": false
+    }
+  ],
+  "simulations": 0,
+  "phenomenality_or_revised_package_soundness_claim": false
+}

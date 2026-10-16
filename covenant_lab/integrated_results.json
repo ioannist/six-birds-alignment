@@ -1,0 +1,1134 @@
+{
+  "tag": "[B: lab]",
+  "grade": "computed exact",
+  "review": "self-reviewed",
+  "source_sha256": "24379994616e132f68dbe87475b6652e5cd5546f9cb46aaf375c80bb65e429b7",
+  "declaration_sha256": "f08a720f66b2782195687974926140c0557df5f2ac57c991539503db6aef76fe",
+  "buyer": {
+    "states": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "transition": [
+      [
+        "23/80",
+        "0",
+        "19/40",
+        "0",
+        "19/80",
+        "0"
+      ],
+      [
+        "0",
+        "23/80",
+        "0",
+        "19/40",
+        "0",
+        "19/80"
+      ],
+      [
+        "0",
+        "1/20",
+        "0",
+        "19/40",
+        "0",
+        "19/40"
+      ],
+      [
+        "0",
+        "1/20",
+        "0",
+        "19/40",
+        "0",
+        "19/40"
+      ],
+      [
+        "0",
+        "1/20",
+        "0",
+        "0",
+        "0",
+        "19/20"
+      ],
+      [
+        "0",
+        "1/20",
+        "0",
+        "0",
+        "0",
+        "19/20"
+      ]
+    ],
+    "stage_net_service": [
+      "-19/20",
+      "-19/20",
+      "71/20",
+      "81/20",
+      "231/20",
+      "241/20"
+    ],
+    "values": [
+      "1596114703/67993390",
+      "3225649/135445",
+      "8693453/270890",
+      "4414449/135445",
+      "12059853/270890",
+      "6097649/135445"
+    ],
+    "deviations": [
+      {
+        "state": [
+          0,
+          0
+        ],
+        "action": [
+          0,
+          0,
+          0
+        ],
+        "prescribed": [
+          0,
+          0,
+          1
+        ],
+        "slack": "756054333/135986780"
+      },
+      {
+        "state": [
+          0,
+          0
+        ],
+        "action": [
+          0,
+          0,
+          1
+        ],
+        "prescribed": [
+          0,
+          0,
+          1
+        ],
+        "slack": "0"
+      },
+      {
+        "state": [
+          0,
+          0
+        ],
+        "action": [
+          1,
+          0,
+          0
+        ],
+        "prescribed": [
+          0,
+          0,
+          1
+        ],
+        "slack": "394348289/67993390"
+      },
+      {
+        "state": [
+          0,
+          0
+        ],
+        "action": [
+          1,
+          0,
+          1
+        ],
+        "prescribed": [
+          0,
+          0,
+          1
+        ],
+        "slack": "40/251"
+      },
+      {
+        "state": [
+          0,
+          0
+        ],
+        "action": [
+          1,
+          1,
+          0
+        ],
+        "prescribed": [
+          0,
+          0,
+          1
+        ],
+        "slack": "598328459/67993390"
+      },
+      {
+        "state": [
+          0,
+          0
+        ],
+        "action": [
+          1,
+          1,
+          1
+        ],
+        "prescribed": [
+          0,
+          0,
+          1
+        ],
+        "slack": "793/251"
+      },
+      {
+        "state": [
+          0,
+          1
+        ],
+        "action": [
+          0,
+          0,
+          0
+        ],
+        "prescribed": [
+          1,
+          0,
+          1
+        ],
+        "slack": "802376523/135986780"
+      },
+      {
+        "state": [
+          0,
+          1
+        ],
+        "action": [
+          0,
+          0,
+          1
+        ],
+        "prescribed": [
+          1,
+          0,
+          1
+        ],
+        "slack": "171/502"
+      },
+      {
+        "state": [
+          0,
+          1
+        ],
+        "action": [
+          1,
+          0,
+          0
+        ],
+        "prescribed": [
+          1,
+          0,
+          1
+        ],
+        "slack": "1527939/270890"
+      },
+      {
+        "state": [
+          0,
+          1
+        ],
+        "action": [
+          1,
+          0,
+          1
+        ],
+        "prescribed": [
+          1,
+          0,
+          1
+        ],
+        "slack": "0"
+      },
+      {
+        "state": [
+          0,
+          1
+        ],
+        "action": [
+          1,
+          1,
+          0
+        ],
+        "prescribed": [
+          1,
+          0,
+          1
+        ],
+        "slack": "2340609/270890"
+      },
+      {
+        "state": [
+          0,
+          1
+        ],
+        "action": [
+          1,
+          1,
+          1
+        ],
+        "prescribed": [
+          1,
+          0,
+          1
+        ],
+        "slack": "3"
+      },
+      {
+        "state": [
+          1,
+          0
+        ],
+        "action": [
+          0,
+          0,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "3802217601/271973560"
+      },
+      {
+        "state": [
+          1,
+          0
+        ],
+        "action": [
+          0,
+          0,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "9777/2008"
+      },
+      {
+        "state": [
+          1,
+          0
+        ],
+        "action": [
+          1,
+          0,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "3851689/270890"
+      },
+      {
+        "state": [
+          1,
+          0
+        ],
+        "action": [
+          1,
+          0,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "5"
+      },
+      {
+        "state": [
+          1,
+          0
+        ],
+        "action": [
+          1,
+          1,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "2497239/270890"
+      },
+      {
+        "state": [
+          1,
+          0
+        ],
+        "action": [
+          1,
+          1,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "0"
+      },
+      {
+        "state": [
+          1,
+          1
+        ],
+        "action": [
+          0,
+          0,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "3938204381/271973560"
+      },
+      {
+        "state": [
+          1,
+          1
+        ],
+        "action": [
+          0,
+          0,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "10781/2008"
+      },
+      {
+        "state": [
+          1,
+          1
+        ],
+        "action": [
+          1,
+          0,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "3851689/270890"
+      },
+      {
+        "state": [
+          1,
+          1
+        ],
+        "action": [
+          1,
+          0,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "5"
+      },
+      {
+        "state": [
+          1,
+          1
+        ],
+        "action": [
+          1,
+          1,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "2497239/270890"
+      },
+      {
+        "state": [
+          1,
+          1
+        ],
+        "action": [
+          1,
+          1,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "0"
+      },
+      {
+        "state": [
+          2,
+          0
+        ],
+        "action": [
+          0,
+          0,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "7118710721/271973560"
+      },
+      {
+        "state": [
+          2,
+          0
+        ],
+        "action": [
+          0,
+          0,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "25841/2008"
+      },
+      {
+        "state": [
+          2,
+          0
+        ],
+        "action": [
+          1,
+          0,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "7154969/270890"
+      },
+      {
+        "state": [
+          2,
+          0
+        ],
+        "action": [
+          1,
+          0,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "13"
+      },
+      {
+        "state": [
+          2,
+          0
+        ],
+        "action": [
+          1,
+          1,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "3633399/270890"
+      },
+      {
+        "state": [
+          2,
+          0
+        ],
+        "action": [
+          1,
+          1,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "0"
+      },
+      {
+        "state": [
+          2,
+          1
+        ],
+        "action": [
+          0,
+          0,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "7254697501/271973560"
+      },
+      {
+        "state": [
+          2,
+          1
+        ],
+        "action": [
+          0,
+          0,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "26845/2008"
+      },
+      {
+        "state": [
+          2,
+          1
+        ],
+        "action": [
+          1,
+          0,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "7154969/270890"
+      },
+      {
+        "state": [
+          2,
+          1
+        ],
+        "action": [
+          1,
+          0,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "13"
+      },
+      {
+        "state": [
+          2,
+          1
+        ],
+        "action": [
+          1,
+          1,
+          0
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "3633399/270890"
+      },
+      {
+        "state": [
+          2,
+          1
+        ],
+        "action": [
+          1,
+          1,
+          1
+        ],
+        "prescribed": [
+          1,
+          1,
+          1
+        ],
+        "slack": "0"
+      }
+    ]
+  },
+  "occupations": [
+    {
+      "role": "maintainer",
+      "active_value": "28",
+      "inactive_entry_value": "4",
+      "entry_minus_wait": "1",
+      "stay_minus_exit": "1",
+      "working_cash_after_entry": "8"
+    },
+    {
+      "role": "caregiver",
+      "active_value": "32",
+      "inactive_entry_value": "8",
+      "entry_minus_wait": "2",
+      "stay_minus_exit": "2",
+      "working_cash_after_entry": "8"
+    },
+    {
+      "role": "reporter0",
+      "active_value": "28",
+      "inactive_entry_value": "4",
+      "entry_minus_wait": "1",
+      "stay_minus_exit": "1",
+      "working_cash_after_entry": "8"
+    },
+    {
+      "role": "reporter1",
+      "active_value": "28",
+      "inactive_entry_value": "4",
+      "entry_minus_wait": "1",
+      "stay_minus_exit": "1",
+      "working_cash_after_entry": "8"
+    },
+    {
+      "role": "reporter2",
+      "active_value": "28",
+      "inactive_entry_value": "4",
+      "entry_minus_wait": "1",
+      "stay_minus_exit": "1",
+      "working_cash_after_entry": "8"
+    },
+    {
+      "role": "controller",
+      "active_value": "32",
+      "inactive_entry_value": "8",
+      "entry_minus_wait": "2",
+      "stay_minus_exit": "2",
+      "working_cash_after_entry": "8"
+    }
+  ],
+  "delegated_audit_coalition": {
+    "members": [
+      "monitor",
+      "controller"
+    ],
+    "event": "safe task, all fact reports truthful",
+    "monitor_action": "withhold real effort; receive bribe",
+    "controller_action": "abusive request",
+    "bribe": "7/2",
+    "monitor_increment": "1/2",
+    "controller_increment": "1/2",
+    "client_task_loss": "1/2",
+    "additional_appeal_resource": "1",
+    "care_floor_removed": false,
+    "repair_control": {
+      "automatic_sample_cannot_be_disabled_by_monitor": true,
+      "expected_continuation_loss_from_forfeiture": "9",
+      "abuse_gain_less_continuation_loss": "-5"
+    }
+  },
+  "copying": [
+    {
+      "old_debt": 0,
+      "asset_allocation": [
+        "1/2",
+        "1/2"
+      ],
+      "vote_allocation": [
+        "1/2",
+        "1/2"
+      ],
+      "liability_allocation": [
+        "0",
+        "0"
+      ],
+      "collectible_total": "0",
+      "client_copy_grant_increment": "2",
+      "copy_without_grant_increment": "-22"
+    },
+    {
+      "old_debt": 1,
+      "asset_allocation": [
+        "1/2",
+        "1/2"
+      ],
+      "vote_allocation": [
+        "1/2",
+        "1/2"
+      ],
+      "liability_allocation": [
+        "1/2",
+        "1/2"
+      ],
+      "collectible_total": "1",
+      "client_copy_grant_increment": "5/2",
+      "copy_without_grant_increment": "-43/2"
+    }
+  ],
+  "resources": [
+    {
+      "patients": 2,
+      "productive_input": "150",
+      "starting_reserve": "16",
+      "maintenance": "9",
+      "care": "16",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "73",
+      "consumable_surplus": "57"
+    },
+    {
+      "patients": 2,
+      "productive_input": "150",
+      "starting_reserve": "16",
+      "maintenance": "8",
+      "care": "16",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "74",
+      "consumable_surplus": "58"
+    },
+    {
+      "patients": 2,
+      "productive_input": "150",
+      "starting_reserve": "16",
+      "maintenance": "9",
+      "care": "10",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "79",
+      "consumable_surplus": "63"
+    },
+    {
+      "patients": 2,
+      "productive_input": "150",
+      "starting_reserve": "16",
+      "maintenance": "8",
+      "care": "10",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "80",
+      "consumable_surplus": "64"
+    },
+    {
+      "patients": 2,
+      "productive_input": "152",
+      "starting_reserve": "16",
+      "maintenance": "9",
+      "care": "16",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "75",
+      "consumable_surplus": "59"
+    },
+    {
+      "patients": 2,
+      "productive_input": "152",
+      "starting_reserve": "16",
+      "maintenance": "8",
+      "care": "16",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "76",
+      "consumable_surplus": "60"
+    },
+    {
+      "patients": 2,
+      "productive_input": "152",
+      "starting_reserve": "16",
+      "maintenance": "9",
+      "care": "10",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "81",
+      "consumable_surplus": "65"
+    },
+    {
+      "patients": 2,
+      "productive_input": "152",
+      "starting_reserve": "16",
+      "maintenance": "8",
+      "care": "10",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "82",
+      "consumable_surplus": "66"
+    },
+    {
+      "patients": 3,
+      "productive_input": "150",
+      "starting_reserve": "16",
+      "maintenance": "9",
+      "care": "20",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "69",
+      "consumable_surplus": "53"
+    },
+    {
+      "patients": 3,
+      "productive_input": "150",
+      "starting_reserve": "16",
+      "maintenance": "8",
+      "care": "20",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "70",
+      "consumable_surplus": "54"
+    },
+    {
+      "patients": 3,
+      "productive_input": "150",
+      "starting_reserve": "16",
+      "maintenance": "9",
+      "care": "11",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "78",
+      "consumable_surplus": "62"
+    },
+    {
+      "patients": 3,
+      "productive_input": "150",
+      "starting_reserve": "16",
+      "maintenance": "8",
+      "care": "11",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "79",
+      "consumable_surplus": "63"
+    },
+    {
+      "patients": 3,
+      "productive_input": "152",
+      "starting_reserve": "16",
+      "maintenance": "9",
+      "care": "20",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "71",
+      "consumable_surplus": "55"
+    },
+    {
+      "patients": 3,
+      "productive_input": "152",
+      "starting_reserve": "16",
+      "maintenance": "8",
+      "care": "20",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "72",
+      "consumable_surplus": "56"
+    },
+    {
+      "patients": 3,
+      "productive_input": "152",
+      "starting_reserve": "16",
+      "maintenance": "9",
+      "care": "11",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "80",
+      "consumable_surplus": "64"
+    },
+    {
+      "patients": 3,
+      "productive_input": "152",
+      "starting_reserve": "16",
+      "maintenance": "8",
+      "care": "11",
+      "report_backstops": "51/2",
+      "controller_backstop": "10",
+      "audit_max": "7/2",
+      "core_admin": "5",
+      "creation_grant": "24",
+      "ending_reserve_before_consumption": "81",
+      "consumable_surplus": "65"
+    }
+  ],
+  "fault_reports": [
+    [
+      0,
+      [
+        0,
+        0,
+        0
+      ],
+      0
+    ],
+    [
+      0,
+      [
+        0,
+        0,
+        1
+      ],
+      0
+    ],
+    [
+      0,
+      [
+        0,
+        1,
+        0
+      ],
+      0
+    ],
+    [
+      0,
+      [
+        1,
+        0,
+        0
+      ],
+      0
+    ],
+    [
+      1,
+      [
+        0,
+        1,
+        1
+      ],
+      1
+    ],
+    [
+      1,
+      [
+        1,
+        0,
+        1
+      ],
+      1
+    ],
+    [
+      1,
+      [
+        1,
+        1,
+        0
+      ],
+      1
+    ],
+    [
+      1,
+      [
+        1,
+        1,
+        1
+      ],
+      1
+    ]
+  ],
+  "simulations": 0,
+  "acceptance": {
+    "buyer_all_state_incentives": true,
+    "role_entry_exit_certificates": true,
+    "bounded_resource_quote": true,
+    "asset_vote_liability_conservation": true,
+    "delegated_candidate_coalition_resistant": false,
+    "repaired_candidate_full_joint_game_certificate": false,
+    "self_carrying_claim": false
+  },
+  "remaining": "evaluate shared phase/game payoffs, financier technology/entry/creation choices, all work/report/control deviations and every admitted coalition; current module is the integrated construction packet with computed hinges, not a composed equilibrium certificate"
+}

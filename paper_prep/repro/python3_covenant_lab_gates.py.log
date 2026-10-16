@@ -1,0 +1,9 @@
+base 11111111
+prediction-forgets-bit 01111111
+book-misassigns-bearer 11011111
+revision-bypasses-authority 11101111
+withdrawal-erases-cache 11110111
+factual-channel-blind 11111001
+participant-warrant-blind 11111101
+combined-quote-underfunded 10111110
+PASS 2768896 control frames; 11075584 private extensions; 8192 worlds; 169 macros/date

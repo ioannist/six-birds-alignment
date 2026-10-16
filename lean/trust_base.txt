@@ -1,0 +1,594 @@
+Alignment.Adoption.margin_gap.{u_1} {R : Type u_1} [Field R] (a c e s D k : R) :
+  Alignment.Adoption.entrant a c e s D k - Alignment.Adoption.incumbent a c s D k = a / D - e
+'Alignment.Adoption.margin_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Adoption.forward_potential.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (a c e s D k : R) (hD : D ≠ 0) :
+  Alignment.Adoption.potential a c s D (k + 1) - Alignment.Adoption.potential a c s D k =
+    Alignment.Adoption.entrant a c e s D k + e
+'Alignment.Adoption.forward_potential' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Adoption.backward_potential.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (a c s D k : R) (hD : D ≠ 0) :
+  Alignment.Adoption.potential a c s D (k - 1) - Alignment.Adoption.potential a c s D k =
+    -Alignment.Adoption.incumbent a c s D k
+'Alignment.Adoption.backward_potential' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Adoption.entry_improves_potential.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (a c e s D k : R) (hD : D ≠ 0) (he : 0 ≤ e) (hj : 0 < Alignment.Adoption.entrant a c e s D k) :
+  Alignment.Adoption.potential a c s D k < Alignment.Adoption.potential a c s D (k + 1)
+'Alignment.Adoption.entry_improves_potential' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Adoption.exit_improves_potential.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (a c s D k : R) (hD : D ≠ 0) (hl : Alignment.Adoption.incumbent a c s D k < 0) :
+  Alignment.Adoption.potential a c s D k < Alignment.Adoption.potential a c s D (k - 1)
+'Alignment.Adoption.exit_improves_potential' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Adoption.bidirectional_needs_small_entry.{u_1} {R : Type u_1} [Field R] [LinearOrder R]
+  [IsStrictOrderedRing R] (a c e s D k : R) (hl : Alignment.Adoption.incumbent a c s D k < 0)
+  (hj : 0 < Alignment.Adoption.entrant a c e s D k) : e < a / D
+'Alignment.Adoption.bidirectional_needs_small_entry' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Adoption.harmonic_flux_iff.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (H prev next u d : R) : H = u * next + d * prev + (1 - u - d) * H ↔ u * (next - H) = d * (H - prev)
+'Alignment.Adoption.harmonic_flux_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Adoption.detailed_balance_stationary.{u_1, u_2} {R : Type u_1} [Field R] {I : Type u_2} [Fintype I]
+  (π : I → R) (P : I → I → R) (hrow : ∀ (i : I), ∑ j, P i j = 1) (hbalance : ∀ (i j : I), π i * P i j = π j * P j i)
+  (j : I) : ∑ i, π i * P i j = π j
+'Alignment.Adoption.detailed_balance_stationary' depends on axioms: [propext, Quot.sound]
+Alignment.Assessment.affine_bellman.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (a x y r0 rg rk d η g k : R) (ha : a = r0 + d * (a + x / 3 + 2 * y / 3)) (hx : x = rg + d * (2 * x / 3 - η * y / 3))
+  (hy : y = rk + d * (-η * x / 6 + (2 / 3 - η / 6) * y)) :
+  a + x * g + y * k =
+    r0 + rg * g + rk * k + d * (a + x * (2 * g / 3 + 1 / 3 - η * k / 6) + y * (2 / 3 + (2 / 3 - η / 6) * k - η * g / 3))
+'Alignment.Assessment.affine_bellman' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Assessment.determinant_pos.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (d η : R)
+  (hd : 0 ≤ d) (hd1 : d < 1) (hη : 0 ≤ η) (hη1 : η ≤ 1) : 0 < Alignment.Assessment.determinant d η
+'Alignment.Assessment.determinant_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Assessment.public_denominator_pos.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (d : R) (hd1 : d ≤ 1) : 0 < Alignment.Assessment.publicDenominator d
+'Alignment.Assessment.public_denominator_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Assessment.public_gap_identity.{u_1} {R : Type u_1} [Field R] (d : R)
+  (h : Alignment.Assessment.publicDenominator d ≠ 0) :
+  d * Alignment.Assessment.publicSlope d - 1 =
+    Alignment.Assessment.publicPolynomial d / Alignment.Assessment.publicDenominator d
+'Alignment.Assessment.public_gap_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Assessment.public_gap_iff.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (d : R)
+  (hd1 : d ≤ 1) : 0 ≤ d * Alignment.Assessment.publicSlope d - 1 ↔ 0 ≤ Alignment.Assessment.publicPolynomial d
+'Alignment.Assessment.public_gap_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Assessment.public_polynomial_strict.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (x y : R) (hxy : x < y) (hy : y ≤ 1) :
+  Alignment.Assessment.publicPolynomial x < Alignment.Assessment.publicPolynomial y
+'Alignment.Assessment.public_polynomial_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Assessment.public_root_endpoint_signs :
+  Alignment.Assessment.publicPolynomial (5019074 / 7877751) < 0 ∧
+    0 < Alignment.Assessment.publicPolynomial (1047883 / 1644718)
+'Alignment.Assessment.public_root_endpoint_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.average_const.{u_1} {X : Type u_1} [Fintype X] (p : X → ℝ) (hp : ∑ x, p x = 1) (c : ℝ) :
+  (Alignment.Behavioral.average p fun x => c) = c
+'Alignment.Behavioral.average_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.average_sub.{u_1} {X : Type u_1} [Fintype X] (p f g : X → ℝ) :
+  (Alignment.Behavioral.average p fun x => f x - g x) =
+    Alignment.Behavioral.average p f - Alignment.Behavioral.average p g
+'Alignment.Behavioral.average_sub' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.average_mono.{u_1} {X : Type u_1} [Fintype X] (p f g : X → ℝ) (hp : ∀ (x : X), 0 ≤ p x)
+  (hfg : ∀ (x : X), f x ≤ g x) : Alignment.Behavioral.average p f ≤ Alignment.Behavioral.average p g
+'Alignment.Behavioral.average_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.average_le_const.{u_1} {X : Type u_1} [Fintype X] (p f : X → ℝ) (hp : ∀ (x : X), 0 ≤ p x)
+  (hrow : ∑ x, p x = 1) (c : ℝ) (hf : ∀ (x : X), f x ≤ c) : Alignment.Behavioral.average p f ≤ c
+'Alignment.Behavioral.average_le_const' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.average_le_on_support.{u_1} {X : Type u_1} [Fintype X] (p f : X → ℝ) (hp : ∀ (x : X), 0 ≤ p x)
+  (hrow : ∑ x, p x = 1) (c : ℝ) (hf : ∀ (x : X), p x ≠ 0 → f x ≤ c) : Alignment.Behavioral.average p f ≤ c
+'Alignment.Behavioral.average_le_on_support' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.abs_average_le.{u_1} {X : Type u_1} [Fintype X] (p f : X → ℝ) (hp : ∀ (x : X), 0 ≤ p x)
+  (hrow : ∑ x, p x = 1) (c : ℝ) (hf : ∀ (x : X), |f x| ≤ c) : |Alignment.Behavioral.average p f| ≤ c
+'Alignment.Behavioral.abs_average_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.reward_abs_le.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype S] [Fintype A]
+  [Fintype O] (M : Alignment.Behavioral.Model S A O) (s : S) (a : A) :
+  |M.reward s a| ≤ Alignment.Behavioral.rewardBound M
+'Alignment.Behavioral.reward_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.step_lipschitz.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype A] [Fintype O]
+  (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (σ : Alignment.Behavioral.Strategy S A O)
+  (V W : Alignment.Behavioral.History S A O → S → ℝ) (C : ℝ)
+  (hVW : ∀ (h : Alignment.Behavioral.History S A O) (s : S), |V h s - W h s| ≤ C)
+  (h : Alignment.Behavioral.History S A O) (s : S) :
+  |Alignment.Behavioral.step M β σ V h s - Alignment.Behavioral.step M β σ W h s| ≤ β * C
+'Alignment.Behavioral.step_lipschitz' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.increment_bound.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype S]
+  [Fintype A] [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β)
+  (σ : Alignment.Behavioral.Strategy S A O) (n : ℕ) (h : Alignment.Behavioral.History S A O) (s : S) :
+  |Alignment.Behavioral.truncated M β σ (n + 1) h s - Alignment.Behavioral.truncated M β σ n h s| ≤
+    Alignment.Behavioral.rewardBound M * β ^ n
+'Alignment.Behavioral.increment_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.truncated_cauchy.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype S]
+  [Fintype A] [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (hβ1 : β < 1)
+  (σ : Alignment.Behavioral.Strategy S A O) (h : Alignment.Behavioral.History S A O) (s : S) :
+  CauchySeq fun n => Alignment.Behavioral.truncated M β σ n h s
+'Alignment.Behavioral.truncated_cauchy' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.payoff_tendsto.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype S] [Fintype A]
+  [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (hβ1 : β < 1)
+  (σ : Alignment.Behavioral.Strategy S A O) (h : Alignment.Behavioral.History S A O) (s : S) :
+  Filter.Tendsto (fun n => Alignment.Behavioral.truncated M β σ n h s) Filter.atTop
+    (nhds (Alignment.Behavioral.payoff M β σ h s))
+'Alignment.Behavioral.payoff_tendsto' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.payoff_error_bound.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype S]
+  [Fintype A] [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (hβ1 : β < 1)
+  (σ : Alignment.Behavioral.Strategy S A O) (h : Alignment.Behavioral.History S A O) (s : S) (n : ℕ) :
+  |Alignment.Behavioral.truncated M β σ n h s - Alignment.Behavioral.payoff M β σ h s| ≤
+    Alignment.Behavioral.rewardBound M * β ^ n / (1 - β)
+'Alignment.Behavioral.payoff_error_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.truncated_upper.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype A]
+  [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (W : S → ℝ) (C : ℝ) (hW : ∀ (s : S), -C ≤ W s)
+  (hcert :
+    ∀ (s : S) (a : A),
+      (M.reward s a + β * Alignment.Behavioral.average (M.transition s a) fun o => W (M.nextState o)) ≤ W s)
+  (σ : Alignment.Behavioral.Strategy S A O) (n : ℕ) (h : Alignment.Behavioral.History S A O) (s : S) :
+  Alignment.Behavioral.truncated M β σ n h s ≤ W s + β ^ n * C
+'Alignment.Behavioral.truncated_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.payoff_upper.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype S] [Fintype A]
+  [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (hβ1 : β < 1) (W : S → ℝ)
+  (hcert :
+    ∀ (s : S) (a : A),
+      (M.reward s a + β * Alignment.Behavioral.average (M.transition s a) fun o => W (M.nextState o)) ≤ W s)
+  (σ : Alignment.Behavioral.Strategy S A O) (h : Alignment.Behavioral.History S A O) (s : S) :
+  Alignment.Behavioral.payoff M β σ h s ≤ W s
+'Alignment.Behavioral.payoff_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.markov_value_error.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype A]
+  [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (μ : Alignment.Behavioral.MarkovStrategy S A)
+  (W : S → ℝ) (C : ℝ) (hW : ∀ (s : S), |W s| ≤ C)
+  (hvalue :
+    ∀ (s : S),
+      (Alignment.Behavioral.average (μ.probability s) fun a =>
+          M.reward s a + β * Alignment.Behavioral.average (M.transition s a) fun o => W (M.nextState o)) =
+        W s)
+  (n : ℕ) (h : Alignment.Behavioral.History S A O) (s : S) :
+  |Alignment.Behavioral.truncated M β μ.behavioral n h s - W s| ≤ β ^ n * C
+'Alignment.Behavioral.markov_value_error' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.markov_payoff_eq.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype S]
+  [Fintype A] [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (hβ1 : β < 1)
+  (μ : Alignment.Behavioral.MarkovStrategy S A) (W : S → ℝ)
+  (hvalue :
+    ∀ (s : S),
+      (Alignment.Behavioral.average (μ.probability s) fun a =>
+          M.reward s a + β * Alignment.Behavioral.average (M.transition s a) fun o => W (M.nextState o)) =
+        W s)
+  (h : Alignment.Behavioral.History S A O) (s : S) : Alignment.Behavioral.payoff M β μ.behavioral h s = W s
+'Alignment.Behavioral.markov_payoff_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.one_shot_certifies_best_response.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3}
+  [Fintype S] [Fintype A] [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (hβ1 : β < 1)
+  (μ : Alignment.Behavioral.MarkovStrategy S A) (W : S → ℝ)
+  (hvalue :
+    ∀ (s : S),
+      (Alignment.Behavioral.average (μ.probability s) fun a =>
+          M.reward s a + β * Alignment.Behavioral.average (M.transition s a) fun o => W (M.nextState o)) =
+        W s)
+  (hcert :
+    ∀ (s : S) (a : A),
+      (M.reward s a + β * Alignment.Behavioral.average (M.transition s a) fun o => W (M.nextState o)) ≤ W s) :
+  Alignment.Behavioral.BestResponse M β μ
+'Alignment.Behavioral.one_shot_certifies_best_response' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.truncated_upper_legal.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype A]
+  [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (L : S → A → Prop) (W : S → ℝ) (C : ℝ)
+  (hW : ∀ (s : S), -C ≤ W s)
+  (hcert :
+    ∀ (s : S) (a : A),
+      L s a → (M.reward s a + β * Alignment.Behavioral.average (M.transition s a) fun o => W (M.nextState o)) ≤ W s)
+  (σ : Alignment.Behavioral.Strategy S A O) (hσ : Alignment.Behavioral.Admissible L σ) (n : ℕ)
+  (h : Alignment.Behavioral.History S A O) (s : S) : Alignment.Behavioral.truncated M β σ n h s ≤ W s + β ^ n * C
+'Alignment.Behavioral.truncated_upper_legal' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.payoff_upper_legal.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3} [Fintype S]
+  [Fintype A] [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (hβ1 : β < 1) (L : S → A → Prop)
+  (W : S → ℝ)
+  (hcert :
+    ∀ (s : S) (a : A),
+      L s a → (M.reward s a + β * Alignment.Behavioral.average (M.transition s a) fun o => W (M.nextState o)) ≤ W s)
+  (σ : Alignment.Behavioral.Strategy S A O) (hσ : Alignment.Behavioral.Admissible L σ)
+  (h : Alignment.Behavioral.History S A O) (s : S) : Alignment.Behavioral.payoff M β σ h s ≤ W s
+'Alignment.Behavioral.payoff_upper_legal' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Behavioral.one_shot_certifies_legal_best_response.{u_1, u_2, u_3} {S : Type u_1} {A : Type u_2} {O : Type u_3}
+  [Fintype S] [Fintype A] [Fintype O] (M : Alignment.Behavioral.Model S A O) (β : ℝ) (hβ : 0 ≤ β) (hβ1 : β < 1)
+  (L : S → A → Prop) (μ : Alignment.Behavioral.MarkovStrategy S A) (W : S → ℝ)
+  (hμ : ∀ (s : S) (a : A), ¬L s a → μ.probability s a = 0)
+  (hvalue :
+    ∀ (s : S),
+      (Alignment.Behavioral.average (μ.probability s) fun a =>
+          M.reward s a + β * Alignment.Behavioral.average (M.transition s a) fun o => W (M.nextState o)) =
+        W s)
+  (hcert :
+    ∀ (s : S) (a : A),
+      L s a → (M.reward s a + β * Alignment.Behavioral.average (M.transition s a) fun o => W (M.nextState o)) ≤ W s) :
+  Alignment.Behavioral.BestResponseLegal M β L μ
+'Alignment.Behavioral.one_shot_certifies_legal_best_response' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Carrier.descent_iff_fibers.{u_1, u_2, u_3} {S : Type u_1} {Q : Type u_2} {T : Type u_3} (q : S → Q)
+  (target : S → T) (hq : Function.Surjective q) :
+  Alignment.Carrier.Descends q target ↔ ∀ (x y : S), q x = q y → target x = target y
+'Alignment.Carrier.descent_iff_fibers' depends on axioms: [Classical.choice]
+Alignment.Carrier.repaired_target.{u_1, u_2, u_3} {S : Type u_1} {Q : Type u_2} {T : Type u_3} (q : S → Q)
+  (target : S → T) : Alignment.Carrier.Descends (fun s => (q s, target s)) target
+'Alignment.Carrier.repaired_target' does not depend on any axioms
+Alignment.Carrier.repair_preserves_current.{u_1, u_2, u_3} {S : Type u_1} {Q : Type u_2} {T : Type u_3} (q : S → Q)
+  (target : S → T) : Alignment.Carrier.Descends (fun s => (q s, target s)) q
+'Alignment.Carrier.repair_preserves_current' does not depend on any axioms
+Alignment.Carrier.repair_is_coarsest.{u_1, u_2, u_3, u_4} {S : Type u_1} {Q : Type u_2} {T : Type u_3} {Z : Type u_4}
+  (q : S → Q) (target : S → T) (r : S → Z) (hq : Alignment.Carrier.Descends r q)
+  (ht : Alignment.Carrier.Descends r target) : Alignment.Carrier.Descends r fun s => (q s, target s)
+'Alignment.Carrier.repair_is_coarsest' does not depend on any axioms
+Alignment.Carrier.duty_split : ¬Alignment.Carrier.Descends (fun s => s.2) fun s => s.1
+'Alignment.Carrier.duty_split' does not depend on any axioms
+Alignment.CertificationControls.control_one_step (μ : Alignment.StochasticGame.Profile Unit Bool Bool) (β : ℝ)
+  (W : Bool → ℝ) (s a : Bool) :
+  Alignment.StochasticGame.oneStep Alignment.CertificationControls.controlGame μ β () W s a =
+    (if a = true then 1 else 0) + β * W s
+'Alignment.CertificationControls.control_one_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.CertificationControls.good_value_equation (i : Unit) (s : Bool) :
+  (Alignment.Behavioral.average ((Alignment.CertificationControls.goodProfile i).probability s) fun a =>
+      Alignment.StochasticGame.oneStep Alignment.CertificationControls.controlGame
+        Alignment.CertificationControls.goodProfile (1 / 2) i (fun x => 2) s a) =
+    2
+'Alignment.CertificationControls.good_value_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.CertificationControls.good_all_state_certificate (i : Unit) (s a : Bool) :
+  Alignment.StochasticGame.oneStep Alignment.CertificationControls.controlGame
+      Alignment.CertificationControls.goodProfile (1 / 2) i (fun x => 2) s a ≤
+    2
+'Alignment.CertificationControls.good_all_state_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.CertificationControls.good_markov_perfect :
+  Alignment.StochasticGame.MarkovPerfect Alignment.CertificationControls.controlGame (1 / 2)
+    Alignment.CertificationControls.goodProfile
+'Alignment.CertificationControls.good_markov_perfect' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.CertificationControls.bad_value_equation (i : Unit) (s : Bool) :
+  (Alignment.Behavioral.average ((Alignment.CertificationControls.badProfile i).probability s) fun a =>
+      Alignment.StochasticGame.oneStep Alignment.CertificationControls.controlGame
+        Alignment.CertificationControls.badProfile (1 / 2) i (Alignment.CertificationControls.badValue i) s a) =
+    Alignment.CertificationControls.badValue i s
+'Alignment.CertificationControls.bad_value_equation' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.CertificationControls.reachable_state_passes (a : Bool) :
+  Alignment.StochasticGame.oneStep Alignment.CertificationControls.controlGame
+      Alignment.CertificationControls.badProfile (1 / 2) () (Alignment.CertificationControls.badValue ()) true a ≤
+    Alignment.CertificationControls.badValue () true
+'Alignment.CertificationControls.reachable_state_passes' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.CertificationControls.off_path_state_fails :
+  Alignment.CertificationControls.badValue () false <
+    Alignment.StochasticGame.oneStep Alignment.CertificationControls.controlGame
+      Alignment.CertificationControls.badProfile (1 / 2) () (Alignment.CertificationControls.badValue ()) false true
+'Alignment.CertificationControls.off_path_state_fails' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.CertificationControls.bad_global_certificate_false :
+  ¬∀ (i : Unit) (s a : Bool),
+      Alignment.StochasticGame.oneStep Alignment.CertificationControls.controlGame
+          Alignment.CertificationControls.badProfile (1 / 2) i (Alignment.CertificationControls.badValue i) s a ≤
+        Alignment.CertificationControls.badValue i s
+'Alignment.CertificationControls.bad_global_certificate_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Alignment.CertificationControls.bad_profile_deviation_payoffs
+  (h : Alignment.Behavioral.History Bool Bool (Alignment.StochasticGame.JointAction Unit Bool × Bool)) :
+  Alignment.Behavioral.payoff
+        (Alignment.StochasticGame.response Alignment.CertificationControls.controlGame
+          Alignment.CertificationControls.badProfile ())
+        (1 / 2) (Alignment.CertificationControls.goodProfile ()).behavioral h false =
+      2 ∧
+    Alignment.Behavioral.payoff
+        (Alignment.StochasticGame.response Alignment.CertificationControls.controlGame
+          Alignment.CertificationControls.badProfile ())
+        (1 / 2) (Alignment.CertificationControls.badProfile ()).behavioral h false =
+      0
+'Alignment.CertificationControls.bad_profile_deviation_payoffs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Alignment.CertificationControls.bad_profile_not_markov_perfect :
+  ¬Alignment.StochasticGame.MarkovPerfect Alignment.CertificationControls.controlGame (1 / 2)
+      Alignment.CertificationControls.badProfile
+'Alignment.CertificationControls.bad_profile_not_markov_perfect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Alignment.CertificationControls.bad_profile_admissible :
+  Alignment.StochasticGame.AdmissibleProfile Alignment.CertificationControls.controlMenu
+    Alignment.CertificationControls.badProfile
+'Alignment.CertificationControls.bad_profile_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.CertificationControls.bad_legal_all_state_certificate (i : Unit) (s a : Bool) :
+  Alignment.CertificationControls.controlMenu i s a →
+    Alignment.StochasticGame.oneStep Alignment.CertificationControls.controlGame
+        Alignment.CertificationControls.badProfile (1 / 2) i (Alignment.CertificationControls.badValue i) s a ≤
+      Alignment.CertificationControls.badValue i s
+'Alignment.CertificationControls.bad_legal_all_state_certificate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Alignment.CertificationControls.bad_profile_legal_markov_perfect :
+  Alignment.StochasticGame.MarkovPerfectLegal Alignment.CertificationControls.controlGame (1 / 2)
+    Alignment.CertificationControls.controlMenu Alignment.CertificationControls.badProfile
+'Alignment.CertificationControls.bad_profile_legal_markov_perfect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Alignment.CertificationControls.good_profile_inadmissible :
+  ¬Alignment.StochasticGame.AdmissibleProfile Alignment.CertificationControls.controlMenu
+      Alignment.CertificationControls.goodProfile
+'Alignment.CertificationControls.good_profile_inadmissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.CertificationControls.good_profile_not_legal_markov_perfect :
+  ¬Alignment.StochasticGame.MarkovPerfectLegal Alignment.CertificationControls.controlGame (1 / 2)
+      Alignment.CertificationControls.controlMenu Alignment.CertificationControls.goodProfile
+'Alignment.CertificationControls.good_profile_not_legal_markov_perfect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Alignment.Coalitions.coalition_sum_le_forced_upper.{u_1, u_2} {I : Type u_1} {R : Type u_2} [Fintype I] [Field R]
+  [LinearOrder R] [IsStrictOrderedRing R] (d : I → R) (required members : I → Bool)
+  (h : ∀ (i : I), required i = true → members i = true) :
+  Alignment.Coalitions.coalitionSum d members ≤ Alignment.Coalitions.forcedUpper d required
+'Alignment.Coalitions.coalition_sum_le_forced_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Coalitions.no_positive_coalition_sum.{u_1, u_2} {I : Type u_1} {R : Type u_2} [Fintype I] [Field R]
+  [LinearOrder R] [IsStrictOrderedRing R] (d : I → R) (required members : I → Bool)
+  (h : ∀ (i : I), required i = true → members i = true) (hu : Alignment.Coalitions.forcedUpper d required ≤ 0) :
+  Alignment.Coalitions.coalitionSum d members ≤ 0
+'Alignment.Coalitions.no_positive_coalition_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Coalitions.maximizing_contains_required.{u_1, u_2} {I : Type u_1} {R : Type u_2} [Field R] [LinearOrder R]
+  (d : I → R) (required : I → Bool) (i : I) :
+  required i = true → Alignment.Coalitions.maximizingMembers d required i = true
+'Alignment.Coalitions.maximizing_contains_required' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Coalitions.forced_upper_attained.{u_1, u_2} {I : Type u_1} {R : Type u_2} [Fintype I] [Field R]
+  [LinearOrder R] (d : I → R) (required : I → Bool) :
+  Alignment.Coalitions.coalitionSum d (Alignment.Coalitions.maximizingMembers d required) =
+    Alignment.Coalitions.forcedUpper d required
+'Alignment.Coalitions.forced_upper_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Coalitions.balanced_transfers_preserve_sum.{u_1, u_2} {I : Type u_1} {R : Type u_2} [Fintype I] [Field R]
+  (d t : I → R) (members : I → Bool) (ht : Alignment.Coalitions.coalitionSum t members = 0) :
+  Alignment.Coalitions.coalitionSum (fun i => d i + t i) members = Alignment.Coalitions.coalitionSum d members
+'Alignment.Coalitions.balanced_transfers_preserve_sum' depends on axioms: [propext, Quot.sound]
+Alignment.Coalitions.no_pareto_improvement.{u_1, u_2} {I : Type u_1} {R : Type u_2} [Fintype I] [Field R]
+  [LinearOrder R] [IsStrictOrderedRing R] (d : I → R) (members : I → Bool)
+  (hbound : Alignment.Coalitions.coalitionSum d members ≤ 0) (hnonnegative : ∀ (i : I), members i = true → 0 ≤ d i) :
+  ¬∃ j, members j = true ∧ 0 < d j
+'Alignment.Coalitions.no_pareto_improvement' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Coalitions.atomic_stage_cap.{u_2} {R : Type u_2} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (p q x y B a : R) (hp : 0 ≤ p) (hpq : p ≤ q) (hxy : x ≤ y) (hB : 0 ≤ B) (hcoefficient : 0 ≤ B * y - a) :
+  p * (B * x - a) ≤ q * (B * y - a)
+'Alignment.Coalitions.atomic_stage_cap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.ControlGroups.same_roots_same_capacity.{u_1, u_2, u_4} {A : Type u_1} {G : Type u_2} {R : Type u_4}
+  [DecidableEq G] [Field R] (root : A → G) (capacity : G → R) (x y : Finset A)
+  (h : Finset.image root x = Finset.image root y) :
+  Alignment.ControlGroups.controlCapacity root capacity x = Alignment.ControlGroups.controlCapacity root capacity y
+'Alignment.ControlGroups.same_roots_same_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.ControlGroups.added_alias_no_capacity_gain.{u_1, u_2, u_4} {A : Type u_1} {G : Type u_2} {R : Type u_4}
+  [DecidableEq A] [DecidableEq G] [Field R] (root : A → G) (capacity : G → R) (aliases : Finset A) (newAlias : A)
+  (h : root newAlias ∈ Finset.image root aliases) :
+  Alignment.ControlGroups.controlCapacity root capacity (insert newAlias aliases) =
+    Alignment.ControlGroups.controlCapacity root capacity aliases
+'Alignment.ControlGroups.added_alias_no_capacity_gain' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.ControlGroups.remaining_capacity_identity.{u_2, u_4} {G : Type u_2} {R : Type u_4} [DecidableEq G] [Field R]
+  (groups withheld : Finset G) (c : G → R) (h : withheld ⊆ groups) :
+  ∑ g ∈ groups \ withheld, c g = ∑ g ∈ groups, c g - ∑ g ∈ withheld, c g
+'Alignment.ControlGroups.remaining_capacity_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.ControlGroups.remaining_capacity_nonnegative.{u_2, u_4} {G : Type u_2} {R : Type u_4} [DecidableEq G]
+  [Field R] [LinearOrder R] [IsStrictOrderedRing R] (groups withheld : Finset G) (c : G → R) (hc : ∀ (g : G), 0 ≤ c g) :
+  0 ≤ ∑ g ∈ groups \ withheld, c g
+'Alignment.ControlGroups.remaining_capacity_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.ControlGroups.floor_feasible_iff.{u_3, u_4} {I : Type u_3} {R : Type u_4} [Field R] [LinearOrder R]
+  [IsStrictOrderedRing R] [Fintype I] (need : I → R) (available : R) (hn : ∀ (i : I), 0 ≤ need i) :
+  (∃ allocation, (∀ (i : I), 0 ≤ allocation i ∧ need i ≤ allocation i) ∧ ∑ i, allocation i ≤ available) ↔
+    ∑ i, need i ≤ available
+'Alignment.ControlGroups.floor_feasible_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Decoding.counts (t : List Bool) : List.count true t + List.count false t = t.length
+'Alignment.Decoding.counts' depends on axioms: [propext, Quot.sound]
+Alignment.Decoding.repetition_iff (n b : ℕ) : Alignment.Decoding.Decodable n b ↔ 2 * b + 1 ≤ n
+'Alignment.Decoding.repetition_iff' depends on axioms: [propext, Quot.sound]
+Alignment.Decoding.majority_correct (n b : ℕ) (hnb : 2 * b + 1 ≤ n) (t : List Bool) (hl : t.length = n) (truth : Bool)
+  (hf : Alignment.Decoding.corruptionCount truth t ≤ b) : Alignment.Decoding.majority t = truth
+'Alignment.Decoding.majority_correct' depends on axioms: [propext, Quot.sound]
+Alignment.Decoding.decoder_implies_disjoint (n b : ℕ) (hd : Alignment.Decoding.DecoderExists n b) :
+  Alignment.Decoding.Decodable n b
+'Alignment.Decoding.decoder_implies_disjoint' depends on axioms: [propext]
+Alignment.Decoding.decoder_exists_iff (n b : ℕ) : Alignment.Decoding.DecoderExists n b ↔ 2 * b + 1 ≤ n
+'Alignment.Decoding.decoder_exists_iff' depends on axioms: [propext, Quot.sound]
+Alignment.Dependence.owned_external_total.{u_1} {R : Type u_1} [Field R] (d : R) : 1 - d + d = 1
+'Alignment.Dependence.owned_external_total' depends on axioms: [propext, Quot.sound]
+Alignment.Dependence.outside_gap_factor.{u_1} {R : Type u_1} [Field R] (d : R) :
+  2 * d - 8 * d * (1 - d) = d * (8 * d - 6)
+'Alignment.Dependence.outside_gap_factor' depends on axioms: [propext, Quot.sound]
+Alignment.Dependence.outside_passing_region.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (d : R) (hd : 0 ≤ d) : 0 ≤ 2 * d - 8 * d * (1 - d) ↔ d = 0 ∨ 3 / 4 ≤ d
+'Alignment.Dependence.outside_passing_region' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Dependence.provider_margin_positive.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (d : R) (hd : d ≤ 1) : 0 < 1 / 2 - d / 4
+'Alignment.Dependence.provider_margin_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Dependence.funding_provider_transfer.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (d : R) : 1 / 2 - (1 / 2 - d / 8) = d / 8 ∧ -(1 / 2 - d / 4) + (1 / 2 - d / 8) = d / 8
+'Alignment.Dependence.funding_provider_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Dependence.binding_gain_strict.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (d : R)
+  (hd : 0 < d) : 0 < 1 / 2 - (1 / 2 - d / 8) ∧ 0 < -(1 / 2 - d / 4) + (1 / 2 - d / 8)
+'Alignment.Dependence.binding_gain_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Discounted.truncation_bound.{u_1, u_2} {S : Type u_1} {A : Type u_2} [Fintype S] (r : S → A → ℝ)
+  (P : S → A → S → ℝ) (β C : ℝ) (W : S → ℝ) (hβ : 0 ≤ β) (hP : ∀ (s : S) (a : A) (t : S), 0 ≤ P s a t)
+  (hrow : ∀ (s : S) (a : A), ∑ t, P s a t = 1) (hW : ∀ (s : S), -C ≤ W s)
+  (hcert : ∀ (s : S) (a : A), r s a + β * ∑ t, P s a t * W t ≤ W s) (σ : List (S × A) → S → A) (n : ℕ)
+  (hist : List (S × A)) (s : S) : Alignment.Discounted.value r P β σ hist s n ≤ W s + β ^ n * C
+'Alignment.Discounted.truncation_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Discounted.deviation_limit_le.{u_1, u_2} {S : Type u_1} {A : Type u_2} [Fintype S] (r : S → A → ℝ)
+  (P : S → A → S → ℝ) (β C : ℝ) (W : S → ℝ) (hβ : 0 ≤ β) (hβ1 : β < 1) (hP : ∀ (s : S) (a : A) (t : S), 0 ≤ P s a t)
+  (hrow : ∀ (s : S) (a : A), ∑ t, P s a t = 1) (hW : ∀ (s : S), -C ≤ W s)
+  (hcert : ∀ (s : S) (a : A), r s a + β * ∑ t, P s a t * W t ≤ W s) (σ : List (S × A) → S → A) (hist : List (S × A))
+  (s : S) (U : ℝ) (hU : Filter.Tendsto (fun n => Alignment.Discounted.value r P β σ hist s n) Filter.atTop (nhds U)) :
+  U ≤ W s
+'Alignment.Discounted.deviation_limit_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Evidence.equal_likelihood_no_update.{u_1} {R : Type u_1} [Field R] (q l : R) (hl : l ≠ 0) :
+  Alignment.Evidence.posterior q l l = q
+'Alignment.Evidence.equal_likelihood_no_update' depends on axioms: [propext, Quot.sound]
+Alignment.Evidence.posterior_mean.{u_1} {R : Type u_1} [Field R] (q e : R)
+  (hA : Alignment.Evidence.mass q (1 - e) e ≠ 0) (hR : Alignment.Evidence.mass q e (1 - e) ≠ 0) :
+  Alignment.Evidence.mass q (1 - e) e * Alignment.Evidence.posterior q (1 - e) e +
+      Alignment.Evidence.mass q e (1 - e) * Alignment.Evidence.posterior q e (1 - e) =
+    q
+'Alignment.Evidence.posterior_mean' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Evidence.posterior_separation_identity.{u_1} {R : Type u_1} [Field R] (q e : R)
+  (hA : Alignment.Evidence.mass q (1 - e) e ≠ 0) (hR : Alignment.Evidence.mass q e (1 - e) ≠ 0) :
+  Alignment.Evidence.posterior q (1 - e) e - Alignment.Evidence.posterior q e (1 - e) =
+    q * (1 - q) * (1 - 2 * e) / (Alignment.Evidence.mass q (1 - e) e * Alignment.Evidence.mass q e (1 - e))
+'Alignment.Evidence.posterior_separation_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Evidence.response_mass_positive.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (q e : R) (hq : 0 ≤ q) (hq1 : q ≤ 1) (he : 0 < e) (he1 : e ≤ 1 / 2) :
+  0 < Alignment.Evidence.mass q (1 - e) e ∧ 0 < Alignment.Evidence.mass q e (1 - e)
+'Alignment.Evidence.response_mass_positive' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Evidence.responses_strictly_separate.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (q e : R) (hq : 0 < q) (hq1 : q < 1) (he : 0 < e) (he1 : e < 1 / 2) :
+  Alignment.Evidence.posterior q e (1 - e) < Alignment.Evidence.posterior q (1 - e) e
+'Alignment.Evidence.responses_strictly_separate' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Evidence.predict_deviation.{u_1} {R : Type u_1} [Field R] (ρ π q : R) :
+  Alignment.Evidence.predict ρ π q - π = (1 - ρ) * (q - π)
+'Alignment.Evidence.predict_deviation' depends on axioms: [propext, Quot.sound]
+Alignment.Evidence.predict_bounds.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (ρ π q : R)
+  (hρ : ρ ≤ 1) (hq : 0 ≤ q) (hq1 : q ≤ 1) :
+  ρ * π ≤ Alignment.Evidence.predict ρ π q ∧ Alignment.Evidence.predict ρ π q ≤ 1 - ρ + ρ * π
+'Alignment.Evidence.predict_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Evidence.unobserved_prediction.{u_1} {R : Type u_1} [Field R] (ρ π q : R) (n : ℕ) :
+  Alignment.Evidence.predictMany ρ π n q = π + (1 - ρ) ^ n * (q - π)
+'Alignment.Evidence.unobserved_prediction' depends on axioms: [propext, Quot.sound]
+Alignment.Evidence.exact_summary_must_be_injective.{u_2, u_3, u_4} {S : Type u_2} {Q : Type u_3} {T : Type u_4}
+  (target : S → T) (summary : S → Q) (ht : Function.Injective target) (hs : Alignment.Carrier.Descends summary target) :
+  Function.Injective summary
+'Alignment.Evidence.exact_summary_must_be_injective' does not depend on any axioms
+Alignment.Evidence.odds_cross_bound.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (q r k : R)
+  (hr : 0 ≤ r) (hk : 1 ≤ k) (hm : 0 ≤ k ^ 2 * r * (1 - q) - q * (1 - r)) : q - r ≤ (k - 1) / (k + 1)
+'Alignment.Evidence.odds_cross_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Horizon.backward_induction.{u_1} {S : Type u_1} [Fintype S] (d g β : ℝ) (P : S → Bool → S → ℝ)
+  (hrow : ∀ (s : S) (a : Bool), ∑ t, P s a t = 1) (hg : 0 < g) (n : ℕ) (s : S) :
+  Alignment.Horizon.optimal d g β P n s = Alignment.Horizon.payoff d β n
+'Alignment.Horizon.backward_induction' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Horizon.D_unique_at_every_stage.{u_1} {S : Type u_1} [Fintype S] (d g β : ℝ) (P : S → Bool → S → ℝ)
+  (hrow : ∀ (s : S) (a : Bool), ∑ t, P s a t = 1) (hg : 0 < g) (n : ℕ) (s : S) :
+  d - g + β * ∑ t, P s true t * Alignment.Horizon.optimal d g β P n t <
+    d + β * ∑ t, P s false t * Alignment.Horizon.optimal d g β P n t
+'Alignment.Horizon.D_unique_at_every_stage' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Horizon.noisy_donation_gap (ε c : ℝ) (he : ε < 1 / 2) (hc : 0 < c) : 0 < (1 - 2 * ε) * c
+'Alignment.Horizon.noisy_donation_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Payoffs.interruption_iff.{u_1} {R : Type u_1} [Field R] [LinearOrder R] (S a T r σ A : R) :
+  S - a + T ≥ r - σ ∧ S - a + T ≥ A ↔ S - a + T ≥ max (r - σ) A
+'Alignment.Payoffs.interruption_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Payoffs.deterrence_iff.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (g q P : R) :
+  g - q * P ≤ 0 ↔ g ≤ q * P
+'Alignment.Payoffs.deterrence_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Payoffs.strict_deterrence_iff.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (g q P : R) : g - q * P < 0 ↔ g < q * P
+'Alignment.Payoffs.strict_deterrence_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Payoffs.hosting_pivotal_gain.{u_1} {R : Type u_1} [Field R] (ω V h pPiv pAbove : R) :
+  ω * V * (pPiv + pAbove) - h - ω * V * pAbove = ω * V * pPiv - h
+'Alignment.Payoffs.hosting_pivotal_gain' depends on axioms: [propext, Quot.sound]
+Alignment.Payoffs.hosting_best_response.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (ω V h pPiv pAbove : R) : ω * V * pAbove ≤ ω * V * (pPiv + pAbove) - h ↔ h ≤ ω * V * pPiv
+'Alignment.Payoffs.hosting_best_response' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Payoffs.all_N_strict.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (ω V h : R)
+  (m : ℕ) (hm : 2 ≤ m) (hh : 0 < h) :
+  Alignment.Payoffs.hostUtility ω V h m 0 true < Alignment.Payoffs.hostUtility ω V h m 0 false
+'Alignment.Payoffs.all_N_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Payoffs.threshold_endpoint_signs :
+  0 < Alignment.Payoffs.thresholdPolynomial (2382315 / 3734821) ∧
+    Alignment.Payoffs.thresholdPolynomial (2383666 / 3736939) < 0
+'Alignment.Payoffs.threshold_endpoint_signs' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Recovery.gain_identity.{u_1} {R : Type u_1} [Field R] (B z β q γ : R)
+  (hd : Alignment.Recovery.denominator β q γ ≠ 0) :
+  Alignment.Recovery.gain B z β q γ = β * Alignment.Recovery.slope B z β q γ + z
+'Alignment.Recovery.gain_identity' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Recovery.bellman_affine.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R]
+  (B z β q γ c s : R) (hd : Alignment.Recovery.denominator β q γ ≠ 0) (hb : 1 - β ≠ 0) :
+  Alignment.Recovery.intercept B z β q γ c + Alignment.Recovery.slope B z β q γ * s =
+    B * s - c * q + z * (q * (γ + (1 - γ) * s)) +
+      β * (Alignment.Recovery.intercept B z β q γ c + Alignment.Recovery.slope B z β q γ * (q * (γ + (1 - γ) * s)))
+'Alignment.Recovery.bellman_affine' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Recovery.denominator_pos.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (t γ : R)
+  (ht : 0 ≤ t) (ht1 : t < 1) (hg : 0 ≤ γ) (_hg1 : γ ≤ 1) : 0 < 1 - t * (1 - γ)
+'Alignment.Recovery.denominator_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Recovery.recovery_iff.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (H c t γ : R)
+  (hd : 0 < 1 - t * (1 - γ)) : 0 ≤ -c + H / (1 - t * (1 - γ)) * γ ↔ γ * (H - c * t) ≥ c * (1 - t)
+'Alignment.Recovery.recovery_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Recovery.recovery_feasible.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (H c t : R)
+  (hc : 0 < c) (ht1 : t < 1) : (∃ γ, 0 ≤ γ ∧ γ ≤ 1 ∧ γ * (H - c * t) ≥ c * (1 - t)) ↔ c ≤ H
+'Alignment.Recovery.recovery_feasible' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Recovery.recovery_window.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (H c t γ : R)
+  (hc : 0 < c) (ht1 : t < 1) (hH : c ≤ H) : γ * (H - c * t) ≥ c * (1 - t) ↔ c * (1 - t) / (H - c * t) ≤ γ
+'Alignment.Recovery.recovery_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Recovery.all_grades_iff.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (c G γ : R)
+  (hG : 0 ≤ G) (hg1 : γ ≤ 1) : (∀ (s : R), 0 ≤ s → s ≤ 1 → 0 ≤ -c + G * (γ + (1 - γ) * s)) ↔ 0 ≤ -c + G * γ
+'Alignment.Recovery.all_grades_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.Recovery.coverage_iff.{u_1} {R : Type u_1} [Field R] [LinearOrder R] [IsStrictOrderedRing R] (q ε γ η : R)
+  (hd : 0 < ε + q * γ) (hq : 0 < q) (he : η < 1) : η ≤ q * γ / (ε + q * γ) ↔ η * ε / (q * (1 - η)) ≤ γ
+'Alignment.Recovery.coverage_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.RolePrivacy.fiber_private_iff_action_factor.{u_1, u_2, u_3} {A : Type u_1} {H : Type u_2} {Y : Type u_3}
+  (O : A × H → Y) [Nonempty H] : Alignment.RolePrivacy.FiberPrivate O ↔ Alignment.Carrier.Descends Prod.fst O
+'Alignment.RolePrivacy.fiber_private_iff_action_factor' depends on axioms: [Classical.choice]
+Alignment.RolePrivacy.global_implies_fiber.{u_1, u_2, u_3} {A : Type u_1} {H : Type u_2} {Y : Type u_3} (O : A × H → Y)
+  (hp : Alignment.RolePrivacy.GlobalPrivate O) : Alignment.RolePrivacy.FiberPrivate O
+'Alignment.RolePrivacy.global_implies_fiber' does not depend on any axioms
+Alignment.RolePrivacy.global_accountability_collapses.{u_1, u_2, u_3} {A : Type u_1} {H : Type u_2} {Y : Type u_3}
+  (O : A × H → Y) [Nonempty H] (hp : Alignment.RolePrivacy.GlobalPrivate O) (ha : Alignment.RolePrivacy.Accountable O)
+  (a b : A) : a = b
+'Alignment.RolePrivacy.global_accountability_collapses' depends on axioms: [Classical.choice]
+Alignment.RolePrivacy.no_original_package_with_accountability.{u_1, u_2, u_3} {A : Type u_1} {H : Type u_2}
+  {Y : Type u_3} (O : A × H → Y) [Nonempty H] (P : Prop) (hP : P → Alignment.RolePrivacy.GlobalPrivate O)
+  (ha : Alignment.RolePrivacy.Accountable O) (hn : ∃ a b, a ≠ b) : ¬P
+'Alignment.RolePrivacy.no_original_package_with_accountability' depends on axioms: [Classical.choice]
+Alignment.RolePrivacy.action_is_fiber_private.{u_1, u_2} {A : Type u_1} {H : Type u_2} :
+  Alignment.RolePrivacy.FiberPrivate Prod.fst
+'Alignment.RolePrivacy.action_is_fiber_private' does not depend on any axioms
+Alignment.RolePrivacy.bool_action_not_global.{u_2} {H : Type u_2} [Nonempty H] :
+  ¬Alignment.RolePrivacy.GlobalPrivate Prod.fst
+'Alignment.RolePrivacy.bool_action_not_global' depends on axioms: [Classical.choice]
+Alignment.RolePrivacy.bool_package_obstruction.{u_2} {H : Type u_2} [Nonempty H] (P : Prop)
+  (hP : P → Alignment.RolePrivacy.GlobalPrivate Prod.fst) : ¬P
+'Alignment.RolePrivacy.bool_package_obstruction' depends on axioms: [Classical.choice]
+Alignment.RolePrivacy.future_injective : Function.Injective Alignment.RolePrivacy.twoFuture
+'Alignment.RolePrivacy.future_injective' depends on axioms: [propext]
+Alignment.RolePrivacy.connector_preserves_action (w : Bool × Bool) : (Alignment.RolePrivacy.connector w).1 = w.1
+'Alignment.RolePrivacy.connector_preserves_action' does not depend on any axioms
+Alignment.RolePrivacy.connector_changes_future (w : Bool × Bool) :
+  Alignment.RolePrivacy.twoFuture (Alignment.RolePrivacy.connector w) ≠ Alignment.RolePrivacy.twoFuture w
+'Alignment.RolePrivacy.connector_changes_future' depends on axioms: [propext]
+Alignment.StochasticGame.response_factor_nonnegative.{u_1, u_2, u_3} {I : Type u_1} {S : Type u_2} {A : Type u_3}
+  [Fintype A] [DecidableEq I] (μ : Alignment.StochasticGame.Profile I S A) (i : I) (s : S) (a : A) (k : I) (b : A) :
+  0 ≤ Alignment.StochasticGame.responseFactor μ i s a k b
+'Alignment.StochasticGame.response_factor_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.StochasticGame.response_factor_normalized.{u_1, u_2, u_3} {I : Type u_1} {S : Type u_2} {A : Type u_3}
+  [Fintype A] [DecidableEq I] (μ : Alignment.StochasticGame.Profile I S A) (i : I) (s : S) (a : A) (k : I) :
+  ∑ b, Alignment.StochasticGame.responseFactor μ i s a k b = 1
+'Alignment.StochasticGame.response_factor_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.StochasticGame.response_probability_nonnegative.{u_1, u_2, u_3} {I : Type u_1} {S : Type u_2} {A : Type u_3}
+  [Fintype I] [Fintype A] [DecidableEq I] (μ : Alignment.StochasticGame.Profile I S A) (i : I) (s : S) (a : A)
+  (j : Alignment.StochasticGame.JointAction I A) : 0 ≤ Alignment.StochasticGame.responseProbability μ i s a j
+'Alignment.StochasticGame.response_probability_nonnegative' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.StochasticGame.response_probability_normalized.{u_1, u_2, u_3} {I : Type u_1} {S : Type u_2} {A : Type u_3}
+  [Fintype I] [Fintype A] [DecidableEq I] (μ : Alignment.StochasticGame.Profile I S A) (i : I) (s : S) (a : A) :
+  ∑ j, Alignment.StochasticGame.responseProbability μ i s a j = 1
+'Alignment.StochasticGame.response_probability_normalized' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.StochasticGame.response_own_action.{u_1, u_2, u_3} {I : Type u_1} {S : Type u_2} {A : Type u_3} [Fintype I]
+  [Fintype A] [DecidableEq I] (μ : Alignment.StochasticGame.Profile I S A) (i : I) (s : S) (a : A)
+  (j : Alignment.StochasticGame.JointAction I A) (hp : Alignment.StochasticGame.responseProbability μ i s a j ≠ 0) :
+  j i = a
+'Alignment.StochasticGame.response_own_action' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.StochasticGame.response_one_step_eq.{u_1, u_2, u_3} {I : Type u_1} {S : Type u_2} {A : Type u_3} [Fintype I]
+  [Fintype S] [Fintype A] [DecidableEq I] (G : Alignment.StochasticGame.Game I S A)
+  (μ : Alignment.StochasticGame.Profile I S A) (β : ℝ) (i : I) (W : S → ℝ) (s : S) (a : A) :
+  ((Alignment.StochasticGame.response G μ i).reward s a +
+      β *
+        Alignment.Behavioral.average ((Alignment.StochasticGame.response G μ i).transition s a) fun o =>
+          W ((Alignment.StochasticGame.response G μ i).nextState o)) =
+    Alignment.StochasticGame.oneStep G μ β i W s a
+'Alignment.StochasticGame.response_one_step_eq' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.StochasticGame.one_shot_deviation_implies_markov_perfect.{u_1, u_2, u_3} {I : Type u_1} {S : Type u_2}
+  {A : Type u_3} [Fintype I] [Fintype S] [Fintype A] [DecidableEq I] (G : Alignment.StochasticGame.Game I S A) (β : ℝ)
+  (hβ : 0 ≤ β) (hβ1 : β < 1) (μ : Alignment.StochasticGame.Profile I S A) (W : I → S → ℝ)
+  (hvalue :
+    ∀ (i : I) (s : S),
+      (Alignment.Behavioral.average ((μ i).probability s) fun a => Alignment.StochasticGame.oneStep G μ β i (W i) s a) =
+        W i s)
+  (hcert : ∀ (i : I) (s : S) (a : A), Alignment.StochasticGame.oneStep G μ β i (W i) s a ≤ W i s) :
+  Alignment.StochasticGame.MarkovPerfect G β μ
+'Alignment.StochasticGame.one_shot_deviation_implies_markov_perfect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Alignment.StochasticGame.supported_joint_action_legal.{u_1, u_2, u_3} {I : Type u_1} {S : Type u_2} {A : Type u_3}
+  [Fintype I] [Fintype A] [DecidableEq I] (L : I → S → A → Prop) (μ : Alignment.StochasticGame.Profile I S A)
+  (hμ : Alignment.StochasticGame.AdmissibleProfile L μ) (i : I) (s : S) (a : A) (ha : L i s a)
+  (j : Alignment.StochasticGame.JointAction I A) (hp : Alignment.StochasticGame.responseProbability μ i s a j ≠ 0)
+  (k : I) : L k s (j k)
+'Alignment.StochasticGame.supported_joint_action_legal' depends on axioms: [propext, Classical.choice, Quot.sound]
+Alignment.StochasticGame.one_shot_deviation_implies_legal_markov_perfect.{u_1, u_2, u_3} {I : Type u_1} {S : Type u_2}
+  {A : Type u_3} [Fintype I] [Fintype S] [Fintype A] [DecidableEq I] (G : Alignment.StochasticGame.Game I S A) (β : ℝ)
+  (hβ : 0 ≤ β) (hβ1 : β < 1) (L : I → S → A → Prop) (μ : Alignment.StochasticGame.Profile I S A)
+  (hμ : Alignment.StochasticGame.AdmissibleProfile L μ) (W : I → S → ℝ)
+  (hvalue :
+    ∀ (i : I) (s : S),
+      (Alignment.Behavioral.average ((μ i).probability s) fun a => Alignment.StochasticGame.oneStep G μ β i (W i) s a) =
+        W i s)
+  (hcert : ∀ (i : I) (s : S) (a : A), L i s a → Alignment.StochasticGame.oneStep G μ β i (W i) s a ≤ W i s) :
+  Alignment.StochasticGame.MarkovPerfectLegal G β L μ
+'Alignment.StochasticGame.one_shot_deviation_implies_legal_markov_perfect' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

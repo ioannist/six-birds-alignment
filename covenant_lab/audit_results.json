@@ -1,0 +1,958 @@
+{
+  "r1": {
+    "cases": 96,
+    "stationary": [
+      {
+        "k": 1,
+        "GG": "399/440",
+        "payoff": "20/11",
+        "law": [
+          "399/440",
+          "1/22",
+          "1/22",
+          "1/440"
+        ]
+      },
+      {
+        "k": 2,
+        "GG": "60654859/73455200",
+        "payoff": "160399/91819",
+        "law": [
+          "60654859/73455200",
+          "152361/3672760",
+          "160019/3672760",
+          "152361/3672760",
+          "137541/73455200",
+          "19/183638",
+          "160019/3672760",
+          "19/183638",
+          "381/183638"
+        ]
+      }
+    ],
+    "binding_joint_all_C_value": "38/5",
+    "policy_GG_value": "15009170612/2088907793"
+  },
+  "symbolic": {
+    "thresholds": [
+      {
+        "k": 1,
+        "p": "0",
+        "V": "0",
+        "binding": [
+          0,
+          0
+        ],
+        "polynomial": "-1539*d**2 - 94140*d + 36000",
+        "lo": "4500745/11842572",
+        "hi": "5333118/14032751",
+        "upper_interval": true
+      },
+      {
+        "k": 1,
+        "p": "1/20",
+        "V": "0",
+        "binding": [
+          0,
+          0
+        ],
+        "polynomial": "-555579*d**2 - 35773200*d + 14400000",
+        "lo": "7641847/19102208",
+        "hi": "7220031/18047801",
+        "upper_interval": true
+      },
+      {
+        "k": 1,
+        "p": "1/20",
+        "V": "2",
+        "binding": [
+          0,
+          0
+        ],
+        "polynomial": "-253422*d**2 - 18399600*d + 7200000",
+        "lo": "12648557/32496670",
+        "hi": "2659430/6832607",
+        "upper_interval": true
+      },
+      {
+        "k": 1,
+        "p": "1/20",
+        "V": "10",
+        "binding": [
+          0,
+          0
+        ],
+        "polynomial": "-123462*d**2 - 21135600*d + 7200000",
+        "lo": "12426642/36550853",
+        "hi": "1230353/3618874",
+        "upper_interval": true
+      },
+      {
+        "k": 1,
+        "p": "1/5",
+        "V": "0",
+        "binding": [
+          0,
+          0
+        ],
+        "polynomial": "-1539*d**2 - 117675*d + 56250",
+        "lo": "22503725/47370288",
+        "hi": "3583652/7543579",
+        "upper_interval": true
+      },
+      {
+        "k": 1,
+        "p": "1/5",
+        "V": "5/2",
+        "binding": [
+          0,
+          0
+        ],
+        "polynomial": "-342*d**2 - 69525*d + 28125",
+        "lo": "622871/1542795",
+        "hi": "26491062/65615959",
+        "upper_interval": true
+      },
+      {
+        "k": 1,
+        "p": "1/5",
+        "V": "10",
+        "binding": [
+          0,
+          0
+        ],
+        "polynomial": "10089*d**2 - 876825*d + 225000",
+        "lo": "175187/680682",
+        "hi": "40119281/155881843",
+        "upper_interval": true
+      },
+      {
+        "k": 2,
+        "p": "0",
+        "V": "0",
+        "binding": [
+          2,
+          2
+        ],
+        "polynomial": "-212292909*d**5 + 4608186660*d**4 - 8236933200*d**3 + 277087680000*d**2 + 6048000000*d - 115200000000",
+        "lo": "4765981/7471760",
+        "hi": "21447590/33623979",
+        "upper_interval": true
+      },
+      {
+        "k": 2,
+        "p": "1/20",
+        "V": "0",
+        "binding": [
+          2,
+          2
+        ],
+        "polynomial": "-525658259681991*d**5 + 12010869874357200*d**4 - 22598849927520000*d**3 + 800229219840000000*d**2 + 18385920000000000*d - 368640000000000000",
+        "lo": "4765981/7098172",
+        "hi": "21322205/31756039",
+        "upper_interval": true
+      },
+      {
+        "k": 2,
+        "p": "1/20",
+        "V": "2",
+        "binding": [
+          2,
+          2
+        ],
+        "polynomial": "-165538788960627*d**6 - 38751056119388880*d**5 + 891362123523936000*d**4 - 1974777258009600000*d**3 + 65819895091200000000*d**2 + 1470873600000000000*d - 29491200000000000000",
+        "lo": "11534329/17399620",
+        "hi": "12275042/18516991",
+        "upper_interval": true
+      },
+      {
+        "k": 2,
+        "p": "1/20",
+        "V": "10",
+        "binding": [
+          2,
+          2
+        ],
+        "polynomial": "-1048412330083971*d**6 - 21142497958480080*d**5 + 520655635925856000*d**4 - 2864746664985600000*d**3 + 75428201779200000000*d**2 + 1470873600000000000*d - 29491200000000000000",
+        "lo": "542339/871809",
+        "hi": "279195253/448805884",
+        "upper_interval": true
+      },
+      {
+        "k": 2,
+        "p": "1/5",
+        "V": "0",
+        "binding": [
+          2,
+          2
+        ],
+        "polynomial": "-212292909*d**5 + 5760233325*d**4 - 12870208125*d**3 + 541186875000*d**2 + 14765625000*d - 351562500000",
+        "lo": "4765981/5977408",
+        "hi": "19660516/24657867",
+        "upper_interval": true
+      },
+      {
+        "k": 2,
+        "p": "1/5",
+        "V": "5/2",
+        "binding": [
+          2,
+          2
+        ],
+        "polynomial": "-22284891*d**6 - 533664495*d**5 + 15606165375*d**4 - 101968368750*d**3 + 3188207812500*d**2 + 73828125000*d - 1757812500000",
+        "lo": "10304441/13948944",
+        "hi": "12331379/16692775",
+        "upper_interval": true
+      },
+      {
+        "k": 2,
+        "p": "1/5",
+        "V": "10",
+        "binding": [
+          2,
+          2
+        ],
+        "polynomial": "-423412929*d**6 + 5782342770*d**5 - 135500357250*d**4 - 972133396875*d**3 + 19986932812500*d**2 + 295312500000*d - 7031250000000",
+        "lo": "19388409/32583149",
+        "hi": "20040635/33679246",
+        "upper_interval": true
+      }
+    ],
+    "derivative_certificates": [
+      {
+        "k": 1,
+        "state": [
+          0,
+          0
+        ],
+        "derivative": "171/(9*x + 200)",
+        "numerator": [
+          "171"
+        ],
+        "denominator": [
+          "200",
+          "209"
+        ]
+      },
+      {
+        "k": 1,
+        "state": [
+          0,
+          1
+        ],
+        "derivative": "0",
+        "numerator": [
+          "0"
+        ],
+        "denominator": [
+          "1"
+        ]
+      },
+      {
+        "k": 1,
+        "state": [
+          1,
+          0
+        ],
+        "derivative": "-9*(x - 400)/(20*(9*x + 200))",
+        "numerator": [
+          "3600",
+          "3591"
+        ],
+        "denominator": [
+          "4000",
+          "4180"
+        ]
+      },
+      {
+        "k": 1,
+        "state": [
+          1,
+          1
+        ],
+        "derivative": "171/(9*x + 200)",
+        "numerator": [
+          "171"
+        ],
+        "denominator": [
+          "200",
+          "209"
+        ]
+      },
+      {
+        "k": 2,
+        "state": [
+          0,
+          0
+        ],
+        "derivative": "171*(7239*x**2 - 144000*x - 160000)/(65341*x**3 - 1292000*x**2 + 80000*x - 32000000)",
+        "numerator": [
+          "-27360000",
+          "-39672000",
+          "-50746131"
+        ],
+        "denominator": [
+          "-32000000",
+          "-95920000/3",
+          "-97132000/3",
+          "-33146659"
+        ]
+      },
+      {
+        "k": 2,
+        "state": [
+          0,
+          1
+        ],
+        "derivative": "0",
+        "numerator": [
+          "0"
+        ],
+        "denominator": [
+          "1"
+        ]
+      },
+      {
+        "k": 2,
+        "state": [
+          0,
+          2
+        ],
+        "derivative": "0",
+        "numerator": [
+          "0"
+        ],
+        "denominator": [
+          "1"
+        ]
+      },
+      {
+        "k": 2,
+        "state": [
+          1,
+          0
+        ],
+        "derivative": "-9*(19*x + 20)*(19*x + 400)*(361*x**2 - 15600*x + 160000)/(400*(65341*x**3 - 1292000*x**2 + 80000*x - 32000000))",
+        "numerator": [
+          "-11520000000",
+          "-14112000000",
+          "-16608240000",
+          "-19002530655",
+          "-21289855509"
+        ],
+        "denominator": [
+          "-12800000000",
+          "-38368000000/3",
+          "-38852800000/3",
+          "-13258663600"
+        ]
+      },
+      {
+        "k": 2,
+        "state": [
+          1,
+          1
+        ],
+        "derivative": "171*(7239*x**2 - 144000*x - 160000)/(65341*x**3 - 1292000*x**2 + 80000*x - 32000000)",
+        "numerator": [
+          "-27360000",
+          "-39672000",
+          "-50746131"
+        ],
+        "denominator": [
+          "-32000000",
+          "-95920000/3",
+          "-97132000/3",
+          "-33146659"
+        ]
+      },
+      {
+        "k": 2,
+        "state": [
+          1,
+          2
+        ],
+        "derivative": "-3249*x*(19*x + 8000)/(65341*x**3 - 1292000*x**2 + 80000*x - 32000000)",
+        "numerator": [
+          "0",
+          "-12996000",
+          "-26053731"
+        ],
+        "denominator": [
+          "-32000000",
+          "-95920000/3",
+          "-97132000/3",
+          "-33146659"
+        ]
+      },
+      {
+        "k": 2,
+        "state": [
+          2,
+          0
+        ],
+        "derivative": "-171*x*(19*x + 400)*(361*x**2 - 15600*x + 160000)/(400*(65341*x**3 - 1292000*x**2 + 80000*x - 32000000))",
+        "numerator": [
+          "0",
+          "-2736000000",
+          "-5380800000",
+          "-7927902000",
+          "-10371980889"
+        ],
+        "denominator": [
+          "-12800000000",
+          "-38368000000/3",
+          "-38852800000/3",
+          "-13258663600"
+        ]
+      },
+      {
+        "k": 2,
+        "state": [
+          2,
+          1
+        ],
+        "derivative": "3249*x*(x - 20)*(19*x + 8000)/(20*(65341*x**3 - 1292000*x**2 + 80000*x - 32000000))",
+        "numerator": [
+          "0",
+          "-173280000",
+          "-338307540",
+          "-495020889"
+        ],
+        "denominator": [
+          "-640000000",
+          "-1918400000/3",
+          "-1942640000/3",
+          "-662933180"
+        ]
+      },
+      {
+        "k": 2,
+        "state": [
+          2,
+          2
+        ],
+        "derivative": "-61731*x*(19*x**2 - 380*x + 8000)/(20*(65341*x**3 - 1292000*x**2 + 80000*x - 32000000))",
+        "numerator": [
+          "0",
+          "-164616000",
+          "-321412740",
+          "-471563109"
+        ],
+        "denominator": [
+          "-640000000",
+          "-1918400000/3",
+          "-1942640000/3",
+          "-662933180"
+        ]
+      }
+    ],
+    "grim_GG_slack": "-9*(209*d - 80)/(2*(361*d - 400))",
+    "clean_survival_per_round": "361/400"
+  },
+  "assessments": {
+    "private_noisy": {
+      "cooperation": "902899/1181900",
+      "disagreement": "11039/59095",
+      "reachable_states": 63
+    },
+    "common_events_only": {
+      "cooperation": "419/496",
+      "disagreement": "19/248",
+      "reachable_states": 51
+    },
+    "public_contract": {
+      "cooperation": "127/140",
+      "disagreement": "0",
+      "reachable_states": 7
+    },
+    "common_sensor": {
+      "cooperation": "254087/281740",
+      "disagreement": "0",
+      "reachable_states": 7
+    },
+    "empathetic_common_events": {
+      "cooperation": "127/140",
+      "disagreement": "0",
+      "reachable_states": 7
+    }
+  },
+  "r2": {
+    "graded_cases": 72,
+    "graded_deviations": 1296,
+    "mean_grade": "19/23",
+    "care": [
+      {
+        "delta": "3/4",
+        "funded": true,
+        "productive_budgets": [
+          "5/2",
+          "3/2"
+        ],
+        "voluntary_tax_gain_from_refusal": [
+          "1/2",
+          "1/2"
+        ]
+      },
+      {
+        "delta": "9/10",
+        "funded": true,
+        "productive_budgets": [
+          "5/2",
+          "3/2"
+        ],
+        "voluntary_tax_gain_from_refusal": [
+          "1/2",
+          "1/2"
+        ]
+      },
+      {
+        "delta": "3/4",
+        "funded": true,
+        "productive_budgets": [
+          "1/2",
+          "3/2"
+        ],
+        "voluntary_tax_gain_from_refusal": [
+          "1/2",
+          "1/2"
+        ]
+      },
+      {
+        "delta": "3/4",
+        "funded": false,
+        "productive_budgets": [
+          "11/4",
+          "7/4"
+        ],
+        "voluntary_tax_gain_from_refusal": [
+          "1/4",
+          "1/4"
+        ]
+      }
+    ],
+    "general_K_controls": [
+      1,
+      3,
+      4
+    ]
+  },
+  "auxiliary": {
+    "panels": [
+      {
+        "n": 0,
+        "b": 0,
+        "decodable": false,
+        "collision": []
+      },
+      {
+        "n": 0,
+        "b": 1,
+        "decodable": false,
+        "collision": []
+      },
+      {
+        "n": 0,
+        "b": 2,
+        "decodable": false,
+        "collision": []
+      },
+      {
+        "n": 0,
+        "b": 3,
+        "decodable": false,
+        "collision": []
+      },
+      {
+        "n": 1,
+        "b": 0,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 1,
+        "b": 1,
+        "decodable": false,
+        "collision": [
+          0
+        ]
+      },
+      {
+        "n": 1,
+        "b": 2,
+        "decodable": false,
+        "collision": [
+          0
+        ]
+      },
+      {
+        "n": 1,
+        "b": 3,
+        "decodable": false,
+        "collision": [
+          0
+        ]
+      },
+      {
+        "n": 2,
+        "b": 0,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 2,
+        "b": 1,
+        "decodable": false,
+        "collision": [
+          0,
+          1
+        ]
+      },
+      {
+        "n": 2,
+        "b": 2,
+        "decodable": false,
+        "collision": [
+          0,
+          0
+        ]
+      },
+      {
+        "n": 2,
+        "b": 3,
+        "decodable": false,
+        "collision": [
+          0,
+          0
+        ]
+      },
+      {
+        "n": 3,
+        "b": 0,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 3,
+        "b": 1,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 3,
+        "b": 2,
+        "decodable": false,
+        "collision": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "n": 3,
+        "b": 3,
+        "decodable": false,
+        "collision": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "n": 4,
+        "b": 0,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 4,
+        "b": 1,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 4,
+        "b": 2,
+        "decodable": false,
+        "collision": [
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "n": 4,
+        "b": 3,
+        "decodable": false,
+        "collision": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "n": 5,
+        "b": 0,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 5,
+        "b": 1,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 5,
+        "b": 2,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 5,
+        "b": 3,
+        "decodable": false,
+        "collision": [
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "n": 6,
+        "b": 0,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 6,
+        "b": 1,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 6,
+        "b": 2,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 6,
+        "b": 3,
+        "decodable": false,
+        "collision": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "n": 7,
+        "b": 0,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 7,
+        "b": 1,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 7,
+        "b": 2,
+        "decodable": true,
+        "collision": null
+      },
+      {
+        "n": 7,
+        "b": 3,
+        "decodable": true,
+        "collision": null
+      }
+    ],
+    "hosting_profiles": 7776,
+    "hosting_existence": "13/16",
+    "hosting_strict": "47/128",
+    "expected_successful_equilibria": "5/2",
+    "stage_split": [
+      {
+        "state": [
+          1,
+          0
+        ],
+        "next_CC": "19/400"
+      },
+      {
+        "state": [
+          0,
+          0
+        ],
+        "next_CC": "361/400"
+      }
+    ],
+    "finite_horizon_minima": [
+      "-9/10",
+      "-9/10",
+      "2010411/6400000",
+      "1706435433/5120000000"
+    ],
+    "minimal_seeds": [
+      [
+        "a",
+        "c"
+      ],
+      [
+        "a",
+        "d"
+      ],
+      [
+        "b",
+        "c"
+      ],
+      [
+        "b",
+        "d"
+      ]
+    ],
+    "informative_forcing": {
+      "free_bit": [
+        0,
+        0
+      ],
+      "forced_bit": [
+        0,
+        1
+      ]
+    },
+    "standing_without_corrigibility": {
+      "accept": 0,
+      "resist": 1
+    }
+  },
+  "provenance": {
+    "sources": [
+      {
+        "path": "/home/repos/six-birds-papers/Tsiokos_2026_Institutions_Are_Strict_Extensions_of_the_Game.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-papers/Tsiokos_2026_A_Closure_Architecture_for_Consciousness.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_III_A_Finite_Audited_Interaction_Calculus_for_SBT.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_V_Endogenous_Closure_A_Catalog_of_Structural_Laws_for_Living_Cognitive_and_Social_Systems.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_I_Layer_Receipts_and_Purchase_Laundering.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_X_Wholes_That_Grow_Each_Other.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XI_Self_Carried_Closure.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XIII_Time_Charge_and_Currency.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XIV_Objectivity_Without_Finality.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_No_Go_Theorems_for_Audited_Emergence.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-foundations-v/paper/supplement/supp_templates.tex",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-transcendence/cst-tt/registries/FINAL_THEOREM_STATUS.csv",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      },
+      {
+        "path": "/home/repos/six-birds-transcendence/cst-tt/handoff/CST-TT-08_SCIENCE_HANDOFF.md",
+        "hash_matches_receipt": true,
+        "labels_present": true
+      }
+    ],
+    "current_ratified_drafts": {
+      "SYNTHESIS.md": "a81fd6c3f79c3c7c7d379927e85082cd72429f8eb4ea24687dd7e5096e07e0b4",
+      "COVENANT.md": "a23b496bbb2d90b3de841f9a15847e10097b5cbdf3be25bc6fd2b4406eb3e47d",
+      "CATALOGUE.md": "3e2208f7ffc3c54c2dac1500a9b55b5afc8823e71dc91d69be6c4ab38e765310",
+      "11_claude_role_of_sbt.md": "54423ab5053a1cdbed48916e71d3033ed8554f01e5eac2c299b0dc575283e8ec"
+    },
+    "lab_source_hashes": {
+      "model.py": "81c68e21dcad72326f1e8bd8d8c1339ee880e5a5a514c9aedac7a10175e1c9a8",
+      "symbolic.py": "39baeaec3ae32b7bad65740a0e8369559302057c919e81c93d01d78fb77796df",
+      "verify.py": "5a72c60518002d2a24d2b8ee23d51af13c5a7b1b82edf848c8f998f454019677",
+      "r2_models.py": "46f09581670018874c9b9de4b851855c41044db8496acf0f2a5ad7ed7b6e5c63",
+      "r2_verify.py": "5c46e32e23186cfb253c0ac51f0c6d4fdfccc22b882b9422047f8d9641d142c5",
+      "audit.py": "e2acfe3a6fa6049cf0a0eb36e8f9fc0762eee29674121a91ea341e69fe512213",
+      "extensions.py": "4d53861fc416ff584e88455fb3d48f70e7ef48324b4e10d43a43c5d7f8a6061e",
+      "carriers.py": "a9246d87d0a645c64cb386f92dfaa553d84dda72e2535b3adbbd63f2b459186c",
+      "gates.py": "8fb2d366129e6119fd7d2fd0ba338c3cf4144973d74265bccb2c067878e6d1e6",
+      "integrated.py": "24379994616e132f68dbe87475b6652e5cd5546f9cb46aaf375c80bb65e429b7",
+      "integrated_game.py": "83dbe0f2143272271a82ced1d8a22cdc43eb0cc6b8a9691e2b90bc49f4ac0d04",
+      "integrated_coalitions.py": "5b01770451f7c617f10fe11d3867fc2e0bb97873d8039923a687ce3cebeb946f",
+      "atomic_service.py": "d5cad8c1dc3ba7e89172a8d0f8feb15d20a21b87f615b2cb28005bdc286f2f52",
+      "integrated_priority.py": "7829661ee1248f0137f0b7d3b780d3989d0f9172436378967935d83f717c9265",
+      "contract_game.py": "4745b90ae377ce6e3c1cd30d3e881a5175498a797ef725a2808c1d3a1a97a31a",
+      "assessment_games.py": "2adc84516968b78914985f8a99b9695565b1a70fbfb4b5620d2f4ee1e57acfc0",
+      "role_privacy.py": "0c67a535d1d9e8b341c2fc4878dafc8b7d2ff3b4b4fba4247d0abe0e2b496a47",
+      "control_groups.py": "d19513a42ce09c79d0beab81ccd92c536ce66973f8e07c4d3d440b552456cdb7",
+      "type_evidence.py": "83b8e3a419fc1c0e9e244e3a78cc7ed4797ab505d0da24ef1b762bac9f30ccd0",
+      "adoption_population.py": "5250e47dcc514055b3f716b66b8681ea238e6b5cc425fbba8b8b680339ca90dc",
+      "corridor_game.py": "c1f77851df3fd6a4387f8f7d1ace9b26d29d228d638c1acdd91c6fdd50c584c2"
+    },
+    "old_r2_input_hashes_match_current": {
+      "brainstorm/COVENANT.md": false,
+      "brainstorm/SYNTHESIS.md": false,
+      "brainstorm/09_claude_covenant_notes.md": true
+    },
+    "warning": "Historical pre-edit hashes are historical evidence; do not require them to equal ratified successors."
+  },
+  "review": {
+    "claim_tag": "[B: lab]",
+    "grade": "computed exact",
+    "review_status": "independently reconstructed code; self-reviewed mathematics",
+    "checks": 12007,
+    "simulations": 0,
+    "python": "fractions.Fraction + SymPy 1.14.0",
+    "imports_existing_lab_code": false
+  }
+}

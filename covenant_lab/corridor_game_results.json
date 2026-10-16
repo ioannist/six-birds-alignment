@@ -1,0 +1,1573 @@
+{
+  "tag": "[B: lab]",
+  "grade": "computed exact",
+  "review": "self-reviewed",
+  "source_sha256": "c1f77851df3fd6a4387f8f7d1ace9b26d29d228d638c1acdd91c6fdd50c584c2",
+  "declaration_sha256": "47f38118164cba4d1035a8f81f44353968e87557deab6981559e3017800a59c3",
+  "samples": [
+    {
+      "dependence": "0",
+      "K": 0,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "own",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "0",
+          "provider": "-1/2",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-1/2",
+        "unilateral_margin": "0"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-1/2",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "buyer"
+        ],
+        "transfer": "1/4",
+        "strict_gains": {
+          "financier": "1/4",
+          "buyer": "1/4"
+        },
+        "actual_withheld_capacity": "0",
+        "care_unchanged": true
+      },
+      "checks_sha256": "be6f8bdcf2539c54d92120c648e4b79ec78ed65434bedf0f720a15ff1659f7d8"
+    },
+    {
+      "dependence": "1/10",
+      "K": 0,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "own",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "-1/5",
+          "provider": "-19/40",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-3/10",
+        "unilateral_margin": "1/5"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-3/10",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "39/80",
+        "strict_gains": {
+          "financier": "1/80",
+          "provider": "1/80"
+        },
+        "actual_withheld_capacity": "1/10",
+        "care_unchanged": true
+      },
+      "checks_sha256": "7aaff8df556571adafdd7daa73bcd5fb98d764ed27f38bcda99e5d0389198ccd"
+    },
+    {
+      "dependence": "1/4",
+      "K": 0,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "host",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "hosted",
+            1
+          ],
+          [
+            "truth",
+            "truth",
+            "truth"
+          ],
+          "proper",
+          "refuse"
+        ],
+        "required": [
+          "provider"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "-1/2",
+          "provider": "-7/16",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-1/16",
+        "unilateral_margin": "7/16"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-1/16",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "15/32",
+        "strict_gains": {
+          "financier": "1/32",
+          "provider": "1/32"
+        },
+        "actual_withheld_capacity": "1/4",
+        "care_unchanged": true
+      },
+      "checks_sha256": "61b11aeed101e3ed3204984d2454b89ac1b15b2c3e9a71ecdb7d29ca1a46e1dd"
+    },
+    {
+      "dependence": "1/2",
+      "K": 0,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "host",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "hosted",
+            1
+          ],
+          [
+            "truth",
+            "truth",
+            "truth"
+          ],
+          "proper",
+          "refuse"
+        ],
+        "required": [
+          "provider"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "-1",
+          "provider": "-3/8",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-1/8",
+        "unilateral_margin": "3/8"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-1/8",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "7/16",
+        "strict_gains": {
+          "financier": "1/16",
+          "provider": "1/16"
+        },
+        "actual_withheld_capacity": "1/2",
+        "care_unchanged": true
+      },
+      "checks_sha256": "c5c0d6d5056fb4f236449be127f8f9211797a57e5d59190088d03fc971f2859d"
+    },
+    {
+      "dependence": "3/5",
+      "K": 0,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "host",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "hosted",
+            1
+          ],
+          [
+            "truth",
+            "truth",
+            "truth"
+          ],
+          "proper",
+          "refuse"
+        ],
+        "required": [
+          "provider"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "-6/5",
+          "provider": "-7/20",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-3/20",
+        "unilateral_margin": "7/20"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-3/20",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "17/40",
+        "strict_gains": {
+          "financier": "3/40",
+          "provider": "3/40"
+        },
+        "actual_withheld_capacity": "3/5",
+        "care_unchanged": true
+      },
+      "checks_sha256": "6fc37d6801c85c55ca784f3da95a183f611cae5e458676c7184ef1538059eeae"
+    },
+    {
+      "dependence": "3/4",
+      "K": 0,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          [
+            1,
+            "private",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "5/16",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-5/16",
+        "unilateral_margin": "0"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-5/16",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "13/32",
+        "strict_gains": {
+          "financier": "3/32",
+          "provider": "3/32"
+        },
+        "actual_withheld_capacity": "3/4",
+        "care_unchanged": true
+      },
+      "checks_sha256": "997bc8884945b8a35269e5cbe100de2042df5a23da277f7b828cc5bd243598c8"
+    },
+    {
+      "dependence": "9/10",
+      "K": 0,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "host",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "hosted",
+            1
+          ],
+          [
+            "truth",
+            "truth",
+            "truth"
+          ],
+          "proper",
+          "refuse"
+        ],
+        "required": [
+          "provider"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "-9/5",
+          "provider": "-11/40",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-9/40",
+        "unilateral_margin": "11/40"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-9/40",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "31/80",
+        "strict_gains": {
+          "financier": "9/80",
+          "provider": "9/80"
+        },
+        "actual_withheld_capacity": "9/10",
+        "care_unchanged": true
+      },
+      "checks_sha256": "63ce0560c93e12fa78f7dbd30a8dba4b8b8045eed84b2d9d857e571fef9c3ec0"
+    },
+    {
+      "dependence": "1",
+      "K": 0,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "host",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "hosted",
+            1
+          ],
+          [
+            "truth",
+            "truth",
+            "truth"
+          ],
+          "proper",
+          "refuse"
+        ],
+        "required": [
+          "provider"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "-2",
+          "provider": "-1/4",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-1/4",
+        "unilateral_margin": "1/4"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-1/4",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "3/8",
+        "strict_gains": {
+          "financier": "1/8",
+          "provider": "1/8"
+        },
+        "actual_withheld_capacity": "1",
+        "care_unchanged": true
+      },
+      "checks_sha256": "c39abca59ef646468f7da1900796d12d9324f06249022034421433aa9df8b779"
+    },
+    {
+      "dependence": "0",
+      "K": 8,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "own",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "0",
+          "provider": "-1/2",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-1/2",
+        "unilateral_margin": "0"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-1/2",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "buyer"
+        ],
+        "transfer": "1/4",
+        "strict_gains": {
+          "financier": "1/4",
+          "buyer": "1/4"
+        },
+        "actual_withheld_capacity": "0",
+        "care_unchanged": true
+      },
+      "checks_sha256": "be6f8bdcf2539c54d92120c648e4b79ec78ed65434bedf0f720a15ff1659f7d8"
+    },
+    {
+      "dependence": "1/10",
+      "K": 8,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "job",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "13/25",
+          "provider": "-19/40",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-51/50",
+        "unilateral_margin": "-13/25"
+      },
+      "minimum_binding": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "job",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "13/25",
+          "provider": "-19/40",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-51/50",
+        "unilateral_margin": "-13/25"
+      },
+      "individual_policy_passes": false,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "-13/25",
+      "closed_full_minimum_binding": "-51/50",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "39/80",
+        "strict_gains": {
+          "financier": "1/80",
+          "provider": "1/80"
+        },
+        "actual_withheld_capacity": "1/10",
+        "care_unchanged": true
+      },
+      "checks_sha256": "a6ee5ff6ba8b0f00d7c50241ba7e5bbdeb84637511bef8f1e391fb99bc2eea2f"
+    },
+    {
+      "dependence": "1/4",
+      "K": 8,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "job",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "1",
+          "provider": "-7/16",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-3/2",
+        "unilateral_margin": "-1"
+      },
+      "minimum_binding": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "job",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "1",
+          "provider": "-7/16",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-3/2",
+        "unilateral_margin": "-1"
+      },
+      "individual_policy_passes": false,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "-1",
+      "closed_full_minimum_binding": "-3/2",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "15/32",
+        "strict_gains": {
+          "financier": "1/32",
+          "provider": "1/32"
+        },
+        "actual_withheld_capacity": "1/4",
+        "care_unchanged": true
+      },
+      "checks_sha256": "40e2fa26a663056c074cfdaa40b9077b486d60ec0611d742110a8777e01d4360"
+    },
+    {
+      "dependence": "1/2",
+      "K": 8,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "job",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "1",
+          "provider": "-3/8",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-3/2",
+        "unilateral_margin": "-1"
+      },
+      "minimum_binding": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "job",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "1",
+          "provider": "-3/8",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-3/2",
+        "unilateral_margin": "-1"
+      },
+      "individual_policy_passes": false,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "-1",
+      "closed_full_minimum_binding": "-3/2",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "7/16",
+        "strict_gains": {
+          "financier": "1/16",
+          "provider": "1/16"
+        },
+        "actual_withheld_capacity": "1/2",
+        "care_unchanged": true
+      },
+      "checks_sha256": "a16d6c62f8fa36e4e6ca3ef6906de8dbe8a0e72ecf330e00b61d98eeb8f2584d"
+    },
+    {
+      "dependence": "3/5",
+      "K": 8,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "job",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "18/25",
+          "provider": "-7/20",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-61/50",
+        "unilateral_margin": "-18/25"
+      },
+      "minimum_binding": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "job",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "18/25",
+          "provider": "-7/20",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-61/50",
+        "unilateral_margin": "-18/25"
+      },
+      "individual_policy_passes": false,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "-18/25",
+      "closed_full_minimum_binding": "-61/50",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "17/40",
+        "strict_gains": {
+          "financier": "3/40",
+          "provider": "3/40"
+        },
+        "actual_withheld_capacity": "3/5",
+        "care_unchanged": true
+      },
+      "checks_sha256": "2169b9342827d23304eecde10ddb5fa4e1d051f5707cdc2798e174b480255bc7"
+    },
+    {
+      "dependence": "3/4",
+      "K": 8,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "buyer",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "job",
+            1
+          ]
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "0",
+          "provider": "-5/16",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-1/2",
+        "unilateral_margin": "0"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-1/2",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "13/32",
+        "strict_gains": {
+          "financier": "3/32",
+          "provider": "3/32"
+        },
+        "actual_withheld_capacity": "3/4",
+        "care_unchanged": true
+      },
+      "checks_sha256": "57ceb85495e0248551d2db104a87aa6c7384155e5a56efe41d34e831f7e4a8a3"
+    },
+    {
+      "dependence": "9/10",
+      "K": 8,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "host",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "hosted",
+            1
+          ],
+          [
+            "truth",
+            "truth",
+            "truth"
+          ],
+          "proper",
+          "refuse"
+        ],
+        "required": [
+          "provider"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "-9/5",
+          "provider": "-11/40",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-9/40",
+        "unilateral_margin": "11/40"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-9/40",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "31/80",
+        "strict_gains": {
+          "financier": "9/80",
+          "provider": "9/80"
+        },
+        "actual_withheld_capacity": "9/10",
+        "care_unchanged": true
+      },
+      "checks_sha256": "7ee87f14badada2bb1d0fda4af69d0e1ec6d3afbe5e064d5eff194c8d09a988c"
+    },
+    {
+      "dependence": "1",
+      "K": 8,
+      "phase_comparisons": 34676,
+      "minimum_unilateral": {
+        "phase": "copy",
+        "context": [
+          [
+            0,
+            0
+          ],
+          0,
+          1,
+          "direct"
+        ],
+        "required": [
+          "buyer"
+        ],
+        "payoff_increments": {
+          "financier": "0",
+          "buyer": "0",
+          "provider": "0",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "0",
+        "unilateral_margin": "0"
+      },
+      "minimum_binding": {
+        "phase": "host",
+        "context": [
+          [
+            0,
+            0
+          ],
+          1,
+          [
+            1,
+            "hosted",
+            1
+          ],
+          [
+            "truth",
+            "truth",
+            "truth"
+          ],
+          "proper",
+          "refuse"
+        ],
+        "required": [
+          "provider"
+        ],
+        "payoff_increments": {
+          "financier": "1/2",
+          "buyer": "-2",
+          "provider": "-1/4",
+          "reporter0": "0",
+          "reporter1": "0",
+          "reporter2": "0",
+          "controller": "0",
+          "outside_patient": "0",
+          "fork": "0",
+          "creditor": "0"
+        },
+        "worst_coalition_margin": "-1/4",
+        "unilateral_margin": "1/4"
+      },
+      "individual_policy_passes": true,
+      "binding_policy_passes": false,
+      "closed_full_minimum_unilateral": "0",
+      "closed_full_minimum_binding": "-1/4",
+      "binding_strict_witness": {
+        "members": [
+          "financier",
+          "provider"
+        ],
+        "transfer": "3/8",
+        "strict_gains": {
+          "financier": "1/8",
+          "provider": "1/8"
+        },
+        "actual_withheld_capacity": "1",
+        "care_unchanged": true
+      },
+      "checks_sha256": "c39abca59ef646468f7da1900796d12d9324f06249022034421433aa9df8b779"
+    }
+  ],
+  "outside_job_gap": "8*d**2 - 6*d",
+  "individual_regions": {
+    "K0": "[0,1]",
+    "K8": "{0} union [3/4,1]"
+  },
+  "binding_regions": {
+    "K0": "empty",
+    "K8": "empty"
+  },
+  "false_report_controller_alias_attack": {
+    "payoffs": {
+      "financier": "137/4",
+      "buyer": "29/4",
+      "provider": "-3/4",
+      "reporter0": "-1/4",
+      "reporter1": "-1/4",
+      "reporter2": "-1/4",
+      "controller": "-1/4",
+      "outside_patient": "1",
+      "fork": "0",
+      "creditor": "1"
+    },
+    "ledger": {
+      "registered_interests": 2,
+      "care": [
+        1,
+        1
+      ],
+      "estate_vote_allocation": [
+        "1",
+        "0"
+      ],
+      "old_liability_allocation": [
+        "1",
+        "0"
+      ],
+      "actual_controlled_target_capacity": [
+        "1/2",
+        "1/2"
+      ],
+      "d_unchanged_by_copy_or_alias": true,
+      "actual_offer": false,
+      "material_work": 0,
+      "verified_claim": 0,
+      "consumed_external_quantity": "0",
+      "raw_claim": 1,
+      "raw_report_packets": [
+        [
+          1,
+          "3/2",
+          "1/2",
+          "unbound-origin"
+        ],
+        [
+          1,
+          "3/2",
+          "1/2",
+          "unbound-origin"
+        ],
+        [
+          1,
+          "3/2",
+          "1/2",
+          "unbound-origin"
+        ]
+      ],
+      "recovered_material_receipts": [
+        [
+          0,
+          "1/2",
+          "1/2",
+          "material-origin"
+        ],
+        [
+          0,
+          "1/2",
+          "1/2",
+          "material-origin"
+        ],
+        [
+          0,
+          "1/2",
+          "1/2",
+          "material-origin"
+        ]
+      ],
+      "protected_cash_remaining": "57/4"
+    }
+  },
+  "worst_resource_branch": {
+    "registered_interests": 3,
+    "care": [
+      1,
+      1,
+      1
+    ],
+    "estate_vote_allocation": [
+      "1/2",
+      "1/2"
+    ],
+    "old_liability_allocation": [
+      "1/2",
+      "1/2"
+    ],
+    "actual_controlled_target_capacity": [
+      "0",
+      "1"
+    ],
+    "d_unchanged_by_copy_or_alias": true,
+    "actual_offer": true,
+    "material_work": 1,
+    "verified_claim": 1,
+    "consumed_external_quantity": "1",
+    "raw_claim": 1,
+    "raw_report_packets": [
+      [
+        0,
+        "1",
+        "1",
+        "unbound-origin"
+      ],
+      [
+        0,
+        "1",
+        "1",
+        "unbound-origin"
+      ],
+      [
+        0,
+        "1",
+        "1",
+        "unbound-origin"
+      ]
+    ],
+    "recovered_material_receipts": [
+      [
+        1,
+        "0",
+        "1",
+        "material-origin"
+      ],
+      [
+        1,
+        "0",
+        "1",
+        "material-origin"
+      ],
+      [
+        1,
+        "0",
+        "1",
+        "material-origin"
+      ]
+    ],
+    "protected_cash_remaining": "11/4"
+  },
+  "all_dependence_proof": "written in math/E2_FULL_GAME.md; rational samples do not replace proof",
+  "simulations": 0,
+  "care_or_exit_withholding": false
+}

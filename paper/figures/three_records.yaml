@@ -1,0 +1,31 @@
+
+legend:
+  restores: "repair restores the service status (K0: three records)"
+  clears_neither: "restoring status clears neither provenance nor outstanding duties (K0)"
+  fixes: "the invoice's standing entry fixes whose claims are protected (E1)"
+
+nodes:
+  - {id: r1, kind: record, title: "Record~1", label: "events and their provenance",                       map_ids: [K0], pos: [0.0, 4.6]}
+  - {id: r2, kind: record, title: "Record~2", label: "service status, computed under a published contract", map_ids: [K0], pos: [4.2, 4.6]}
+  - {id: r3, kind: record, title: "Record~3", label: "protected claims and their outstanding duties",      map_ids: [K0], pos: [8.4, 4.6]}
+  - {id: who, kind: input, label: "whose claims count: the invoice's standing entry (\\S\\ref{sec:invoice}; \\S\\ref{sec:who})",
+     map_ids: [P-INVOICE, CS2], pos: [8.4, 6.35]}
+  - {id: rep, kind: action, label: "\\textbf{repair} restores service status", map_ids: [K0], pos: [4.2, 2.85]}
+  - {id: g1, kind: tag, label: "calibrated facts: decoding against bounded faults; shared facts with plural verdicts",
+     claim_ids: [CL-42, CL-46], pos: [0.0, 1.2]}
+  - {id: g2, kind: tag, label: "service threshold, recovery speed, repairable controls; good service standing need not imply acceptance of interruption",
+     claim_ids: [CL-40, CL-41, CL-56, CL-57], pos: [4.2, 1.2]}
+  - {id: floor, kind: band, label: "care floor: basic care, rescue, record and contest access, safe exit; funded and enforced independently of service status",
+     claim_ids: [CL-55], map_ids: [K0], pos: [4.2, -0.3], width: 12.0}
+  - {id: g4, kind: tag, label: "limits of finite-end service, constant funding increments and unpaid hosting",
+     claim_ids: [CL-54, CL-43, CL-44], pos: [0.0, -1.8]}
+  - {id: g3, kind: tag, label: "the enforced floor excludes withholding based on service status; monopoly rent remains possible",
+     claim_ids: [CL-55], pos: [4.2, -1.8]}
+  - {id: g5, kind: tag, label: "conditional maintenance: partial three-record representation; recording supplied by premise (Appendix~\\ref{app:covenant})",
+     claim_ids: [CL-51], pos: [8.4, -1.8]}
+
+relations:
+  - {from: who, to: r3, kind: fixes}
+  - {from: rep, to: r2, kind: restores}
+  - {from: rep, to: r1, kind: clears_neither}
+  - {from: rep, to: r3, kind: clears_neither}

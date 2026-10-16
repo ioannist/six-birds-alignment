@@ -1,0 +1,4 @@
+PASS D23 filter/latent path agreement: 254 record histories
+PASS grade mean19/21 with no type update; 144 grade paths
+REFUTED counts-only, stale-static, unknown-label and control-blind inference; no patienthood verdict
+PASS finite posterior repair: 8190 word checks; forecast error <= 123/3364 ; genuine merger stored

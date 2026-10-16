@@ -1,0 +1,316 @@
+ℹ [43/74] Replayed SixBirdsMetaMath.ImportedFoundations
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:15:0: ClosureOp.{u} (α : Type u) : Type u
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:16:0: ClosureLadder.{u} (α : Type u) : Type u
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:17:0: ClosureLadder.IdempotentEndo.{u} (α : Type u) : Type u
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:18:0: ClosureLadder.MetaPackaging.pack.{u_1, u_2} {α : Sort u_1} {β : Sort u_2} (f : α → β) :
+  α → Quotient (ClosureLadder.MetaPackaging.kerRel f)
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:20:0: SixBirds.Role : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:21:0: SixBirds.FATCD : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:22:0: SixBirds.ChannelStatus : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:23:0: SixBirds.scoped_exact_six : SixBirds.ScopedExactSixQuestion
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:24:0: SixBirds.typed_non_collapse {r s : SixBirds.Role} : r ≠ s → SixBirds.ForbiddenCollapse r s
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:26:0: SixBirdsIII.BirdIntDomain : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:27:0: SixBirdsIII.Primitive : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:28:0: SixBirdsIII.PromotionStatus : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:29:0: SixBirdsIII.ClaimStatus : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:30:0: SixBirdsIII.GateStatus : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:31:0: SixBirdsIII.PromotionBridgeRecord : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:32:0: SixBirdsIII.ClaimRecord : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:33:0: SixBirdsIII.DefectRecord : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:34:0: SixBirdsIII.Level : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:35:0: SixBirdsIII.Host : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:36:0: SixBirdsIII.DirectedCellRecord : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:37:0: SixBirdsIII.TopDownChannelRecord : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:38:0: SixBirdsIII.ThresholdTag : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:39:0: SixBirdsIII.VisibilityTag : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:40:0: SixBirdsIII.StrictGateStatus : Type
+info: vendor/foundations/six-birds-meta-math/lean/SixBirdsMetaMath/ImportedFoundations.lean:41:0: SixBirdsIII.SqStatus : Type
+⚠ [108/235] Replayed SixBirdsFoundationsV.Laws.E15OfflineReclosure
+warning: vendor/foundations/six-birds-foundations-v/lean/full/SixBirdsFoundationsV/Laws/E15OfflineReclosure.lean:723:5: unused variable `geometry`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: vendor/foundations/six-birds-foundations-v/lean/full/SixBirdsFoundationsV/Laws/E15OfflineReclosure.lean:728:5: unused variable `geometry`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: vendor/foundations/six-birds-foundations-v/lean/full/SixBirdsFoundationsV/Laws/E15OfflineReclosure.lean:733:5: unused variable `geometry`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [119/235] Replayed FoundationsVII.Prior.FoundationalObjects
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FoundationalObjects.lean:16:0: SixBirdsFoundationsV.TheoryPackage.{u, v, w, x, z} (FData : Type u) (RuleFamily : Type v) (ResidualFamily : Type w)
+  (AuditAccessData : Type x) : Type (max (max (max (max u v) w) x) (z + 1))
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FoundationalObjects.lean:17:0: SixBirdsFoundationsV.AccessPolicy.{u, v} (Probe : Type u) (XiFamily : Type v) : Type (max u v)
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FoundationalObjects.lean:18:0: ClosureOp.{u} (α : Type u) : Type u
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FoundationalObjects.lean:19:0: ClosureLadder.{u} (α : Type u) : Type u
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FoundationalObjects.lean:20:0: SixBirds.ClaimRecord : Type
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FoundationalObjects.lean:21:0: SixBirds.NonclaimRecord : Type
+ℹ [120/235] Replayed FoundationsVII.Prior.FT01
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT01.lean:9:0: SixBirds.ClaimRecord : Type
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT01.lean:22:0: SixBirdsFoundationsV.AccessPolicy.{u, v} (Probe : Type u) (XiFamily : Type v) : Type (max u v)
+ℹ [121/235] Replayed FoundationsVII.Prior.FT03
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT03.lean:8:0: SixBirdsFoundationsV.NoReachableRepairGenerator.{u, v, w, x, y, y', y'', y''', y'''', y''''', z, z', z'', u_1}
+  {FData : Type u} {RuleFamily : Type v} {ResidualFamily : Type w} {AuditAccessData : Type x}
+  {InstrumentRecord : Type y} {LedgerEntry : Type y'} {DefectRecord : Type y''} {MovePayload : Type y'''}
+  {MoveRecord : Type y''''} {AuditRecord : Type y'''''} {History : Type z} {ChallengeClass : Type z'}
+  {Horizon : Type z''}
+  (S :
+    SixBirdsFoundationsV.ESystem FData RuleFamily ResidualFamily AuditAccessData InstrumentRecord LedgerEntry
+      DefectRecord MovePayload MoveRecord AuditRecord)
+  (bindingDefect : SixBirdsFoundationsV.BindingDefectForChallenge History ChallengeClass Horizon DefectRecord)
+  (H : History) (C : ChallengeClass) (horizon : Horizon) : Prop
+ℹ [122/235] Replayed FoundationsVII.Prior.FT04
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT04.lean:8:0: SixBirdsFoundationsV.SharedBudgetAllocationRecord.{u} (ChallengeClass : Type u) : Type u
+ℹ [123/235] Replayed FoundationsVII.Prior.FT05
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT05.lean:9:0: SixBirdsFoundationsV.CarriedSource (tag : SixBirdsFoundationsV.FineSourceTag) (generatedByS inScope : Bool) : Prop
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT05.lean:22:0: SixBirdsFoundationsV.TransportTokenRecord : Type
+ℹ [124/235] Replayed FoundationsVII.Prior.FT06
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT06.lean:8:0: SixBirdsIII.InstrumentClaimRecord : Type
+ℹ [125/235] Replayed FoundationsVII.Prior.FT07
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT07.lean:8:0: SixBirdsFoundationsV.repairJoin.{u, v, w} {X : Type u} {A : Type v} {B : Type w} (q : X → A) (r : X → B) : X → A × B
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT07.lean:21:0: SixBirdsFoundationsV.join_well_defined.{u, v, v', w, w'} {X : Type u} {A : Type v} {A' : Type v'} {B : Type w}
+  {B' : Type w'} (q : X → A) (q' : X → A') (r : X → B) (r' : X → B') (hq : SixBirdsFoundationsV.FiberEquiv q q')
+  (hr : SixBirdsFoundationsV.FiberEquiv r r') :
+  SixBirdsFoundationsV.FiberEquiv (SixBirdsFoundationsV.repairJoin q r) (SixBirdsFoundationsV.repairJoin q' r')
+ℹ [126/235] Replayed FoundationsVII.Prior.FT08
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT08.lean:8:0: SixBirdsFoundationsV.StrictSelfExtension.{u, v} (RepairRefinement : Type u) (Sigma : Type v) : Type (max u v)
+ℹ [127/235] Replayed FoundationsVII.Prior.FT09
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT09.lean:9:0: SixBirdsFoundationsV.BudgetFeasible.{u, v, w, x, y, y', y'', y''', y'''', y''''', z, z', u_1} {FData : Type u}
+  {RuleFamily : Type v} {ResidualFamily : Type w} {AuditAccessData : Type x} {InstrumentRecord : Type y}
+  {LedgerEntry : Type y'} {DefectRecord : Type y''} {MovePayload : Type y'''} {MoveRecord : Type y''''}
+  {AuditRecord : Type y'''''}
+  {S :
+    SixBirdsFoundationsV.ESystem FData RuleFamily ResidualFamily AuditAccessData InstrumentRecord LedgerEntry
+      DefectRecord MovePayload MoveRecord AuditRecord}
+  {Probe : Type z} {XiFamily : Type z'} {economy : SixBirdsFoundationsV.ProbeEconomy S Probe XiFamily}
+  {move : SixBirdsFoundationsV.ProbeMove Probe XiFamily}
+  (budgetData : SixBirdsFoundationsV.ExposureBudgetWitness economy move) : Prop
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT09.lean:22:0: SixBirdsFoundationsV.ObstructionStatusRecord.{w1, x1, u, v, w, x, y, y', y'', y''', y'''', y''''', z, z''''', x', u_1}
+  {FData : Type u} {RuleFamily : Type v} {ResidualFamily : Type w} {AuditAccessData : Type x}
+  {InstrumentRecord : Type y} {LedgerEntry : Type y'} {DefectRecord : Type y''} {MovePayload : Type y'''}
+  {MoveRecord : Type y''''} {AuditRecord : Type y'''''} {ChallengeClass : Type z} {RepairRefinement : Type z'''''}
+  {PromotionCarrier PromotionO0 PromotionO1 : Type} {Family : Type x'} {Probe : Type y'''''} {X : Type w1} {Q : Type x1}
+  (S :
+    SixBirdsFoundationsV.ESystem FData RuleFamily ResidualFamily AuditAccessData InstrumentRecord LedgerEntry
+      DefectRecord MovePayload MoveRecord AuditRecord)
+  {decompilationPolicy : SixBirdsFoundationsV.CarriedRecordPolicy S.T DefectRecord} {C : ChallengeClass}
+  {R : RepairRefinement}
+  (candidate :
+    SixBirdsFoundationsV.CompiledOperatorRecord S decompilationPolicy C R PromotionCarrier PromotionO0 PromotionO1
+      Family Probe X Q) :
+  Type (max w1 z)
+ℹ [128/235] Replayed FoundationsVII.Prior.FT10
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT10.lean:8:0: SixBirdsFoundationsV.E11_NCTDObstruction :
+  ∃ R, SixBirdsIII.StructDown R ∧ SixBirdsIII.TopDownChannelClaimStatus R = SixBirdsIII.ClaimStatus.blocked
+ℹ [129/235] Replayed FoundationsVII.Prior.FT11
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT11.lean:8:0: SixBirdsFoundationsV.RepairGeneratorReachabilityRecord.{z, z'''''} {ChallengeClass : Type z} {Horizon : Type z'''''} :
+  Type (max z z''''')
+ℹ [130/235] Replayed FoundationsVII.Prior.FT12
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT12.lean:8:0: SixBirdsFoundationsV.NoReachableRepairGeneratorExcludesEndogenousFamily.{u, v, w, x, y, y', y'', y''', y'''', y''''', z,
+    z', z'', z''', z'''', z''''', u', v', w', x', u_1}
+  {FData : Type u} {RuleFamily : Type v} {ResidualFamily : Type w} {AuditAccessData : Type x}
+  {InstrumentRecord : Type y} {LedgerEntry : Type y'} {DefectRecord : Type y''} {MovePayload : Type y'''}
+  {MoveRecord : Type y''''} {AuditRecord : Type y'''''} {ChallengeClass : Type z} {SourceQuotient : Type z'}
+  {DeclaredFamily : Type z''} {TargetReadout : Type z'''} {ObstructionWitness : Type z''''} {Horizon : Type z'''''}
+  {RepairRefinement : Type u'} {X : Type v'} {Q : Type w'} {QNext : Type x'} {FOut : Type y'} {Readout : Type y''}
+  (S :
+    SixBirdsFoundationsV.ESystem FData RuleFamily ResidualFamily AuditAccessData InstrumentRecord LedgerEntry
+      DefectRecord MovePayload MoveRecord AuditRecord)
+  (H :
+    SixBirdsFoundationsV.ChallengeHistory ChallengeClass SourceQuotient DeclaredFamily TargetReadout ObstructionWitness
+      DefectRecord MoveRecord AuditRecord)
+  (bindingDefect :
+    SixBirdsFoundationsV.BindingDefectForChallenge
+      (SixBirdsFoundationsV.ChallengeHistory ChallengeClass SourceQuotient DeclaredFamily TargetReadout
+        ObstructionWitness DefectRecord MoveRecord AuditRecord)
+      ChallengeClass Horizon DefectRecord)
+  (Q_at : Nat → X → Q) (Q_next_at : Nat → X → QNext) (F_C : X → FOut) (r : FOut → Readout)
+  (challengedFibersAt : Nat → X → X → Prop)
+  (installs : SixBirdsFoundationsV.MovePayloadInstallsRefinement MovePayload (X → RepairRefinement))
+  (postState :
+    SixBirdsFoundationsV.PostRepairStateForEpisode S ChallengeClass SourceQuotient DeclaredFamily TargetReadout
+      ObstructionWitness)
+  (budget :
+    SixBirdsFoundationsV.FamilyBudgetFeasibleInLambda (SixBirdsFoundationsV.CarriedLedger S.T LedgerEntry)
+      (SixBirdsFoundationsV.RepairTypedAuditEntry DefectRecord MoveRecord AuditRecord) (X → RepairRefinement))
+  (C : ChallengeClass) (horizon : Horizon) : Prop
+ℹ [131/235] Replayed FoundationsVII.Prior.FT13
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT13.lean:8:0: SixBirdsIII.descent_square_recovery {X Y : Type} (q : X → Y) (F : X → X) :
+  (∃ Fs, SixBirdsIII.DescentSquareExact q F Fs) ↔ SixBirdsIII.DescendsToImage q F
+ℹ [132/235] Replayed FoundationsVII.Prior.FT14
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT14.lean:8:0: SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseB_confluent_runs_share_final :
+  ∃ final,
+    SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.LegalRun
+        SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseBMove
+        SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseBLegal
+        SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseBState.S
+        [SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseBMove.r,
+          SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseBMove.p]
+        final ∧
+      SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.LegalRun
+          SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseBMove
+          SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseBLegal
+          SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseBState.S
+          [SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseBMove.r,
+            SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseBMove.t]
+          final ∧
+        SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.LegalRun
+            SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseBMove
+            SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseBLegal
+            SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseBState.S
+            [SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseBMove.s,
+              SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseBMove.q]
+            final ∧
+          SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.Stable
+            SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseBLegal final
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT14.lean:21:0: SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseD_nonconfluent_witness :
+  SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.LegalRun
+      SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseDMove
+      SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseDLegal
+      SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseDState.S
+      [SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseDMove.r]
+      SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseDState.A ∧
+    SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.Stable
+        SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseDLegal
+        SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseDState.A ∧
+      SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.LegalRun
+          SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseDMove
+          SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseDLegal
+          SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseDState.S
+          [SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseDMove.s]
+          SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseDState.B ∧
+        SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.Stable
+            SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.caseDLegal
+            SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseDState.B ∧
+          SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseDState.A ≠
+            SixBirdsFoundationsVI.Laws.G8OdometerAbelianization.CaseDState.B
+ℹ [136/235] Replayed FoundationsVII.Prior.FT16
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT16.lean:8:0: SixBirdsFoundationsV.BindingExposureBudget.{u, v, w, x, y, y', y'', y''', y'''', y''''', z, z', u_1} {FData : Type u}
+  {RuleFamily : Type v} {ResidualFamily : Type w} {AuditAccessData : Type x} {InstrumentRecord : Type y}
+  {LedgerEntry : Type y'} {DefectRecord : Type y''} {MovePayload : Type y'''} {MoveRecord : Type y''''}
+  {AuditRecord : Type y'''''}
+  {S :
+    SixBirdsFoundationsV.ESystem FData RuleFamily ResidualFamily AuditAccessData InstrumentRecord LedgerEntry
+      DefectRecord MovePayload MoveRecord AuditRecord}
+  {Probe : Type z} {XiFamily : Type z'} {economy : SixBirdsFoundationsV.ProbeEconomy S Probe XiFamily}
+  {move : SixBirdsFoundationsV.ProbeMove Probe XiFamily}
+  (budgetData : SixBirdsFoundationsV.ExposureBudgetWitness economy move) : Prop
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT16.lean:21:0: SixBirdsFoundationsV.PositiveAccessMoveCosts.{u, v} {Probe : Type u} {XiFamily : Type v}
+  (pricing : SixBirdsFoundationsV.AccessMovePricing Probe XiFamily)
+  (candidates : List (SixBirdsFoundationsV.AccessMove Probe XiFamily)) : Prop
+ℹ [137/235] Replayed FoundationsVII.Prior.FT17
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT17.lean:8:0: SixBirds.AdmissibleClaim (c : SixBirds.ClaimRecord) : Prop
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT17.lean:21:0: SixBirds.NonclaimRecord : Type
+ℹ [138/235] Replayed FoundationsVII.Prior.FT18
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT18.lean:8:0: SixBirdsMetaMath.FoundationsIV.Access.NoFreeDistinction.financed_refinement_retains_access {H Q D : Type} (q : H → Q)
+  (distinction : H → D) :
+  SixBirdsMetaMath.FoundationsIV.Access.NoFreeDistinction.RetainsAccess q
+    (SixBirdsMetaMath.FoundationsIV.Access.NoFreeDistinction.financedRefinement q distinction)
+ℹ [139/235] Replayed FoundationsVII.Prior.FT19
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT19.lean:8:0: SixBirdsMetaMath.FoundationsIV.StatusRecordsCoherence.ObjectPersistence.persistence_extension_retains_old
+  {Hi Qi Hj Qj : Type} (qi : Hi → Qi) (γ : Hi → Hj) (qj : Hj → Qj) :
+  SixBirdsMetaMath.FoundationsIV.StatusRecordsCoherence.ObjectPersistence.RetainsOldIdentity qi
+    (SixBirdsMetaMath.FoundationsIV.StatusRecordsCoherence.ObjectPersistence.persistenceExtension qi γ qj)
+ℹ [140/235] Replayed FoundationsVII.Prior.FT20
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT20.lean:9:0: SixBirdsFoundationsV.ResidualStatusRecord : Type
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT20.lean:22:0: SixBirdsMetaMath.Xi.Obstruction.blindSpotWitness {e y z : Nat} (C : SixBirdsMetaMath.Main.LegalQuotient.Mat e e)
+  (L : SixBirdsMetaMath.Main.LegalQuotient.Mat y e) (D : SixBirdsMetaMath.Main.LegalQuotient.Mat z e)
+  (KLLdagger : SixBirdsMetaMath.Main.LegalQuotient.Mat y y) (Omega : SixBirdsMetaMath.Main.LegalQuotient.Mat z z) :
+  ¬SixBirdsMetaMath.Main.LegalQuotient.loewnerLE (SixBirdsMetaMath.Xi.AdequacyResidual.adequacyResidual C L D KLLdagger)
+        Omega ↔
+    ∃ z_witness,
+      0 <
+        SixBirdsMetaMath.Main.LegalQuotient.quad (SixBirdsMetaMath.Xi.Obstruction.adequacyDefect C L D KLLdagger Omega)
+          z_witness
+ℹ [149/235] Replayed FoundationsVII.Prior.FT02
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT02.lean:8:0: SixBirdsFoundationsV.RepairGeneratorReachabilityRecord.{z, z'''''} {ChallengeClass : Type z} {Horizon : Type z'''''} :
+  Type (max z z''''')
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT02.lean:21:0: SixBirdsFoundationsV.RepairGeneratorReachabilityCertified.{z, z'''''} {ChallengeClass : Type z}
+  {Horizon : Type z'''''} : Type (max z z''''')
+ℹ [153/235] Replayed FoundationsVII.Prior.FT15
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT15.lean:8:0: HolonomyMemory.LoopAsymmetry.{u_1, u_2, u_3, u_4, u_5} (T : HolonomyMemory.RouteTransportCore) (i : T.Interface)
+  (ℓ : HolonomyMemory.Loop T i) : Prop
+info: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Prior/FT15.lean:21:0: HolonomyMemory.loopAsymmetry_exhibits_movedPredictive_fixedCurrent.{u_1, u_2, u_3, u_4, u_5}
+  (T : HolonomyMemory.RouteTransportCore) {i : T.Interface} (ℓ : HolonomyMemory.Loop T i)
+  (hAsym : HolonomyMemory.LoopAsymmetry T i ℓ) :
+  ∃ q,
+    HolonomyMemory.predictiveLoopAction T ℓ q ≠ q ∧
+      HolonomyMemory.predictiveToCurrent T (HolonomyMemory.predictiveLoopAction T ℓ q) =
+        HolonomyMemory.predictiveToCurrent T q
+⚠ [160/235] Replayed FoundationsVII.Access.Origin
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Access/Origin.lean:146:5: unused variable `hTotal`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Access/Origin.lean:147:5: unused variable `hSelfOwned`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [172/235] Replayed FoundationsVII.Join.Strictness
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Join/Strictness.lean:130:37: unused variable `h`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Join/Strictness.lean:133:64: This simp argument is unused:
+  hDirection
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵h̵D̵i̵r̵e̵c̵t̵i̵o̵n̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [173/235] Replayed FoundationsVII.Join.Source
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Join/Source.lean:105:5: unused variable `hBehavior`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [174/235] Replayed FoundationsVII.Join.Budget
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Join/Budget.lean:52:5: unused variable `hZeroChannel`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Join/Budget.lean:63:5: unused variable `hKind`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+ℹ [204/235] Replayed HolonomyMemory.Instances
+info: vendor/foundations/holonomy-memory/HolonomyMemory/Instances.lean:126:0: 'HolonomyMemory.Wheel.wheelWitness' does not depend on any axioms
+info: vendor/foundations/holonomy-memory/HolonomyMemory/Instances.lean:127:0: 'HolonomyMemory.Wheel.wheel_strictRefinement' depends on axioms: [propext, Quot.sound]
+info: vendor/foundations/holonomy-memory/HolonomyMemory/Instances.lean:128:0: 'HolonomyMemory.Wheel.wheel_loopAsymmetry' depends on axioms: [propext, Quot.sound]
+info: vendor/foundations/holonomy-memory/HolonomyMemory/Instances.lean:129:0: 'HolonomyMemory.Wheel.wheel_movedPredictive_fixedCurrent' depends on axioms: [propext, Quot.sound]
+⚠ [208/375] Replayed FoundationsVII.Dynamics.Confluence
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Dynamics/Confluence.lean:30:5: unused variable `hLegal`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Dynamics/Confluence.lean:97:4: This simp argument is unused:
+  FiniteAdmissionSystem.CriticalPairCriterion
+
+Hint: Omit it from the simp argument list.
+  simp [FiniteAdmissionSystem.ConfluentAtDeclaredScope, F̵i̵n̵i̵t̵e̵A̵d̵m̵i̵s̵s̵i̵o̵n̵S̵y̵s̵t̵e̵m̵.̵C̵r̵i̵t̵i̵c̵a̵l̵P̵a̵i̵r̵C̵r̵i̵t̵e̵r̵i̵o̵n̵,̵ ̵confluentSystem, CriticalPair.Resolved,
+  ̲  ̲ ̲ ̲confluentPair]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Dynamics/Confluence.lean:98:4: This simp argument is unused:
+  CriticalPair.Resolved
+
+Hint: Omit it from the simp argument list.
+  simp [FiniteAdmissionSystem.ConfluentAtDeclaredScope, FiniteAdmissionSystem.CriticalPairCriterion,
+  ̲  ̲ ̲ ̲confluentSystem, C̵r̵i̵t̵i̵c̵a̵l̵P̵a̵i̵r̵.̵R̵e̵s̵o̵l̵v̵e̵d̵,̵ ̵confluentPair]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Dynamics/Confluence.lean:103:4: This simp argument is unused:
+  FiniteAdmissionSystem.CriticalPairCriterion
+
+Hint: Omit it from the simp argument list.
+  simp [FiniteAdmissionSystem.ConfluentAtDeclaredScope, F̵i̵n̵i̵t̵e̵A̵d̵m̵i̵s̵s̵i̵o̵n̵S̵y̵s̵t̵e̵m̵.̵C̵r̵i̵t̵i̵c̵a̵l̵P̵a̵i̵r̵C̵r̵i̵t̵e̵r̵i̵o̵n̵,̵ ̵nonconfluentSystem, CriticalPair.Resolved,
+  ̲  ̲ ̲ ̲nonconfluentPair]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: vendor/foundations/six-birds-foundations-vii/lean/full/FoundationsVII/Dynamics/Confluence.lean:104:4: This simp argument is unused:
+  CriticalPair.Resolved
+
+Hint: Omit it from the simp argument list.
+  simp [FiniteAdmissionSystem.ConfluentAtDeclaredScope, FiniteAdmissionSystem.CriticalPairCriterion,
+  ̲  ̲ ̲ ̲nonconfluentSystem, C̵r̵i̵t̵i̵c̵a̵l̵P̵a̵i̵r̵.̵R̵e̵s̵o̵l̵v̵e̵d̵,̵ ̵nonconfluentPair]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [268/375] Replayed CSTTT.Targets.Composition
+warning: CSTTT/Targets/Composition.lean:67:5: unused variable `interface`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [271/375] Replayed CSTTT.Prospects.Statements
+warning: CSTTT/Prospects/Statements.lean:68:5: unused variable `fixedPointFree`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (375 jobs).

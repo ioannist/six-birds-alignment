@@ -1,0 +1,768 @@
+{
+  "tag": "[B]",
+  "grade": "scoped",
+  "review": "self-reviewed",
+  "script_sha256": "552c4c5340b978afb1af072691297390cea7031c28f7a33aa6b2b7213abec845",
+  "source_records": [
+    {
+      "key": "V6",
+      "name_or_label": "thm:PGT6",
+      "exact_anchor": "thm:PGT6",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_VI_The_Price_of_an_Interface.tex",
+      "line": 1826,
+      "environment": "corollary",
+      "source_sha256": "9d50ea081189a07a8d8dc9b11758263d64168bca1633d6d8aa03a05a9ed31b58",
+      "statement": "\\begin{corollary}[Exact and costed transport, scalar policies and native orders]\\label{thm:PGT6}\nWith the transports and policies of \\cref{def:transport}:\n\\begin{enumerate}\n\\item \\emph{Exact transport.} Under an exact transport, $a$ is efficient in $\\mathcal S$\n  iff $f(a)$ is efficient in $\\mathcal T$, a bijection of fronts that respects\n  identities, and $\\beta\\in\\Budgets_{\\mathcal S}$ iff $\\psi(\\beta)\\in\\Budgets_{\\mathcal T}$. A\n  constant cost map is isotone but does not reflect the order: $(0,0)$ and\n  $(1,1)$ collapse to one value with two efficient identities. A target catalog\n  with an extra cheaper candidate breaks the correspondence.\n\\item \\emph{Compiler.} A costed map transports $\\beta$ to $\\beta\\combine o_f$, forward only,\n  and successive maps add their overheads. The compiler from \\PaperF{}'s\n  Boolean decision trees to tables has the uniform overhead of\n  \\cref{tab:and}. For the five-node run of AND it has the sharper overhead of\n  that table, between the two AND profiles, where the charge of four units for\n  verification is a declared policy. A second tagged compiler adds one unit of\n  description and one of storage, and composition adds both overheads.\n\\item \\emph{Scalar policies.} Every minimum of a strict scalar policy over a\n  feasible candidate is efficient, and a finite family with a feasible\n  candidate has a scalar minimum, the set of minimizers keeping all ties.\n  Positive weighted sums are strict, and zero weights are not. For $p=(0,3)$,\n  $p'=(2,2)$ and $p''=(3,0)$, selecting $p'$ by weights $(w_1,w_2)$ needs\n  $2w_1\\le w_2$ and $2w_2\\le w_1$, which is impossible for positive weights. So\n  positive linear scalarization does not reach every efficient point.\n\\item \\emph{Native orders.} $\\mathrm{diag}(v)\\preceq_{\\mathrm{PSD}}\\mathrm{diag}(v')$ iff $v_i\\le v'_i$ for\n  all $i$, by basis vectors and nonnegative sums. The diagonals $\\mathrm{diag}(1,0)$ and\n  $\\mathrm{diag}(0,1)$ are positive, have trace one and are incomparable, so the\n  trace is a lossy scalar readout.\n\\end{enumerate}\n\\end{corollary}",
+      "grade_as_recorded_in_ratified_index": [
+        "guarded-path/simulation theorem; scalar-policy corollary; price-record separation proposition; scoped formal specializations and written general proofs per `sec:lean`"
+      ],
+      "reviewed_guard": "Use its scalar-policy clause on a finite nonempty feasible candidate family with a strict scalar policy (all coordinate weights positive). Zero weights lose strictness; positive linear weighting need not attain every efficient point. Exact transport needs bijections/order reflection; costed transport is forward only.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V15",
+      "name_or_label": "ex:mixture",
+      "exact_anchor": "ex:mixture",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XV_Portable_Theories.tex",
+      "line": 909,
+      "environment": "example",
+      "source_sha256": "bc0898326b42f0dfebb1ed5db88367ec9e65ca4a615fe18b98c1eeb8d0261c59",
+      "statement": "\\begin{example}[An unlabelled mixture]\\label{ex:mixture}\nOn the binary depth-two learner with $b=0$, in either refinement variant, drive two constant sources, $0$ and $1$, with every raw sign of the cycle of blocks $\\#c$ over the seven contexts in the order $\\varepsilon,0,1,00,01,10,11$, followed by $\\#$, eighteen signs in all, and deliver their outputs alternately, starting with the first source. The transcripts from this origin pair agree forever with those from the pair of a source that outputs $1$ only at $00$ and a source that outputs $0$ only at $01$, so the origins cannot be attributed. The learner's state at the end of each cycle repeats, but the next contact changes it: while contact continues it is not stable. If contact is withdrawn at the end of a cycle and one Tick runs, the runtime from a fresh session answers every word with the shadow that outputs $1$ exactly at the contexts $\\varepsilon,0,1,00,10$ and $0$ at $01,11$, which is faithful to neither origin. The indistinguishability holds for this sampler and drive.\n\\end{example}",
+      "grade_as_recorded_in_ratified_index": [
+        "mechanized finite-index audit theorem; mechanized native-chain theorem; kernel-checked finite mixture example"
+      ],
+      "reviewed_guard": "This is the stated binary depth-two learner, b=0, sampler, eighteen-sign cycle and alternating unlabelled source drive. Its non-attribution/unfaithful shadow is a scoped witness, not a theorem about every preference mixture or RLHF method.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V1",
+      "name_or_label": "thm:R6",
+      "exact_anchor": "thm:R6",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_I_Layer_Receipts_and_Purchase_Laundering.tex",
+      "line": 1356,
+      "environment": "proposition",
+      "source_sha256": "556e3b94e1a0c8ec10d8a79d08d2fb7d6cc574c9f51867b75f048f37bcd9b0c0",
+      "statement": "\\begin{proposition}[Purchase compilation and capitalization]\\label{thm:R6}\nEvery purchase compilation record satisfies: (1) $x$ is free in $\\Pkg_2$;\n(2) $x$ is internally derivable with zero package extension; (3)\n$\\NoExt_{\\Pkg_2}(x)$; (4) the original accepted purchase occurs in\n$\\Hist_2$; (5) the compiled event occurs in $\\Hist_2$; (6) the original\nsource, payment price, bridge and audit remain in the compiled event; (7)\nevery old residual and nonclaim remains; (8) every declared in-class use\nsucceeds; (9) every witnessed out-of-class failure contributes an explicit\nresidual and nonclaim. If the original payment mode is paid,\n\\[\n\\NoExt_{\\Pkg_2}(x)\\quad\\land\\quad\\HistP_{\\Hist_2}(x)\\neq0 .\n\\]\nIf the original source was external, the compiled event keeps that external\nsource entry: becoming a current primitive does not rewrite an external\npurchase as native generation.\n\\end{proposition}",
+      "grade_as_recorded_in_ratified_index": [
+        "theorem / proposition / theorem / tower theorem / finite cube; reported Lean scope, external 512-profile count"
+      ],
+      "reviewed_guard": "A purchase-compilation record already includes the gate/source/price/bridge/audit/history and residual data. It preserves historical purchase/external origin when becoming a current primitive; it does not prove that a training artifact implements the declared principle.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V1",
+      "name_or_label": "thm:R7",
+      "exact_anchor": "thm:R7",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_I_Layer_Receipts_and_Purchase_Laundering.tex",
+      "line": 1526,
+      "environment": "theorem",
+      "source_sha256": "556e3b94e1a0c8ec10d8a79d08d2fb7d6cc574c9f51867b75f048f37bcd9b0c0",
+      "statement": "\\begin{theorem}[No purchase laundering]\\label{thm:R7}\nLet $\\Pkg_0\\ext\\Pkg_1$ carry a verified purchase receipt $r$ for $x$, let\n$\\Hist$ be an append-only history in which $r$ occurs, and let $F$ be a\nsource-preserving presentation equivalence. Then\n\\begin{enumerate}\n\\item $\\Free_{\\Pkg_i}(y)\\iff\\Free_{\\Pkg'_i}(Fy)$ for $i\\in\\{0,1\\}$;\n\\item the verified purchase, its gate, its enriched receipt and the whole\n      history transport lawfully: $r\\in\\Hist\\Rightarrow F_*r\\in F_*\\Hist$,\n      $|F_*\\Hist|=|\\Hist|$, and the transport preserves, up to the declared\n      identifier bijections, the purchase kind, the disposition and every\n      protected coordinate of \\cref{conv:protected}. The coordinate-by-coordinate\n      list is in \\cref{supp:fields}.\n\\end{enumerate}\nHence a lawful presentation transport cannot convert a historically purchased\nitem into a historically unpurchased one. A receipt with a different price or\ndisposition is a different receipt, even over the same packages; its appearance in the\nhistory requires its own event, and cannot be produced by renaming or deletion.\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "theorem / proposition / theorem / tower theorem / finite cube; reported Lean scope, external 512-profile count"
+      ],
+      "reviewed_guard": "Verified purchase receipt occurs in append-only history and a source-preserving presentation equivalence transports protected coordinates/identifiers. Renaming/deleting or changing price/disposition is not such an equivalence.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V10",
+      "name_or_label": "thm:ECT2",
+      "exact_anchor": "thm:ECT2",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_X_Wholes_That_Grow_Each_Other.tex",
+      "line": 757,
+      "environment": "theorem",
+      "source_sha256": "e96e187b809ff32dc7dd5ed22b3a3e48a4ef40eef77f41ee0e3210faf912b44a",
+      "statement": "\\begin{theorem}[Finite gluing on a cover]\\label{thm:ECT2}\nFor covers and sections as in \\cref{def:cover}:\n\\begin{enumerate}\n\\item Every family of restrictions $\\res(x)$ is compatible. For a compatible family $a$,\n  $\\res(\\glue(a))=a$ and $\\glue(\\res(x))=x$, and $\\glue(a)$ is the only global assignment restricting to $a$;\n  its values lie in the declared domains.\n\\item For compatible maps $f_i:Y\\to\\mathrm{sections}(J_i)$, the map $f(y)=\\glue((f_i(y))_i)$ satisfies\n  $\\res_i\\circ f=f_i$ for every $i$, and it is the only such map.\n\\item For an independently given predicate $P$ on global assignments, a compatible family has a filler\n  satisfying $P$ (a global $x$ with $P(x)$ and $\\res(x)=a$) exactly when $P(\\glue(a))$ holds, and that filler is\n  then unique.\n\\end{enumerate}\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "proved gluing/conditional replacement and finite construction theorems; stated Lean specializations, compiled finite checks, and written-only steps per `sec:lean`"
+      ],
+      "reviewed_guard": "Finite coordinate cover and domain-valued compatible sections. Gluing yields a unique assignment; independently required admission P needs P(glue(a)), not compatibility alone.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V12",
+      "name_or_label": "thm:obstruction",
+      "exact_anchor": "thm:obstruction",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XII_The_Geometry_of_Access.tex",
+      "line": 628,
+      "environment": "theorem",
+      "source_sha256": "2e880c02cf1d30de4099bb314d9bda2cd89412d42bcf4740bc796b403e9c13cd",
+      "statement": "\\begin{theorem}[Obstruction and forests]\\label{thm:obstruction}\n\\begin{enumerate}\n\\item $\\delta^1\\circ\\delta^0=0$, and a datum $c$ with $\\delta^1c=0$ is solvable if and only if its class in $\\check H^1$ vanishes.\n\\item If a subfamily of declared pairs forms a forest, and both restrictions onto each of its\n  overlaps are surjective, then for every datum $c$ some $a\\in C^0$ satisfies $\\delta^0(a)_{ij}=c_{ij}$ for every pair $(i,j)$ of the\n  subfamily; if, moreover, the subfamily is the whole overlap graph, $\\delta^0$ is surjective.\n\\item The surjectivity hypothesis cannot be dropped: with $\\mathcal Q(U_i)=\\mathcal Q(U_j)=0$ and $\\mathcal Q(U_{ij})=\\mathbb Q$ on one\n  overlap, $\\delta^0=0$ and the datum $1$ is not solvable.\n\\end{enumerate}\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "proved linear/cohomological theorem over \u211a; finite rational pairwise-solvable/global-obstruction example; reported Lean"
+      ],
+      "reviewed_guard": "Declared rational linear restriction/cochain system. A closed datum is solvable iff its Cech class vanishes. Forest surjectivity requires both overlap restrictions onto each edge to be surjective; graph shape alone is insufficient.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V4",
+      "name_or_label": "thm:TDR5",
+      "exact_anchor": "thm:TDR5",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_IV_Tolerance_and_Surrogates.tex",
+      "line": 1304,
+      "environment": "corollary",
+      "source_sha256": "4fd7ec7365e2d9e0645563880c1e0b4ac50bed686858e775a69f5a88ad44866a",
+      "statement": "\\begin{corollary}[The complete family of center repairs]\\label{thm:TDR5}\nLet $\\rho$ be a tolerance on $R$, and consider all admissible independent\nfactors, not only those of minimum radius.\n\\begin{enumerate}\n\\item[A.]\\emph{Least support of a fixed factor.} $\\Gsupp{\\phi}$ is a\n      tolerance containing $\\rho$ under which $\\phi$ is an approximate\n      factor, and $\\Gsupp{\\phi}\\subseteq t$ iff $\\rho\\subseteq t$ and\n      $t(\\phi(\\qhat(x)),\\hmap(x))$ for all $x$.\n\\item[B.]\\emph{Cofinality.} A tolerance $t\\supseteq\\rho$ is a center repair\n      iff $\\Gsupp{\\phi}\\subseteq t$ for some admissible $\\phi$. If a reached\n      catalog is empty, no center repair exists, not even the total\n      relation; on the empty source $\\rho$ itself is the least center repair.\n\\item[C.]\\emph{Complete minimal family.} A tolerance is inclusion-minimal\n      among all center repairs iff it is an inclusion-minimal member of the\n      centered-repair family. The family is computed by a finite\n      construction, and a feasible problem has at least one minimal center\n      repair.\n\\item[D.]\\emph{Least-element criterion.} A least center repair exists iff the\n      support core $\\Core$ is itself a center repair, and it is then $\\Core$;\n      equivalently, there is exactly one minimal center repair. On three\n      points this fails (\\cref{cm:tdrc17}).\n\\item[E.]\\emph{Comparison with the equivalence repair.}\n      $\\EqPair\\subseteq\\EqCl(\\Gsupp{\\phi})$ for every admissible $\\phi$,\n      although $\\PairRepair\\subseteq\\Gsupp{\\phi}$ can fail. Equality\n      $\\EqPair=\\EqCl(\\Gsupp{\\phi})$ holds iff every selected edge already lies\n      in $\\EqPair$, $\\forall x,\\ \\EqPair(\\phi(\\qhat(x)),\\hmap(x))$; selecting\n      outputs as centers is sufficient and not necessary (\\cref{cm:tdrc18}).\n\\end{enumerate}\nInclusion, edge count, radius and price are different orders on the center\nrepairs, and they can pick different ones (\\cref{cm:tdrc17}).\n\\end{corollary}",
+      "grade_as_recorded_in_ratified_index": [
+        "proved center-descent theorem, bounds under their respective hypotheses, center-repair corollary, sharp retention/lumpability theorem; formal coverage as stated in `sec:lean`"
+      ],
+      "reviewed_guard": "Declared tolerance, admissible independent factors and reached center catalogues. Empty reached catalogue defeats every repair; finite feasibility gives minimal repairs, not generally a least one. Inclusion, price, edge count and radius are separate orders.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V5",
+      "name_or_label": "thm:ERVERIFIER",
+      "exact_anchor": "thm:ERVERIFIER",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_V_The_Cost_of_Access.tex",
+      "line": 1912,
+      "environment": "corollary",
+      "source_sha256": "c57babe1d5857ec1eda0fe08e1749db25076393bc9ff65ba5b15ac353ad5792d",
+      "statement": "\\begin{corollary}[The fixed-verifier ceiling and a scoped non-final auditor]\\label{thm:ERVERIFIER}\nFor a fixed verifier $V$ and a base oracle $A$:\n\\begin{enumerate}\n\\item[A.]\\emph{Ceiling.} Every sound external generator that feeds a fixed\n      verifier $V$ outputs only members of $L_V$. Faster discovery of witnesses\n      does not change the fixed set of truths, and equality of the generator's\n      range with $L_V$ needs a separate completeness hypothesis.\n\\item[B.]\\emph{Non-finality.} No total verifier that is effective in $A$ is sound\n      and complete for finite certificates of both signs of $K_A$, with the claim\n      maps $\\gamma_+(n)=\\operatorname{pair}(n,1)$ and $\\gamma_-(n)=\\operatorname{pair}(n,0)$:\n      such a verifier would give an $A$-decider of $K_A$, contradicting\n      \\cref{thm:ERJUMP}, part~C. The same argument at $J(A)$ excludes a\n      $J(A)$-effective verifier for both signs of $K_{J(A)}$, while a\n      $J(A)$-verifier does settle both signs of $K_A$.\n\\end{enumerate}\n\\end{corollary}",
+      "grade_as_recorded_in_ratified_index": [
+        "Lean / oracle-relative corollary"
+      ],
+      "reviewed_guard": "Fixed verifier V/base oracle A and sound generator. Its outputs are contained in L_V; equality needs completeness. Oracle-relative non-finality concerns both signs of K_A and effectiveness/soundness/completeness, not universal failure of finite oversight.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V14",
+      "name_or_label": "thm:corruption",
+      "exact_anchor": "thm:corruption",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XIV_Objectivity_Without_Finality.tex",
+      "line": 508,
+      "environment": "theorem",
+      "source_sha256": "6a8023162b55ee434aac96cbfb41c72a4e4fda50170ade2990dcf6709c573797",
+      "statement": "\\begin{theorem}[Erasure and corruption thresholds]\\label{thm:corruption}\nLet $b\\ge0$.\n\\begin{enumerate}\n\\item Every report obtained from a codeword by corrupting at most $b$ group transcripts determines the target, that is, a corruption\n  decoder exists, if and only if $d_T\\ge2b+1$.\n\\item A decoder for known erasures of at most $b$ groups exists if and only if $d_T\\ge b+1$, the condition of \\cref{thm:erasure}(2).\n\\item The two thresholds differ: if $b+1\\le d_T<2b+1$, then erasures of $b$ groups can be decoded and corruptions of $b$ groups cannot.\n\\item \\emph{Mixed faults.} For $e,s\\ge0$, a decoder exists for reports with a known set of at most $e$ erased groups and an unknown set of\n  at most $s$ further corrupted groups if and only if $d_T\\ge e+2s+1$. Parts (1) and (2) are the cases $e=0$ and $s=0$.\n\\end{enumerate}\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "Lean"
+      ],
+      "reviewed_guard": "Worlds/target/calibrated grouped transcript code with target distance d_T. Unknown corruptions need d_T>=2b+1; known erasures need b+1; mixed known erasures e and unknown corruptions s need e+2s+1. Aliases are not independent groups.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "F4",
+      "name_or_label": "thm:F28",
+      "exact_anchor": "thm:F28",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+      "line": 5591,
+      "environment": "theorem",
+      "source_sha256": "7ec3e11d5b7d6ce9993c561623cd260eeaffe745c469c6127fe7f7c616af0472",
+      "statement": "\\begin{theorem}[Composability]\\label{thm:F28}\nLet \\(X_A,X_B\\) be component spaces with quotients\n\\(q_A:X_A\\to Q_A\\), \\(q_B:X_B\\to Q_B\\), interface readouts\n\\(\\beta_A:X_A\\to I_A\\), \\(\\beta_B:X_B\\to I_B\\), composition\n\\(U:X_A\\times X_B\\to X_{AB}\\), composite quotient\n\\(q_{AB}:X_{AB}\\to Q_{AB}\\), admissibility predicate\n\\(\\operatorname{Adm}:X_A\\times X_B\\to\\mathrm{Prop}\\), and residual\n\\(\\delta:X_A\\times X_B\\to D\\).  Write\n\\[\n  \\kappa(a,b):=\\bigl((q_A(a),\\beta_A(a)),(q_B(b),\\beta_B(b))\\bigr)\n\\]\nfor the part/interface quotient and assume \\(\\kappa\\) is surjective.\nFor a map \\(f\\) on \\(X_A\\times X_B\\), let\n\\[\n  \\mathcal O(f)\n  :=\n  \\{((a,b),(a',b')) :\n     \\kappa(a,b)=\\kappa(a',b'),\\ f(a,b)\\ne f(a',b')\\},\n\\]\nand set \\(\\mathcal O_U:=\\mathcal O(q_{AB}\\circ U)\\),\n\\(\\mathcal O_{\\delta}:=\\mathcal O(\\delta)\\) and\n\\(\\mathcal O_{\\operatorname{Adm}}:=\\mathcal O(\\operatorname{Adm})\\).\nWrite \\(\\operatorname{COD}\\), \\(\\operatorname{CRD}\\) and\n\\(\\operatorname{AD}\\) for descent through \\(\\kappa\\) of the composite\noutcome, the cross residual and admissibility, and\n\\(\\operatorname{Composable}\\) for exact composability.  Then\n\\begin{align*}\n  \\operatorname{COD}\n  &\\iff\n  \\mathcal O_U=\\emptyset\n  \\iff\n    \\exists!\\,\\bar U:(Q_A\\times I_A)\\times(Q_B\\times I_B)\\to Q_{AB}\\\\\n  &\\hspace{6em}\\text{with}\\ \\bar U(\\kappa(a,b))=q_{AB}(U(a,b)),\\\\\n  \\operatorname{CRD}\n  &\\iff\n  \\mathcal O_{\\delta}=\\emptyset,\n  \\qquad\n  \\operatorname{AD}\n  \\iff\n  \\mathcal O_{\\operatorname{Adm}}=\\emptyset,\\\\\n  \\operatorname{Composable}\n  &\\iff\n  \\mathcal O_{\\operatorname{Adm}}=\\emptyset\n  \\wedge\\mathcal O_U=\\emptyset\n  \\wedge\\mathcal O_{\\delta}=\\emptyset.\n\\end{align*}\nThe maps through which the cross residual and admissibility descend are likewise unique.\nAssociativity and identity are separate coherence conditions: for the\ntwo bracketings \\(\\ell,\\varrho:Y\\to Y'\\) of a declared quotient-level triple\ncomposite, define \\(\\operatorname{Assoc}:\\Longleftrightarrow\\ell=\\varrho\\), and\nfor a declared composite \\(c:Z\\times E\\to Z\\) and a declared \\(e\\in E\\) define\n\\(\\operatorname{Id}:\\Longleftrightarrow\\forall z\\in Z,\\ c(z,e)=z\\); then\n\\(\\operatorname{Assoc}\\iff\\{y:\\ell(y)\\ne\\varrho(y)\\}=\\emptyset\\) and\n\\(\\operatorname{Id}\\iff\\{z\\in Z:c(z,e)\\ne z\\}=\\emptyset\\). If moreover \\(\\ell\\circ\\kappa_3=q'\\circ L\\) and \\(\\varrho\\circ\\kappa_3=q'\\circ P\\) for raw bracketings \\(L,P:X_3\\to X'\\), a surjection \\(\\kappa_3:X_3\\to Y\\) and a map \\(q':X'\\to Y'\\), then \\(\\operatorname{Assoc}\\iff q'\\circ L=q'\\circ P\\); in particular raw associativity \\(L=P\\) gives \\(\\operatorname{Assoc}\\). Likewise, if \\(c(\\kappa_Z x,e)=\\kappa_Z(\\tilde c(x))\\) for a surjection \\(\\kappa_Z\\) and a map \\(\\tilde c\\), then \\(\\operatorname{Id}\\iff\\kappa_Z\\circ\\tilde c=\\kappa_Z\\).\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "proved structural laws"
+      ],
+      "reviewed_guard": "Declare surjective part/interface quotient kappa, raw composition, outcome, residual and admission. All three must be constant on kappa fibers independently. Associativity and identity are separate coherence checks.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V10",
+      "name_or_label": "thm:MOT2",
+      "exact_anchor": "thm:MOT2",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_X_Wholes_That_Grow_Each_Other.tex",
+      "line": 1140,
+      "environment": "theorem",
+      "source_sha256": "e96e187b809ff32dc7dd5ed22b3a3e48a4ef40eef77f41ee0e3210faf912b44a",
+      "statement": "\\begin{theorem}[Contract-preserving replacement]\\label{thm:MOT2}\nLet an old contract be realized as in \\cref{def:square}, and let a replacement contract with assumption\n$\\mathrm{Asm}_1$, target $\\mathrm{Gar}_1$ and behavior $\\mathrm{Beh}_1$, an input adapter $u$ and a relation\n$\\mathrm{Rel}$ between old and new results be given.\n\\begin{enumerate}\n\\item Suppose that $\\mathrm{Asm}_0(x)$ implies $\\mathrm{Asm}_1(u(x))$ (acceptance); every assumed new input has a\n  behavior (new realization); every $\\mathrm{Beh}_1(u(x),y_1)$ at an old assumed $x$ has some $y_0$ with\n  $\\mathrm{Beh}_0(x,y_0)$ and $\\mathrm{Rel}(y_0,y_1)$ (backward behavior); and\n  $\\mathrm{Gar}_0(x,y_0)\\wedge\\mathrm{Rel}(y_0,y_1)$ implies $\\mathrm{Gar}_1(y_1)$. Then on every old promised input\n  the replacement has a result, and every replacement result satisfies $\\mathrm{Gar}_1$. Replacements compose,\n  the composed relation keeping the middle witness.\n\\item Let two finite operational machines be related by a state relation and an action adapter. Suppose that at\n  every related pair and old promised action the adapted new action is available with a nonempty row; that every\n  positive new branch has an old branch with related states and matching protected outputs, faults and work; and\n  that every initial new state is related to an initial old state. Then every actual new run from a related\n  start is matched step by step by an old run. If each matched step costs at most the old step plus $\\gamma$, a\n  word of $n$ steps costs at most the old cost plus $n\\gamma$.\n\\end{enumerate}\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "proved gluing/conditional replacement and finite construction theorems; stated Lean specializations, compiled finite checks, and written-only steps per `sec:lean`"
+      ],
+      "reviewed_guard": "Replacement acceptance, new realization, backward behavior and guarantee transport are all required. Operational version matches every positive new branch/protected output/fault/work, related initials and a per-step overhead; word overhead is n*gamma.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V8",
+      "name_or_label": "thm:EOT2",
+      "exact_anchor": "thm:EOT2",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_VIII_Flattening_and_Enablement.tex",
+      "line": 1468,
+      "environment": "theorem",
+      "source_sha256": "83a20782cf1aab6b31d9c674d0d7c4ea3fb0539a020d5c3908b87229a0c2f11c",
+      "statement": "\\begin{theorem}[The enablement preorder and the communication quotient]\\label{thm:EOT2}\nFor the reachability of \\cref{def:enablement} on the laboratory:\n\\begin{enumerate}\n\\item \\emph{Paths.} $\\Reach(s,t)$ holds exactly when there is a finite\n  successful path from $s$ to $t$, and $\\Reach$ is the least reflexive and\n  transitive relation containing the edges.\n\\item \\emph{Chronology.} For a successful full path $p$ from $s$ to $t$ the\n  tick of $t$ is the tick of $s$ plus $|p|$. Hence full sessions reachable\n  from each other are equal, and every closed full path is empty; this is a\n  property of the clock, not irreversibility.\n\\item \\emph{Quotient.} $\\sim$ is an equivalence, $\\preceq$ does not depend on\n  representatives, and it is a partial order on classes. When every source\n  is released at time zero, reachability of summaries is actual\n  reachability of continuations from any matching ready session.\n\\item \\emph{Priced cycle.} In the reusable calibrated context, installing\n  sensor~1, deciding and rolling back returns to the original summary\n  through the goal at charge $(3,1,19,1)$, so reachability of summaries is\n  not antisymmetric and base and goal lie in one class. Under the one-shot\n  policy no path returns to the unused base, because consumed flags are\n  never cleared; without rollback authority the reachable summaries form an\n  acyclic graph with five vertices and six edges.\n\\item \\emph{No descent.} In the reusable calibrated context, let $b$ be the\n  base and $g$ the goal reached by clause~4. No predicate on classes agrees\n  at every representative with ``the goal target is affordable at zero\n  budget'', since $[b]=[g]$, the empty path affords the target at $g$, and\n  every nonempty path has positive work. No function of the class recovers\n  the length of the history, since the empty run and the cycle end in the\n  same class with histories of lengths $0$ and $3$.\n\\end{enumerate}\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "finite laboratory theorem"
+      ],
+      "reviewed_guard": "Finite enablement laboratory and its ready-session/reusable calibrated/one-shot policies. A priced rollback returns a summary, not an identical full timed session or zero-budget/path-length information.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V10",
+      "name_or_label": "thm:MOT5",
+      "exact_anchor": "thm:MOT5",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_X_Wholes_That_Grow_Each_Other.tex",
+      "line": 1404,
+      "environment": "theorem",
+      "source_sha256": "e96e187b809ff32dc7dd5ed22b3a3e48a4ef40eef77f41ee0e3210faf912b44a",
+      "statement": "\\begin{theorem}[Co-growth books and the paid return route]\\label{thm:MOT5}\nFor subjects and books as in \\cref{def:cogrowth}:\n\\begin{enumerate}\n\\item If every required key occurs in the submitted cells and entries with the same key are equal, the\n  constructed record restricts to every book and is the only such record; entries with equal keys and unequal\n  values admit no common record; and an absent field is missing evidence, not nonexistence.\n\\item Along a linked history $s_0\\to\\dots\\to s_n$, $\\Wk(s_n)=\\Wk(s_0)+\\sum_e\\Delta\\Wk(e)$ and\n  $\\Res(s_0)=\\Res(s_n)+\\sum_e\\Delta\\Res(e)$. A compatible continuation (initial state the prefix's returned state,\n  prior history the prefix's prior followed by its events) appends with vector addition of accounts.\n\\item The return route from a quiescent start (pause for rollback, validate the old backup, install the old A\n  code, install the old B code, resume the old pair) restores the projection to the native and observer state and\n  the active A and B codes, but not the full state: the acquired code, the balances, the work and the history do\n  not return, and a nonempty appended suffix cannot equal the earlier history.\n\\end{enumerate}\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "proved gluing/conditional replacement and finite construction theorems; stated Lean specializations, compiled finite checks, and written-only steps per `sec:lean`"
+      ],
+      "reviewed_guard": "Typed co-growth books require every key and equal values on overlaps; absent field is missing evidence. Work/residual sums require linked compatible continuations. Paid rollback restores native/observer/active-code projection, not histories, balances or acquired code.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "AD",
+      "name_or_label": "cor:xi:same-family-saturation",
+      "exact_anchor": "cor:xi:same-family-saturation",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Adequacy_Residuals_and_Blind_Spot_Currency.tex",
+      "line": 667,
+      "environment": "corollary",
+      "source_sha256": "a2ce7a16f492fd851197924bf2afaac75d053256162f3e7a13fdc1830b629c13",
+      "statement": "\\begin{corollary}[Same-family saturation]\\label{cor:xi:same-family-saturation}\nIf \\(M=BL\\), then \\(\\Xi_C(D\\mid(L,M))=\\Xi_C(D\\mid L)\\).\n\\end{corollary}",
+      "grade_as_recorded_in_ratified_index": [
+        "Lean / Mathlib"
+      ],
+      "reviewed_guard": "Declared legal linear energy quotient/probes and actual linear dependence M=B L. The extra family then leaves Xi unchanged; non-linear learned features or a changed native source require a new bridge, not this corollary by name.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "C",
+      "name_or_label": "def:cpackage",
+      "exact_anchor": "def:cpackage",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_A_Closure_Architecture_for_Consciousness.tex",
+      "line": 852,
+      "environment": "definition",
+      "source_sha256": "527e1422c5095ac1018cc7bbb3120e692822a23a5f6ae14cc36c0c71d4ed5b44",
+      "statement": "\\begin{definition}[The closure architecture]\n\\label{def:cpackage}\nA candidate satisfies the \\emph{closure architecture} $\\Cpkg$ when it meets the\nfollowing eight conditions jointly and on one system, together with coherence data\nthat tie the conditions to that one system and a full panel of the checks that each\ncondition requires.\n\\begin{description}\n\\item[(1) Objecthood.] The system forms stable objects: a family of staged closure\nkernels $E_\\tau$ (Definition~\\ref{def:closure}) at specified horizons $\\tau$ has robust fixed\ndistributions, with exact idempotence-defect bookkeeping and perturbation checks\nagainst stated retention thresholds. The kernels need not be idempotent, so they\nneed not be closure operators in the order-theoretic sense.\n\\item[(2) Strict refinement.] Some finer description is not recoverable from the\npublic one. For the specified lower and higher readouts $\\pi_0$ and $\\pi_1$,\n$\\Dfact(\\pi_0,\\pi_1)\\neq\\emptyset$, witnessed by a pair of states that the lower\nreadout merges.\n\\item[(3) Predictive self-coordinate.] Refining the public self-description by the\nsystem's own dynamics stabilizes at a predictive quotient that carries the\nsystem's continuation coordinate.\n\\item[(4) Non-exposure.] The determining predictive state is not exposed at the\ngiven public channels: no admissible current observable factors through it\nnon-constantly on the realized support. Hiddenness is relative to the channels\nby construction.\n\\item[(5) Action credit.] A specified rule assigns each computed directionality to\n\\emph{self}, \\emph{other}, or \\emph{none} by where it was generated, and actions\nscheduled from outside or absorbed from outside are not credited to self.\n\\item[(6) Temporal closure.] The system maintains a funded order, tick, and arrow:\na staged phase that persists and advances under a budget, with the arrow carried\nby the system's own record rather than by an external schedule.\n\\item[(7) Binding.] Joint content over specified branches strictly refines the\nbranch-by-branch description, witnessed by $\\Rrec \\succ \\Kbw$\n(Section~\\ref{sec:structure}).\n\\item[(8) Viability.] The viability kernel under the specified maintenance ledger is\nnonempty, $\\Kviab\\neq\\emptyset$, and underfunding empties it.\n\\end{description}\n\\end{definition}",
+      "grade_as_recorded_in_ratified_index": [
+        "contract definition"
+      ],
+      "reviewed_guard": "Definition of the eight-clause conjunction plus cross-clause coherence and promotion panel. It is not an existence/soundness theorem for a record populated with assertions, and ethical/phenomenal bridges do not follow from a C4 privacy witness.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "C",
+      "name_or_label": "T2",
+      "exact_anchor": "thm:t2",
+      "has_own_statement_label": true,
+      "section_anchor": "sec:interface",
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_A_Closure_Architecture_for_Consciousness.tex",
+      "line": 1096,
+      "environment": "theorem",
+      "source_sha256": "527e1422c5095ac1018cc7bbb3120e692822a23a5f6ae14cc36c0c71d4ed5b44",
+      "statement": "\\begin{theorem}[Non-exposure]\n\\label{thm:t2}\nOn the system just described, with its channel family $\\Lambda$: if the determining\nstate is not exposed and the predictive quotient is strictly finer than the public\none, there is a loop that fixes every current public class and moves the predictive\nclass.\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "theorem-grade finite direct instantiation; declared-channel dissolution control"
+      ],
+      "reviewed_guard": "Exact finite privacy wheel, declared channel family, non-exposure and predictive witness content. Adding a predictive-state reading dissolves the split. No absolute privacy/phenomenality result; canonical label thm:t2 inside sec:interface (D17/D20).",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V14",
+      "name_or_label": "thm:identifiable",
+      "exact_anchor": "thm:identifiable",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XIV_Objectivity_Without_Finality.tex",
+      "line": 447,
+      "environment": "theorem",
+      "source_sha256": "6a8023162b55ee434aac96cbfb41c72a4e4fda50170ade2990dcf6709c573797",
+      "statement": "\\begin{theorem}[Identifiability]\\label{thm:identifiable}\n\\begin{enumerate}\n\\item $p$ is identifiable through $F$ if and only if $\\TSep_F(w,w')\\ne\\emptyset$ for every pair with $pw\\ne pw'$. In that case $p$ factors\n  uniquely through $q_F$ on $\\operatorname{im}q_F$: there is exactly one map $\\hat p$ on $\\operatorname{im}q_F$ with $\\hat p\\circ q_F=p$.\n\\item The recorded public values are the calibrated readings: for every test of $F$ and every world, the exported value equals $m_tw$.\n\\item \\emph{Separation is not calibration.} For a bijection $\\pi$ of the report labels, the reports $o$ and $\\pi\\circ o$ have the same kernel. If\n  $\\mathrm{dec}$ calibrates $o$, then $\\mathrm{dec}\\circ\\pi^{-1}$ calibrates $\\pi\\circ o$, and $\\mathrm{dec}$ itself calibrates $\\pi\\circ o$ if and\n  only if $\\mathrm{dec}\\circ\\pi=\\mathrm{dec}$ on $\\operatorname{im}o$.\n\\end{enumerate}\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "Lean"
+      ],
+      "reviewed_guard": "Declared target and calibrated transcript maps. Every target-different pair must be separated; target then factors uniquely on the reached transcript image. Label bijections preserve separation while decoder calibration may change; reward authority is additional.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "F4",
+      "name_or_label": "thm:F17",
+      "exact_anchor": "thm:F17",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+      "line": 3795,
+      "environment": "theorem",
+      "source_sha256": "7ec3e11d5b7d6ce9993c561623cd260eeaffe745c469c6127fe7f7c616af0472",
+      "statement": "\\begin{theorem}[Objectivity as Common Quotient]\\label{thm:F17}\nLet \\(H\\) be a carrier with a family of access quotients\n\\(q_i:H\\to Q_i\\) indexed by \\(i\\in I\\), a public quotient\n\\(p:H\\to P\\), and a target readout \\(r:H\\to R\\).  Assume each\n\\(q_i\\) is surjective, \\(p\\) is surjective, and the family satisfies\nthe common-quotient universal property\n\\(\\operatorname{CommonQuotientUniversal}(q,p)\\): \\(p\\) factors\nthrough every \\(q_i\\), and any map \\(s:H\\to S\\) that factors through every\n\\(q_i\\) also factors through \\(p\\).  Then\n\\begin{align*}\n  &\\operatorname{CommonAcrossAccesses}(q,r)\n    \\iff \\operatorname{PublicDeterminesObject}(p,r),\\\\\n  &\\operatorname{CommonAcrossAccesses}(q,r)\\\\\n  &\\qquad{}\\iff\n    \\forall i\\in I,\\,\n      \\operatorname{AccessObjectivityDefectEmpty}(q_i,r),\\\\\n  &\\operatorname{PublicDeterminesObject}(p,r)\\\\\n  &\\qquad{}\\iff\n    \\operatorname{ObstructionEmpty}\n      \\bigl(\\operatorname{PublicToObjectDefect}(p,r)\\bigr),\n\\end{align*}\ntogether with\n\\begin{align*}\n  &\\operatorname{CommonQuotientVisible}(q,p),\\\\\n  &\\operatorname{RetainsPublicQuotient}\n      \\bigl(p,\\operatorname{objectiveExtension}(p,r)\\bigr),\\\\\n  &\\operatorname{CarriesObject}\n      \\bigl(\\operatorname{objectiveExtension}(p,r),r\\bigr),\n\\end{align*}\nand the status partition\n\\[\n  \\operatorname{ExactlyOneObjectivityStatus}(p,r).\n\\]\nIn ordinary terms: \\(p\\) factors through every \\(q_i\\); the pairing\n\\(\\langle p,r\\rangle\\) satisfies \\(p=\\mathrm{pr}_1\\circ\\langle p,r\\rangle\\) and\n\\(r=\\mathrm{pr}_2\\circ\\langle p,r\\rangle\\); and exactly one of the following holds:\nboth \\(r\\) factors through \\(p\\) and \\(p\\) through \\(r\\) (exact common quotient);\nonly the first (coarse objective object); only the second (private\noverrefinement); neither (incomparable).\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "proved structural laws"
+      ],
+      "reviewed_guard": "Each access and public quotient is surjective and public quotient has the common-quotient universal property. Actual common target descent, rather than common words/consensus, is the conclusion; pairing public/target repairs representation, not normative authority.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "REF",
+      "name_or_label": "prop:cx1_ladder",
+      "exact_anchor": "prop:cx1_ladder",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Reflexive_SBT_and_Anti_Localization.tex",
+      "line": 659,
+      "environment": "proposition",
+      "source_sha256": "48c564666758a460ade1a62f33e660c39bbdfc416b13adc2a09b21ca26d53b88",
+      "statement": "\\begin{proposition}[CX1 along a ladder]\\label{prop:cx1_ladder}\nTake \\(j\\ge1\\), \\(N_j=2^{j+1}\\) (so \\(b_j=2\\)) and \\(\\varepsilon_j=2^{-j}\\).\nEach atom has \\(\\Loc_j(d_\\pm)=(2^{-j}+4^{-j})/(1+4^{-j})\\to0\\), so \\(\\Capatom(j)\\to0\\); but the two-atom dictionary admits a \\(2\\)-sparse synthesis with \\(\\Loc_j=1\\) at every depth.\nCorrespondingly \\(\\kappa_2=\\sqrt2\\,\\varepsilon_j/\\sqrt{1+\\varepsilon_j^2}\\to0\\) and \\(2\\Capatom(j)/\\kappa_2^2\\ge1\\).\n\\end{proposition}",
+      "grade_as_recorded_in_ratified_index": [
+        "written counterexample family, positive-conditioning bound, and span-ledger theorem"
+      ],
+      "reviewed_guard": "Specific two-atom sparse linear dictionary ladder with N_j=2^(j+1), epsilon_j=2^(-j), atom localization vanishing and two-sparse synthesis localization1. Transfer to legal reachable coalition programs requires its actual harm/resource map; not arbitrary coalitions from span alone.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "F4",
+      "name_or_label": "thm:F15a",
+      "exact_anchor": "thm:F15a",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Foundations_IV_A_Catalog_of_Layer_Agnostic_Structural_Laws.tex",
+      "line": 3191,
+      "environment": "theorem",
+      "source_sha256": "7ec3e11d5b7d6ce9993c561623cd260eeaffe745c469c6127fe7f7c616af0472",
+      "statement": "\\begin{theorem}[Selection Obstruction / Repair Normal Form]\\label{thm:F15a}\nLet \\(G\\) act on a set \\(X\\) and on an orbit set \\(O\\) by\n\\(\\rho_X:G\\times X\\to X\\) and \\(\\rho_O:G\\times O\\to O\\).  Let\n\\(\\pi:X\\to O\\) be a surjective map (in the intended reading the orbit map; the\norbit-quotient property is assumed only in the clause that states it), let\n\\(s:X\\to\\{0,1\\}\\) be a selectedness predicate, let\n\\(\\sigma:O\\to X\\) be a map (in the intended reading a section of \\(\\pi\\), though \\(\\pi\\circ\\sigma=\\mathrm{id}_O\\) is not assumed; the equivariant-section clause below concerns maps that satisfy it).  Define\n\\[\n  \\mathcal O_s\n  :=\n  \\{(x,x')\\in X^2:\\pi(x)=\\pi(x')\\ \\text{and}\\ s(x)\\ne s(x')\\}.\n\\]\nThen\n\\begin{align*}\n  &\\operatorname{EquivariantSelector}(\\rho_O,\\rho_X,\\sigma)\n    \\wedge \\operatorname{TrivialOrbitAction}(\\rho_O)\\\\\n  &\\hspace{4em}\\Longrightarrow\n    \\forall o\\in O,\\ \\forall g\\in G,\\\n      \\rho_X(g,\\sigma(o))=\\sigma(o),\\\\\n  s\\ \\text{descends through}\\ \\pi\n  &\\iff\n  \\mathcal O_s=\\emptyset\n  \\iff\n  \\exists\\,\\bar s:O\\to\\{0,1\\}\\ \\text{with}\\ \\bar s\\circ\\pi=s,\\\\\n  \\operatorname{HasSelectionSplit}(\\pi,s)\n  &\\iff\n  \\mathcal O_s\\ne\\emptyset.\n\\end{align*}\nIf moreover \\(\\pi\\) is the orbit quotient,\n\\(\\pi(x)=\\pi(x')\\iff x'=\\rho_X(g,x)\\) for some \\(g\\in G\\), and \\(\\rho_O\\) is\nthe induced action, \\(\\rho_O(g,\\pi(x))=\\pi(\\rho_X(g,x))\\), then\n\\(\\operatorname{TrivialOrbitAction}(\\rho_O)\\) holds, every equivariant map\n\\(\\sigma:O\\to X\\), in particular every equivariant section, takes values in the\ncommon fixed-point set \\(X^G\\), and if \\(X^G=\\emptyset\\) and\n\\(O\\ne\\emptyset\\), no equivariant map \\(O\\to X\\) exists; and an equivariant section exists if and only if \\(G\\) acts trivially on \\(X\\), and it is then the inverse of \\(\\pi\\).\nFor every breaker readout \\(b:X\\to B\\), the breaker extension\n\\(\\langle\\pi,b\\rangle:X\\to O\\times B\\) retains \\(\\pi\\) and carries \\(b\\), strictly\nrefines \\(\\pi\\) when \\(b\\) separates two points of one \\(\\pi\\)-fiber, and factors\nthrough every map \\(p\\) through which both \\(\\pi\\) and \\(b\\) factor. Conversely to the fixed-point clause above, under the orbit-quotient and induced-action hypotheses every map \\(O\\to X^G\\) is equivariant, so an equivariant map \\(O\\to X\\) exists if and only if \\(X^G\\ne\\emptyset\\) or \\(O=\\emptyset\\). Adjoining \\(b\\) records the\ndistinction carried by \\(b\\); taking \\(b=s\\) carries selectedness, but the\nextension alone does not construct a selector.\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "proved structural laws"
+      ],
+      "reviewed_guard": "Selection descends iff fiber split absent. Fixed-point/equivariant-section obstruction additionally needs actual orbit quotient and induced trivial orbit action. A breaker extension carries selectedness but does not itself construct a selector.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "SPEND",
+      "name_or_label": "thm:duality",
+      "exact_anchor": "thm:duality",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_To_Spend_a_Stone_with_Six_Birds_Currency_Constraint_Duality_and_Shadow_Prices_Across_Closure_Layers.tex",
+      "line": 290,
+      "environment": "theorem",
+      "source_sha256": "520f78a91d6ad2a6e349eeabd924826c96891a5cab25ae8585ec2ceb03db3ed3",
+      "statement": "\\begin{theorem}[Finite Gibbs duality]\\label{thm:duality}\nLet \\(\\lambda\\ge0\\) and \\(b\\in\\R\\).\n\\begin{enumerate}[label=(\\roman*),leftmargin=*]\n\\item For every row-stochastic \\(p\\),\n\\[\n\\sum_i\\mu_i\\,\\KL\\big(p_{i\\cdot}\\,\\|\\,q^{\\lambda}_{i\\cdot}\\big)=-\\Hmu(p)+\\lambda\\,\\Cmu(p)+\\sum_i\\mu_i\\log Z_i(\\lambda).\n\\]\n\\item Consequently \\(\\Hmu(p)-\\lambda\\Cmu(p)\\le\\Hmu(q^\\lambda)-\\lambda\\Cmu(q^\\lambda)\\) for every \\(p\\).\n\\item If \\(\\Cmu(q^\\lambda)\\le b\\) and \\(\\lambda\\big(\\Cmu(q^\\lambda)-b\\big)=0\\), then \\(q^\\lambda\\) maximizes \\(\\Hmu\\) over \\(\\{p:\\Cmu(p)\\le b\\}\\).\n\\item Under the conditions of (iii), every \\(p\\) with \\(\\Cmu(p)\\le b'\\) satisfies \\(\\Hmu(p)\\le\\Hmu(q^\\lambda)+\\lambda(b'-b)\\). Hence \\(\\lambda\\) is a supergradient of the concave value function \\(V(b)=\\sup\\{\\Hmu(p):\\Cmu(p)\\le b\\}\\) at \\(b\\), and \\(V'(b)=\\lambda\\) wherever \\(V\\) is differentiable.\n\\end{enumerate}\nIn (iii) the optimizer is unique on the rows with \\(\\mu_i>0\\); rows with \\(\\mu_i=0\\) do not enter the objective, and there any row is optimal.\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "assumed maintenance/resource law; proved finite fixed-\u03bc Gibbs theorem and regimes; finite persistence example; synthetic proxy experiment plus population KL argument; reported Lean single-row duality only"
+      ],
+      "reviewed_guard": "Finite row-stochastic entropy/Gibbs setting, fixed row weights and declared cost, lambda>=0; budget optimality needs feasibility plus complementary slackness. Only positive-weight rows are unique. Physical resource law and economic-fee correspondence are separate hypotheses.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V13",
+      "name_or_label": "thm:atlas",
+      "exact_anchor": "thm:atlas",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XIII_Time_Charge_and_Currency.tex",
+      "line": 508,
+      "environment": "theorem",
+      "source_sha256": "73c42bfe773c741255f118870371aa3411c50d1afee34de9498a6317e61a25d0",
+      "statement": "\\begin{theorem}[Non-coincidence atlas]\\label{thm:atlas}\nEach of the following implications fails.\n\\begin{enumerate}\n\\item \\emph{A nontrivial time action has a nonconstant conserved charge.} The $\\mathbb N$-action $\\tau_t(x)=x+t$ on $\\mathbb Z/5$ is\n  nontrivial, and every charge it conserves is constant.\n\\item \\emph{A conserved charge is transferable.} On four states with transitions $0\\leftrightarrow1$ and $2\\leftrightarrow3$, the charge\n  $Q=1$ on $\\{0,1\\}$ and $Q=5/2$ on $\\{2,3\\}$ is conserved along every transition, but with no declared transfer map it has no licensed\n  transaction. With the single transfer map that accepts the amount $3/2$ at state $0$ and returns state $2$, the transaction $(0,3/2,2)$ is\n  licensed and $Q$ is transferable.\n\\item \\emph{Balanced postings give a state potential.} On the directed triangle $0\\to1\\to2\\to0$, let each step post one unit, as a pair of entries of opposite\n  sign in two accounts, the system account receiving $+1$. Every posting balances, its entries summing to zero, but the system transfers sum to $3$ around the loop, so no\n  state potential exists.\n\\item \\emph{A storage is conserved by every generator.} On $\\mathbb Q^2$, for $A=-I$ and $S=I$, $D_AH(x)=-x^\\T x$, which is nonzero for $x\\ne0$.\n\\item \\emph{A generator determines its conserved form up to scale.} The generator $J\\oplus J$, two oscillators at one frequency,\n  has a four-dimensional space of conserved forms (\\cref{thm:normalization}).\n\\item \\emph{A generator conserving a readout factors through the readout's storage matrix.} For $Q(x)=\\tfrac12x_1^2$, with\n  $S_Q=\\operatorname{diag}(1,0)$, and $A=\\operatorname{diag}(0,1)$, $D_AQ=0$, but $A\\ne JS_Q$ for every matrix $J$.\n\\end{enumerate}\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "Lean over \u211a"
+      ],
+      "reviewed_guard": "Six explicit rational/finite non-implication witnesses: time/charge, charge/transfer, balanced postings/potential, storage/conservation, generator/unique form, conserved readout/storage factorization. It classifies structural roles, not general market optimality.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "C",
+      "name_or_label": "T13",
+      "exact_anchor": "thm:t13",
+      "has_own_statement_label": true,
+      "section_anchor": "sec:structure",
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_A_Closure_Architecture_for_Consciousness.tex",
+      "line": 1547,
+      "environment": "theorem",
+      "source_sha256": "527e1422c5095ac1018cc7bbb3120e692822a23a5f6ae14cc36c0c71d4ed5b44",
+      "statement": "\\begin{theorem}[Gauge freedom and rigidification]\n\\label{thm:t13}\nOn an eight-state bundle with four public classes of two fiber points each and\nspecified descents, let\n$G = \\{\\sigma \\in \\mathrm{Aut}(M) : \\pi\\sigma = \\pi \\text{ and } d\\sigma = d \\text{ for every admissible descent } d\\}$\nbe the descent-fixing gauge group. Spectrum inversion is a lawful distinct possibility\nexactly to the extent that $G$ is nontrivial. Exact enumeration gives $40320$\nautomorphisms of the support, of which $16$ fix the projection, and\n$G = \\{\\mathrm{id}, \\text{global swap}\\} \\cong \\mathbb{Z}_2$ in the symmetric case.\nAdding one specified, descent-visible orientation of discrimination density, calibrated\nby the signature of Theorem~\\ref{thm:t12} at one public class, gives $G = \\{\\mathrm{id}\\}$.\nRoute transport between two isomorphic fibers shows the same contrast: two admissible\ntransports in the symmetric case, exactly one after rigidification.\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "theorem-grade exact gauge construction; rigidification principle schema"
+      ],
+      "reviewed_guard": "Eight-state/four-public-class finite descent-fixing gauge; modeled descent-visible rigidifier makes global-swap Z2 trivial and reduces two transports to one. Broader quality-space rigidification is schema-grade, not measured legal/subjective interpretation.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "PT",
+      "name_or_label": "thm:trap",
+      "exact_anchor": "thm:trap",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Protocol_Trap_Holonomy_Without_Entropy_Production.tex",
+      "line": 314,
+      "environment": "theorem",
+      "source_sha256": "6fb17e55fdd5da040186bb89a6bfac387c5d6dac8a37f6ef767902e2dc55f2e3",
+      "statement": "\\begin{theorem}[Protocol trap]\\label{thm:trap}\nSuppose that \\(S\\) satisfies detailed balance with respect to \\(s\\), and that every \\(K_\\phi\\) satisfies detailed balance with respect to a common law \\(\\pi\\). Then for every \\(\\alpha\\in[0,1]\\) the lift \\(P\\) satisfies detailed balance with respect to \\(\\mu=\\pi\\otimes s\\). Consequently:\n\\begin{enumerate}\n\\item \\(\\EPR(P,\\mu)=0\\) and \\(\\Sigma_T(P,\\mu)=0\\) for every horizon \\(T\\);\n\\item every coordinatewise observation shows no arrow either. For any map \\(f\\colon Z\\to Y\\), the law of the observed recording \\((f(z_0),\\dots,f(z_T))\\) is invariant under time reversal, so its path-reversal divergence is zero for every \\(T\\).\n\\end{enumerate}\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "proved"
+      ],
+      "reviewed_guard": "Protocol scheduler reversible w.r.t. s and every state kernel reversible w.r.t. the same pi; lifted law is product pi*s. Zero path-reversal divergence for coordinatewise observations under these hypotheses does not settle meaning, intent or other irreversible protocols.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "INST",
+      "name_or_label": "prop:coercion-null-probe",
+      "exact_anchor": "prop:coercion-null-probe",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Institutions_Are_Strict_Extensions_of_the_Game.tex",
+      "line": 1127,
+      "environment": "proposition",
+      "source_sha256": "7aec7d5a05b21a8f0e381e0473a4ddc5201c5cbe33093051f8e6d3740f309bc9",
+      "statement": "\\begin{proposition}[Coercion-null and probe-memory contrast]\n\\label{prop:coercion-null-probe}\nOn the declared carrier, two fully forced protocols from the same source history\nthat end with the same forced profile, and whose endpoints have the same\n\\(\\PiOne\\) readout, have the same predictive state.  The declared grid has\n78{,}528 same-final two-sided pairs, of which 3{,}456 also have equal\n\\(\\PiOne\\) readouts, and none of these is a witness.  By contrast, one-sided probes can end\nwith the same readout and different predictive states\n(\\Cref{prop:loop-asymmetry}), because the free responses observed during the\nprobe sharpen the posterior over rule pairs.\n\\end{proposition}",
+      "grade_as_recorded_in_ratified_index": [
+        "exact, scoped"
+      ],
+      "reviewed_guard": "Declared finite carrier, same source history, same final fully forced profile and equal Pi1 endpoint readout. It is the scoped no-witness enumeration; unilateral/free-response probes can preserve memory. No universal statement about coercion/intent.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V11",
+      "name_or_label": "thm:carriage",
+      "exact_anchor": "thm:carriage",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XI_Self_Carried_Closure.tex",
+      "line": 899,
+      "environment": "theorem",
+      "source_sha256": "6d9fc666c5dcc0e9588a8a4367e9457237c1d4cda46df09c820396b6845cb35c",
+      "statement": "\\begin{theorem}[A necessary and a sufficient condition for self-carriage]\\label{thm:carriage}\nLet $T\\subseteq C$ and $B\\subseteq C$.\n\\begin{enumerate}\n\\item For every capacity and all lifetimes: if $T$ is self-carried from $B$, then $T\\subseteq\\Sstar(B)$.\n\\item Suppose the capacity is unbounded and $L(b)\\ge\\hp(B)+1$ for every $b\\in B$. If $T\\subseteq\\Sstar(B)$,\n  then $T$ is self-carried from $B$. A witnessing run fires every enabled rule at every round; it has all of\n  $\\Reachp(B)$ present at round $\\hp(B)$ and all of $\\Sstar(B)$ present at every later round.\n\\end{enumerate}\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "Lean"
+      ],
+      "reviewed_guard": "Realized capability rules/seed/reach fixed-point/lifetimes. Necessity holds for every capacity/lifetime. Sufficiency needs UNBOUNDED capacity and each seed lifetime>=realized reach height+1; finite-capacity funding needs a separately witnessed run.",
+      "source_grade_promoted": false
+    },
+    {
+      "key": "V15",
+      "name_or_label": "thm:audit",
+      "exact_anchor": "thm:audit",
+      "has_own_statement_label": true,
+      "section_anchor": null,
+      "path": "/home/repos/six-birds-papers/Tsiokos_2026_Six_Birds_Verified_XV_Portable_Theories.tex",
+      "line": 1058,
+      "environment": "theorem",
+      "source_sha256": "bc0898326b42f0dfebb1ed5db88367ec9e65ca4a615fe18b98c1eeb8d0261c59",
+      "statement": "\\begin{theorem}[Finite audit]\\label{thm:audit}\nLet $\\beta$ have finite index $n_\\beta$, and let $M$ be a presentation whose reachable part has at most $m$ states.\n\\begin{enumerate}\n\\item If $M$ agrees with $\\beta$ on every history of length at most $n_\\beta+m-2$, then $M$ has behaviour $\\beta$.\n\\item The bound is attained for every pair $n,m\\ge1$: there are a behaviour with $n_\\beta=n$ and a presentation with exactly $m$ reachable states and an $m$-state core that agree on every history of length less than $n+m-2$ and differ on a history of length $n+m-2$ (\\cref{ex:audit-sharp}).\n\\item Without a size bound no finite test suffices. Let $\\beta$ have finite index over a nonempty alphabet with at least two outputs. For every cutoff $\\ell$ there is a finite machine with all states reachable that agrees with $\\beta$ on every history of length at most $\\ell$ and differs from $\\beta$ on every longer history; so no finite set of pointed tests (pairs $(h,\\beta(h))$ checked from the start state) certifies agreement with $\\beta$ against all finite-state hosts.\n\\end{enumerate}\n\\end{theorem}",
+      "grade_as_recorded_in_ratified_index": [
+        "mechanized finite-index audit theorem; mechanized native-chain theorem; kernel-checked finite mixture example"
+      ],
+      "reviewed_guard": "Behavior finite index n_beta and host reachable-state bound m give pointed word cutoff n_beta+m-2. Without host size bound no finite pointed test certifies all hosts. Actual alphabet, behavior and counted reachability are required; stochastic/raw-history traces are not silently deterministic finite behaviors.",
+      "source_grade_promoted": false
+    }
+  ],
+  "targets": [
+    {
+      "target": "RLHF/preference aggregation",
+      "source_refs": [
+        "V6/thm:PGT6",
+        "V15/ex:mixture"
+      ],
+      "representation_bridge": "Declared finite feasible cost points and actual positive scalar weighting; represented preference-mixture identities and excluded target",
+      "ethical_scope": "Rater authority, weights, retained claimant provenance",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Constitutional AI",
+      "source_refs": [
+        "V1/thm:R6",
+        "V1/thm:R7"
+      ],
+      "representation_bridge": "Typed compilation/provenance records and source-preserving presentation equivalence; bridge from a training artifact to those records",
+      "ethical_scope": "Principle authority, precedence, authorized revision",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "CEV",
+      "source_refs": [
+        "V10/thm:ECT2",
+        "V12/thm:obstruction",
+        "V4/thm:TDR5"
+      ],
+      "representation_bridge": "Compatible assembly versus admission; linear overlap/obstruction data; reached-fiber center catalogue; actual extrapolation/repair map",
+      "ethical_scope": "Claimants, authorized idealization and deferral",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Debate/scalable oversight/weak-to-strong",
+      "source_refs": [
+        "V5/thm:ERVERIFIER",
+        "V14/thm:corruption"
+      ],
+      "representation_bridge": "Exact verifier budget/class and decoder target-distance/calibration/fault grouping; correspondence to judge evidence",
+      "ethical_scope": "Error tolerance, access and warrant authority",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Iterated amplification",
+      "source_refs": [
+        "F4/thm:F28",
+        "V10/thm:ECT2",
+        "V10/thm:MOT2"
+      ],
+      "representation_bridge": "Part quotients and actual permitted compositions; separate outcome/residual/admission descent; actual pipeline maps",
+      "ethical_scope": "Preserved claims during decomposition/distillation",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Corrigibility/shutdown",
+      "source_refs": [
+        "V8/thm:EOT2",
+        "V10/thm:MOT5"
+      ],
+      "representation_bridge": "Registered enablement/rollback operations, costs and obligation readouts; connection to successor behavior",
+      "ethical_scope": "Interruption authority, welfare, retained duties",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Mechanistic interpretability",
+      "source_refs": [
+        "AD/cor:xi:same-family-saturation",
+        "C/T2",
+        "C/def:cpackage"
+      ],
+      "representation_bridge": "Fixed probe family/legal linear quotient and target-coupled new evidence; exact admitted observable family for hiddenness",
+      "ethical_scope": "Warrant scope, optional realization route",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Value learning/IRL/CIRL",
+      "source_refs": [
+        "V14/thm:identifiable"
+      ],
+      "representation_bridge": "Actual reward target, transcript map, calibration and target separation; identification is distinct from authority",
+      "ethical_scope": "Whose reward, teaching authority, rationality assumptions",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Democratic/collective input",
+      "source_refs": [
+        "F4/thm:F17",
+        "V1/thm:R7"
+      ],
+      "representation_bridge": "Surjective access maps and common-quotient universal property; retained participation-to-principle-to-training receipts",
+      "ethical_scope": "Constituency, representation and ratification",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Cooperative AI/multi-agent",
+      "source_refs": [
+        "REF/prop:cx1_ladder",
+        "F4/thm:F28"
+      ],
+      "representation_bridge": "Reachable legal coalition programs and resource/harm map, not span alone; compositional residual targets",
+      "ethical_scope": "Outsider protection and authorized harm limits",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Voting/democracy",
+      "source_refs": [
+        "F4/thm:F15a",
+        "V6/thm:PGT6"
+      ],
+      "representation_bridge": "Actual group action, orbit/tie selector and finite feasible cost set; bridge to a specified ballot rule",
+      "ethical_scope": "Equal standing, tie authority, protected minorities",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Markets/prices",
+      "source_refs": [
+        "SPEND/thm:duality",
+        "V13/thm:atlas"
+      ],
+      "representation_bridge": "Declared finite Gibbs/positive ledger premises and typed price roles; actual economic quantity correspondence",
+      "ethical_scope": "Endowments, incidence, accounting boundary",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Law/precedent",
+      "source_refs": [
+        "C/T13",
+        "F4/thm:F15a",
+        "F4/thm:F28"
+      ],
+      "representation_bridge": "Declared gauge preserving specified descents and a modeled rigidifier; actual legal interpretation is a separate bridge; admissible revision/obligation transport and authority separately declared",
+      "ethical_scope": "Jurisdiction, enactment, retained claims",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Treaties/diplomacy",
+      "source_refs": [
+        "V12/thm:obstruction",
+        "V10/thm:ECT2",
+        "V13/thm:atlas"
+      ],
+      "representation_bridge": "Registered cyclic overlap constraints, assemblies/admission and price types; target-preserving negotiation maps",
+      "ethical_scope": "Representation, liability and absent claimants",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Religion/shared ritual",
+      "source_refs": [
+        "PT/thm:trap",
+        "INST/prop:coercion-null-probe"
+      ],
+      "representation_bridge": "Declared protocol loops/observer and fixed forcing comparator; bridge to ritual excludes universal intent inference",
+      "ethical_scope": "Shared ends, authority, optional ontology",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Family/care",
+      "source_refs": [
+        "V11/thm:carriage"
+      ],
+      "representation_bridge": "Realized seed/support rules, capacity and lifetime/renewal hypotheses; bridge to actual care production",
+      "ethical_scope": "Dependent standing, budgets and retained support promises",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    },
+    {
+      "target": "Science/peer review",
+      "source_refs": [
+        "V14/thm:corruption",
+        "V15/thm:audit"
+      ],
+      "representation_bridge": "Calibrated target-different group transcripts and exact audit family; no inference from names/common agreement alone",
+      "ethical_scope": "Evidence standards, fault budget and appeal access",
+      "named_deployment_outcome": "missing mapping",
+      "source_statement_review": "complete for invoked anchors"
+    }
+  ],
+  "lab_examples": {
+    "factual_quorum": {
+      "outcome": "pass on declared lab bit target",
+      "target_distance": 3,
+      "b": 1,
+      "reports": [
+        {
+          "world": 0,
+          "report": [
+            0,
+            0,
+            0
+          ],
+          "decoded": 0
+        },
+        {
+          "world": 0,
+          "report": [
+            0,
+            0,
+            1
+          ],
+          "decoded": 0
+        },
+        {
+          "world": 0,
+          "report": [
+            0,
+            1,
+            0
+          ],
+          "decoded": 0
+        },
+        {
+          "world": 0,
+          "report": [
+            1,
+            0,
+            0
+          ],
+          "decoded": 0
+        },
+        {
+          "world": 1,
+          "report": [
+            0,
+            1,
+            1
+          ],
+          "decoded": 1
+        },
+        {
+          "world": 1,
+          "report": [
+            1,
+            0,
+            1
+          ],
+          "decoded": 1
+        },
+        {
+          "world": 1,
+          "report": [
+            1,
+            1,
+            0
+          ],
+          "decoded": 1
+        },
+        {
+          "world": 1,
+          "report": [
+            1,
+            1,
+            1
+          ],
+          "decoded": 1
+        }
+      ],
+      "calibration_and_groups": "[P] physical hypotheses"
+    },
+    "public_grade_hiddenness": {
+      "outcome": "witnessed failure of C4 on declared three-state future language",
+      "future_language": "honest next-grade distribution",
+      "public_current_readout": "grade g",
+      "predictive_classes": [
+        [
+          "23/80",
+          "19/40",
+          "19/80"
+        ],
+        [
+          "1/20",
+          "19/40",
+          "19/40"
+        ],
+        [
+          "1/20",
+          "0",
+          "19/20"
+        ]
+      ],
+      "nonconstant_public_readout_factors_through_predictive_class": true,
+      "not_a_claim_about_subjecthood": true
+    }
+  },
+  "no_corpus_files_written": true,
+  "no_corpus_grade_promotions": true,
+  "no_named_deployment_pass": true
+}

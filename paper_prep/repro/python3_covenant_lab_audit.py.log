@@ -1,0 +1,4 @@
+PASS independent round-1 grid and stationary laws
+PASS independent exact root and Bernstein certificates
+PASS independent round-2 transitions, values, stationary laws, escrow
+PASS 12007 exact comparisons; no simulations

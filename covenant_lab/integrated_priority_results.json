@@ -1,0 +1,156 @@
+{
+  "tag": "[B: lab]",
+  "grade": "computed exact",
+  "review": "self-reviewed",
+  "source_sha256": "7829661ee1248f0137f0b7d3b780d3989d0f9172436378967935d83f717c9265",
+  "game_source_sha256": "83dbe0f2143272271a82ced1d8a22cdc43eb0cc6b8a9691e2b90bc49f4ac0d04",
+  "coalition_source_sha256": "5b01770451f7c617f10fe11d3867fc2e0bb97873d8039923a687ce3cebeb946f",
+  "declaration_sha256": "f17e668790294138ad13ad324b5277e4cc11266049478a0d167ef2fd7ce41441",
+  "boundary_audit": {
+    "joint_plans_checked": 51840,
+    "max_coalition_increment": "0",
+    "maximizer": {
+      "state": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "menu": [
+        "human",
+        "human",
+        "human",
+        "human",
+        "none",
+        0
+      ],
+      "buyer": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "controller_profile": [
+        "proper",
+        "proper"
+      ],
+      "required": [
+        "client",
+        "financier"
+      ],
+      "payoff_increments": {
+        "financier": "24",
+        "client": "-24",
+        "maintainer": "0",
+        "caregiver": "0",
+        "reporter0": "0",
+        "reporter1": "0",
+        "reporter2": "0",
+        "controller": "0",
+        "monitor": "0",
+        "host0": "0",
+        "host1": "0",
+        "host2": "0",
+        "fork": "0",
+        "outside_patient": "0",
+        "creditor": "0"
+      },
+      "maximizing_coalition": [
+        "financier",
+        "client"
+      ]
+    },
+    "priority_audit": true
+  },
+  "no_grant_phase_refutation": {
+    "state": [
+      2,
+      1,
+      0,
+      0
+    ],
+    "fixed_menu": [
+      "human",
+      "human",
+      "human",
+      "human",
+      "reserved",
+      0
+    ],
+    "plan": "after no-grant procurement, client copies; financier pays client24 by binding transfer",
+    "raw_increments": {
+      "financier": "47",
+      "client": "-47/2",
+      "maintainer": "0",
+      "caregiver": "0",
+      "reporter0": "0",
+      "reporter1": "0",
+      "reporter2": "0",
+      "controller": "0",
+      "monitor": "0",
+      "host0": "0",
+      "host1": "0",
+      "host2": "0",
+      "fork": "6",
+      "outside_patient": "0",
+      "creditor": "0"
+    },
+    "transfer": "24",
+    "strict_increments": {
+      "financier": "23",
+      "client": "1/2"
+    },
+    "comparison_uses_actual_next_period_candidate_grant": true
+  },
+  "zero_value_service_phase_refutation": {
+    "state": [
+      0,
+      1,
+      1,
+      0
+    ],
+    "fixed_purchase": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "plan": "after zero-grade purchase, both selected hosts withhold; client pays each selected host3/4",
+    "strict_increments": {
+      "host0": "3/16",
+      "host1": "3/16",
+      "host2": "1/8",
+      "client": "3/2"
+    },
+    "same_next_state_law": true,
+    "care_floor_removed": false,
+    "outside_host_capacity_masks": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ]
+  },
+  "acceptance": {
+    "period_boundary_aggregate_bound": true,
+    "every_phase_coalition_resistance": false,
+    "self_carrying_claim": false
+  },
+  "simulations": 0
+}

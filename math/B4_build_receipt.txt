@@ -1,0 +1,21 @@
+Recorded from the fresh source-copy build tool result on 2026-10-07.
+Original command: lake build
+Working directory: /home/repos/six-birds-alignment/lean/corpus_scratch/transcendence/lean
+Original source: /home/repos/six-birds-transcendence (read-only)
+Old .lake build artifacts were excluded during copying.
+Tool session: 70123
+Exit code: 0
+
+Final output:
+✔ [368/375] Built FoundationsVII.Models.Finite.Phase5.ClosureEnvelope (1228s)
+✔ [369/375] Built FoundationsVII.Models.Finite.Phase5.All (424ms)
+✔ [370/375] Built FoundationsVII.Models.Finite.All (353ms)
+✔ [371/375] Built FoundationsVII.Release.Terminal (4.6s)
+✔ [372/375] Built FoundationsVII.Release.All (307ms)
+✔ [373/375] Built FoundationsVII.All (675ms)
+✔ [374/375] Built FoundationsVII (338ms)
+Build completed successfully (375 jobs).
+
+Scope: configured default roots/globs, not every dormant source file.
+Selected declaration/type/axiom evidence: B4_axioms_and_types.txt.
+Frozen original/copied source evidence: B4_source_hashes.json.

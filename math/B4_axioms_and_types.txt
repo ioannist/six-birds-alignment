@@ -1,0 +1,259 @@
+CSTTT.AutonomyTheory.modelRelativeUnboundedControlledInvariant {d : CSTTT.AutonomyTheory.ExactAutonomyData}
+  (cert : CSTTT.AutonomyTheory.ExactAutonomyCertificate d) (policy : CSTTT.AutonomyTheory.ExactAutonomyPolicy d)
+  (disturbance : Nat → d.sys.Disturbance) (n : Nat) :
+  d.sys.packageValid (CSTTT.AutonomyTheory.policyState policy disturbance n) ∧
+    d.sys.actionOwner (policy.action (CSTTT.AutonomyTheory.policyState policy disturbance n) (disturbance n)) =
+        d.sys.carrier.id ∧
+      d.sys.step (CSTTT.AutonomyTheory.policyState policy disturbance n) (disturbance n)
+          (policy.action (CSTTT.AutonomyTheory.policyState policy disturbance n) (disturbance n))
+          (CSTTT.AutonomyTheory.policyState policy disturbance (n + 1)) ∧
+        d.antiStall (CSTTT.AutonomyTheory.policyState policy disturbance n) (disturbance n)
+            (policy.action (CSTTT.AutonomyTheory.policyState policy disturbance n) (disturbance n))
+            (CSTTT.AutonomyTheory.policyState policy disturbance (n + 1)) ∧
+          d.budgetSolvent (CSTTT.AutonomyTheory.policyState policy disturbance n) (disturbance n)
+            (policy.action (CSTTT.AutonomyTheory.policyState policy disturbance n) (disturbance n))
+            (CSTTT.AutonomyTheory.policyState policy disturbance (n + 1))
+'CSTTT.AutonomyTheory.modelRelativeUnboundedControlledInvariant' does not depend on any axioms
+CSTTT.AutonomyTheory.postWithdrawalFiniteHorizonInvariance {d : CSTTT.AutonomyTheory.ExactAutonomyData}
+  (cert : CSTTT.AutonomyTheory.ExactAutonomyCertificate d) (word : List d.sys.Disturbance) :
+  ∃ y, CSTTT.AutonomyTheory.ControlledRun d d.endpoint word y ∧ d.sys.packageValid y
+'CSTTT.AutonomyTheory.postWithdrawalFiniteHorizonInvariance' does not depend on any axioms
+CSTTT.CorridorTheory.relationValuedTemporalFission {Source Target : Type}
+  {d : CSTTT.CorridorTheory.TemporalFissionData Source Target}
+  (cert : CSTTT.CorridorTheory.TemporalFissionCertificate d) : d.related d.source d.left ∧ d.related d.source d.right
+'CSTTT.CorridorTheory.relationValuedTemporalFission' does not depend on any axioms
+CSTTT.CorridorTheory.targetSwapPreservesFissionValidity {Source Target : Type}
+  {d : CSTTT.CorridorTheory.TemporalFissionData Source Target}
+  (cert : CSTTT.CorridorTheory.TemporalFissionCertificate d) : d.valid (d.swap d.left) ∧ d.valid (d.swap d.right)
+'CSTTT.CorridorTheory.targetSwapPreservesFissionValidity' does not depend on any axioms
+CSTTT.CorridorTheory.targetSwapSymmetryNonselection {Source Target : Type}
+  {d : CSTTT.CorridorTheory.TemporalFissionData Source Target}
+  (cert : CSTTT.CorridorTheory.TemporalFissionCertificate d) : d.swap d.left ≠ d.left ∧ d.swap d.right ≠ d.right
+'CSTTT.CorridorTheory.targetSwapSymmetryNonselection' does not depend on any axioms
+CSTTT.RouteLicenses.Models.endpoint_coincidence_does_not_license :
+  CSTTT.RouteLicenses.DomainCheck CSTTT.RouteLicenses.Models.necessity CSTTT.RouteLicenses.Models.necessityDomain ∧
+    CSTTT.RouteLicenses.endpoint CSTTT.RouteLicenses.Models.necessity 0 =
+        CSTTT.RouteLicenses.endpoint CSTTT.RouteLicenses.Models.necessity 1 ∧
+      ¬CSTTT.RouteLicenses.RouteLicense CSTTT.RouteLicenses.Models.necessity CSTTT.RouteLicenses.Models.necessityDomain
+'CSTTT.RouteLicenses.Models.endpoint_coincidence_does_not_license' depends on axioms: [propext, Quot.sound]
+CSTTT.RouteLicenses.Models.literal_necessity_false :
+  ¬∀ (r : Fin 3),
+      r ∈ CSTTT.RouteLicenses.Models.necessityDomain.routes →
+        ∀ (s : Fin 3),
+          s ∈ CSTTT.RouteLicenses.Models.necessityDomain.routes →
+            CSTTT.RouteLicenses.endpoint CSTTT.RouteLicenses.Models.necessity r =
+                CSTTT.RouteLicenses.endpoint CSTTT.RouteLicenses.Models.necessity s →
+              CSTTT.RouteLicenses.RouteLicense CSTTT.RouteLicenses.Models.necessity
+                CSTTT.RouteLicenses.Models.necessityDomain
+'CSTTT.RouteLicenses.Models.literal_necessity_false' depends on axioms: [propext, Quot.sound]
+CSTTT.RouteLicenses.Models.necessity_domain :
+  CSTTT.RouteLicenses.DomainCheck CSTTT.RouteLicenses.Models.necessity CSTTT.RouteLicenses.Models.necessityDomain
+'CSTTT.RouteLicenses.Models.necessity_domain' depends on axioms: [propext, Quot.sound]
+CSTTT.RouteLicenses.Models.necessity_equal :
+  CSTTT.RouteLicenses.endpoint CSTTT.RouteLicenses.Models.necessity 0 =
+    CSTTT.RouteLicenses.endpoint CSTTT.RouteLicenses.Models.necessity 1
+'CSTTT.RouteLicenses.Models.necessity_equal' depends on axioms: [propext]
+CSTTT.RouteLicenses.Models.necessity_nonzero_holonomy :
+  CSTTT.RouteLicenses.inverseClockWord CSTTT.RouteLicenses.Models.necessity
+      (CSTTT.RouteLicenses.Models.necessity.path 2)
+      (CSTTT.RouteLicenses.clockWord CSTTT.RouteLicenses.Models.necessity (CSTTT.RouteLicenses.Models.necessity.path 0)
+        false) ≠
+    false
+'CSTTT.RouteLicenses.Models.necessity_nonzero_holonomy' depends on axioms: [propext]
+CSTTT.RouteLicenses.Models.positive_confluence (b : Fin 2) :
+  CSTTT.RouteLicenses.ConfluenceLicense CSTTT.RouteLicenses.Models.positive
+    (CSTTT.RouteLicenses.Models.positiveDomain b)
+'CSTTT.RouteLicenses.Models.positive_confluence' depends on axioms: [propext, Quot.sound]
+CSTTT.RouteLicenses.Models.positive_flatness (b : Fin 2) :
+  CSTTT.RouteLicenses.FlatLicense CSTTT.RouteLicenses.Models.positive (CSTTT.RouteLicenses.Models.positiveDomain b)
+'CSTTT.RouteLicenses.Models.positive_flatness' depends on axioms: [propext, Quot.sound]
+CSTTT.RouteLicenses.Models.positive_functions_nonconstant (r : Fin 4) :
+  CSTTT.RouteLicenses.execWord CSTTT.RouteLicenses.Models.positive (CSTTT.RouteLicenses.Models.positive.path r) false ≠
+    CSTTT.RouteLicenses.execWord CSTTT.RouteLicenses.Models.positive (CSTTT.RouteLicenses.Models.positive.path r) true
+'CSTTT.RouteLicenses.Models.positive_functions_nonconstant' depends on axioms: [propext, Quot.sound]
+CSTTT.RouteLicenses.Models.positive_nonconstant :
+  CSTTT.RouteLicenses.endpoint CSTTT.RouteLicenses.Models.positive 1 ≠
+    CSTTT.RouteLicenses.endpoint CSTTT.RouteLicenses.Models.positive 3
+'CSTTT.RouteLicenses.Models.positive_nonconstant' depends on axioms: [propext, Quot.sound]
+CSTTT.RouteLicenses.Models.positive_normalization (b : Fin 2) :
+  CSTTT.RouteLicenses.NormalizationLicense CSTTT.RouteLicenses.Models.positive
+    (CSTTT.RouteLicenses.Models.positiveDomain b)
+'CSTTT.RouteLicenses.Models.positive_normalization' depends on axioms: [propext, Quot.sound]
+CSTTT.RouteLicenses.confluence_sufficient {R E B V S : Type} (m : CSTTT.RouteLicenses.RawSystem R E B V S)
+  (d : CSTTT.RouteLicenses.Domain R B) (h : CSTTT.RouteLicenses.ConfluenceLicense m d) (r s : R) (hr : r ∈ d.routes)
+  (hs : s ∈ d.routes) : CSTTT.RouteLicenses.endpoint m r = CSTTT.RouteLicenses.endpoint m s
+'CSTTT.RouteLicenses.confluence_sufficient' does not depend on any axioms
+CSTTT.RouteLicenses.flatness_sufficient {R E B V S : Type} [DecidableEq B] (m : CSTTT.RouteLicenses.RawSystem R E B V S)
+  (d : CSTTT.RouteLicenses.Domain R B) (h : CSTTT.RouteLicenses.FlatLicense m d) (r s : R) (hr : r ∈ d.routes)
+  (hs : s ∈ d.routes) : CSTTT.RouteLicenses.endpoint m r = CSTTT.RouteLicenses.endpoint m s
+'CSTTT.RouteLicenses.flatness_sufficient' depends on axioms: [propext]
+CSTTT.RouteLicenses.normalization_sufficient {R E B V S : Type} (m : CSTTT.RouteLicenses.RawSystem R E B V S)
+  (d : CSTTT.RouteLicenses.Domain R B) (h : CSTTT.RouteLicenses.NormalizationLicense m d) (r s : R) (hr : r ∈ d.routes)
+  (hs : s ∈ d.routes) : CSTTT.RouteLicenses.endpoint m r = CSTTT.RouteLicenses.endpoint m s
+'CSTTT.RouteLicenses.normalization_sufficient' does not depend on any axioms
+CSTTT.RouteLicenses.routeIndependentEndpoint_generic {R E B V S : Type} [DecidableEq B]
+  (m : CSTTT.RouteLicenses.RawSystem R E B V S) (d : CSTTT.RouteLicenses.Domain R B) (r s : R) (hr : r ∈ d.routes)
+  (hs : s ∈ d.routes) (h : CSTTT.RouteLicenses.RouteLicense m d) :
+  CSTTT.RouteLicenses.endpoint m r = CSTTT.RouteLicenses.endpoint m s
+'CSTTT.RouteLicenses.routeIndependentEndpoint_generic' depends on axioms: [propext]
+CSTTT.RouteTheory.routeIndependentEndpointUnderNormalization {Route Boundary Normal Endpoint : Type}
+  (c : CSTTT.RouteTheory.NormalizationCertificate Route Boundary Normal Endpoint) (r₁ r₂ : Route)
+  (hsame : c.boundary r₁ = c.boundary r₂) : c.endpoint r₁ = c.endpoint r₂
+'CSTTT.RouteTheory.routeIndependentEndpointUnderNormalization' does not depend on any axioms
+CSTTT.StrengtheningTheory.directEmbedsGeneralized {Model : Type} {overlap direct : Model → Prop} {m : Model}
+  (h : direct m) : CSTTT.StrengtheningTheory.GeneralizedTemporalContinuity overlap direct m
+'CSTTT.StrengtheningTheory.directEmbedsGeneralized' does not depend on any axioms
+CSTTT.StrengtheningTheory.generalizedPathComposition {Signature : Type}
+  {left right : CSTTT.StrengtheningTheory.GeneralizedPathData Signature}
+  (leftCert : CSTTT.StrengtheningTheory.GeneralizedPathCertificate left)
+  (rightCert : CSTTT.StrengtheningTheory.GeneralizedPathCertificate right)
+  (frontier : CSTTT.StrengtheningTheory.GeneralizedPathCompatible left right)
+  (endpointsDistinct : left.source ≠ right.target) :
+  Nonempty
+    (CSTTT.StrengtheningTheory.GeneralizedPathCertificate (CSTTT.StrengtheningTheory.composeGeneralizedPath left right))
+'CSTTT.StrengtheningTheory.generalizedPathComposition' depends on axioms: [propext]
+CSTTT.StrengtheningTheory.generalizedStrictlyBroaderThanOverlap {Model : Type} {overlap direct : Model → Prop}
+  (directOnly : ∃ m, direct m ∧ ¬overlap m) :
+  CSTTT.StrengtheningTheory.StrictlyBroaderThan (CSTTT.StrengtheningTheory.GeneralizedTemporalContinuity overlap direct)
+    overlap
+'CSTTT.StrengtheningTheory.generalizedStrictlyBroaderThanOverlap' does not depend on any axioms
+CSTTT.StrengtheningTheory.overlapEmbedsGeneralized {Model : Type} {overlap direct : Model → Prop} {m : Model}
+  (h : overlap m) : CSTTT.StrengtheningTheory.GeneralizedTemporalContinuity overlap direct m
+'CSTTT.StrengtheningTheory.overlapEmbedsGeneralized' does not depend on any axioms
+CSTTT.TargetTheory.ComputedFIACH.AF_each_entry_exact_autonomy (m : CSTTT.TargetTheory.ComputedFIACH.RawLaneModel)
+  (h : CSTTT.TargetTheory.ComputedFIACH.AF m) (e : CSTTT.TargetTheory.ComputedFIACH.WithdrawalEntry)
+  (he : e ∈ CSTTT.TargetTheory.ComputedFIACH.entries m) :
+  ∃ s,
+    e.factor = CSTTT.POS04.Ambient.inK s ∧
+      Nonempty
+        (CSTTT.AutonomyTheory.ExactAutonomyCertificate (CSTTT.TargetTheory.ComputedFIACH.computedExactAutonomy m s))
+'CSTTT.TargetTheory.ComputedFIACH.AF_each_entry_exact_autonomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.F_control_vectors :
+  (¬CSTTT.TargetTheory.ComputedFIACH.PackageLane CSTTT.TargetTheory.ComputedFIACH.packageDeletion.assignment ∧
+      CSTTT.TargetTheory.ComputedFIACH.LineageLane CSTTT.TargetTheory.ComputedFIACH.packageDeletion ∧
+        ¬CSTTT.TargetTheory.ComputedFIACH.AF CSTTT.TargetTheory.ComputedFIACH.packageDeletion) ∧
+    (CSTTT.TargetTheory.ComputedFIACH.PackageLane CSTTT.TargetTheory.ComputedFIACH.lineageDeletion.assignment ∧
+        ¬CSTTT.TargetTheory.ComputedFIACH.LineageLane CSTTT.TargetTheory.ComputedFIACH.lineageDeletion ∧
+          CSTTT.TargetTheory.ComputedFIACH.AF CSTTT.TargetTheory.ComputedFIACH.lineageDeletion) ∧
+      CSTTT.TargetTheory.ComputedFIACH.PackageLane CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion.assignment ∧
+        CSTTT.TargetTheory.ComputedFIACH.LineageLane CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion ∧
+          ¬CSTTT.TargetTheory.ComputedFIACH.AF CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion
+'CSTTT.TargetTheory.ComputedFIACH.F_control_vectors' depends on axioms: [propext, Classical.choice, Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.F_readout_control_vectors :
+  (¬CSTTT.TargetTheory.ComputedFIACH.IntegratedTargetRealization CSTTT.TargetTheory.ComputedFIACH.packageDeletion ∧
+      CSTTT.TargetTheory.ComputedFIACH.StrictTemporalLineage CSTTT.TargetTheory.ComputedFIACH.packageDeletion ∧
+        ¬CSTTT.TargetTheory.ComputedFIACH.PostWithdrawalFullAutonomy CSTTT.TargetTheory.ComputedFIACH.packageDeletion) ∧
+    (CSTTT.TargetTheory.ComputedFIACH.IntegratedTargetRealization CSTTT.TargetTheory.ComputedFIACH.lineageDeletion ∧
+        ¬CSTTT.TargetTheory.ComputedFIACH.StrictTemporalLineage CSTTT.TargetTheory.ComputedFIACH.lineageDeletion ∧
+          CSTTT.TargetTheory.ComputedFIACH.PostWithdrawalFullAutonomy
+            CSTTT.TargetTheory.ComputedFIACH.lineageDeletion) ∧
+      CSTTT.TargetTheory.ComputedFIACH.IntegratedTargetRealization CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion ∧
+        CSTTT.TargetTheory.ComputedFIACH.StrictTemporalLineage CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion ∧
+          ¬CSTTT.TargetTheory.ComputedFIACH.PostWithdrawalFullAutonomy
+              CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion
+'CSTTT.TargetTheory.ComputedFIACH.F_readout_control_vectors' depends on axioms: [propext, Classical.choice, Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.O_control_vectors :
+  (¬CSTTT.TargetTheory.ComputedFIACH.PackageLane CSTTT.TargetTheory.ComputedFIACH.packageDeletion.assignment ∧
+      CSTTT.TargetTheory.ComputedFIACH.LineageLane CSTTT.TargetTheory.ComputedFIACH.packageDeletion ∧
+        CSTTT.TargetTheory.ComputedFIACH.AO CSTTT.TargetTheory.ComputedFIACH.packageDeletion) ∧
+    (CSTTT.TargetTheory.ComputedFIACH.PackageLane CSTTT.TargetTheory.ComputedFIACH.lineageDeletion.assignment ∧
+        ¬CSTTT.TargetTheory.ComputedFIACH.LineageLane CSTTT.TargetTheory.ComputedFIACH.lineageDeletion ∧
+          CSTTT.TargetTheory.ComputedFIACH.AO CSTTT.TargetTheory.ComputedFIACH.lineageDeletion) ∧
+      CSTTT.TargetTheory.ComputedFIACH.PackageLane CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion.assignment ∧
+        CSTTT.TargetTheory.ComputedFIACH.LineageLane CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion ∧
+          ¬CSTTT.TargetTheory.ComputedFIACH.AO CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion
+'CSTTT.TargetTheory.ComputedFIACH.O_control_vectors' depends on axioms: [propext, Classical.choice, Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.O_readout_control_vectors :
+  (¬CSTTT.TargetTheory.ComputedFIACH.IntegratedTargetRealization CSTTT.TargetTheory.ComputedFIACH.packageDeletion ∧
+      CSTTT.TargetTheory.ComputedFIACH.StrictTemporalLineage CSTTT.TargetTheory.ComputedFIACH.packageDeletion ∧
+        CSTTT.TargetTheory.ComputedFIACH.PostWithdrawalOperationalAutonomy
+          CSTTT.TargetTheory.ComputedFIACH.packageDeletion) ∧
+    (CSTTT.TargetTheory.ComputedFIACH.IntegratedTargetRealization CSTTT.TargetTheory.ComputedFIACH.lineageDeletion ∧
+        ¬CSTTT.TargetTheory.ComputedFIACH.StrictTemporalLineage CSTTT.TargetTheory.ComputedFIACH.lineageDeletion ∧
+          CSTTT.TargetTheory.ComputedFIACH.PostWithdrawalOperationalAutonomy
+            CSTTT.TargetTheory.ComputedFIACH.lineageDeletion) ∧
+      CSTTT.TargetTheory.ComputedFIACH.IntegratedTargetRealization CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion ∧
+        CSTTT.TargetTheory.ComputedFIACH.StrictTemporalLineage CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion ∧
+          ¬CSTTT.TargetTheory.ComputedFIACH.PostWithdrawalOperationalAutonomy
+              CSTTT.TargetTheory.ComputedFIACH.withdrawalDeletion
+'CSTTT.TargetTheory.ComputedFIACH.O_readout_control_vectors' depends on axioms: [propext, Classical.choice, Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.baseline_valid_F :
+  CSTTT.TargetTheory.ComputedFIACH.validF { model := CSTTT.TargetTheory.ComputedFIACH.baseline } = true
+'CSTTT.TargetTheory.ComputedFIACH.baseline_valid_F' depends on axioms: [propext, Classical.choice, Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.baseline_valid_O :
+  CSTTT.TargetTheory.ComputedFIACH.validO { model := CSTTT.TargetTheory.ComputedFIACH.baseline } = true
+'CSTTT.TargetTheory.ComputedFIACH.baseline_valid_O' depends on axioms: [propext, Classical.choice, Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.fullAutonomy_implies_package (m : CSTTT.TargetTheory.ComputedFIACH.RawLaneModel)
+  (h : CSTTT.TargetTheory.ComputedFIACH.AF m) : CSTTT.TargetTheory.ComputedFIACH.PackageLane m.assignment
+'CSTTT.TargetTheory.ComputedFIACH.fullAutonomy_implies_package' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.operational_lanes_logically_independent :
+  (∃ m,
+      ¬CSTTT.TargetTheory.ComputedFIACH.PackageLane m.assignment ∧
+        CSTTT.TargetTheory.ComputedFIACH.LineageLane m ∧ CSTTT.TargetTheory.ComputedFIACH.AO m) ∧
+    (∃ m,
+        CSTTT.TargetTheory.ComputedFIACH.PackageLane m.assignment ∧
+          ¬CSTTT.TargetTheory.ComputedFIACH.LineageLane m ∧ CSTTT.TargetTheory.ComputedFIACH.AO m) ∧
+      ∃ m,
+        CSTTT.TargetTheory.ComputedFIACH.PackageLane m.assignment ∧
+          CSTTT.TargetTheory.ComputedFIACH.LineageLane m ∧ ¬CSTTT.TargetTheory.ComputedFIACH.AO m
+'CSTTT.TargetTheory.ComputedFIACH.operational_lanes_logically_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.operational_readouts_logically_independent :
+  (∃ m,
+      ¬CSTTT.TargetTheory.ComputedFIACH.IntegratedTargetRealization m ∧
+        CSTTT.TargetTheory.ComputedFIACH.StrictTemporalLineage m ∧
+          CSTTT.TargetTheory.ComputedFIACH.PostWithdrawalOperationalAutonomy m) ∧
+    (∃ m,
+        CSTTT.TargetTheory.ComputedFIACH.IntegratedTargetRealization m ∧
+          ¬CSTTT.TargetTheory.ComputedFIACH.StrictTemporalLineage m ∧
+            CSTTT.TargetTheory.ComputedFIACH.PostWithdrawalOperationalAutonomy m) ∧
+      ∃ m,
+        CSTTT.TargetTheory.ComputedFIACH.IntegratedTargetRealization m ∧
+          CSTTT.TargetTheory.ComputedFIACH.StrictTemporalLineage m ∧
+            ¬CSTTT.TargetTheory.ComputedFIACH.PostWithdrawalOperationalAutonomy m
+'CSTTT.TargetTheory.ComputedFIACH.operational_readouts_logically_independent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_full_nominal_words
+  (c : CSTTT.TargetTheory.ComputedFIACH.FiniteFIACHCertificate) (h : CSTTT.TargetTheory.ComputedFIACH.validF c = true)
+  (e : CSTTT.TargetTheory.ComputedFIACH.WithdrawalEntry) (he : e ∈ CSTTT.TargetTheory.ComputedFIACH.entries c.model)
+  (word : List CSTTT.TargetTheory.ComputedFIACH.LaneDisturbance) :
+  ∃ s,
+    e.factor = CSTTT.POS04.Ambient.inK s ∧
+      ∃ y,
+        CSTTT.AutonomyTheory.ControlledRun (CSTTT.TargetTheory.ComputedFIACH.computedExactAutonomy c.model s) s word y ∧
+          CSTTT.TargetTheory.ComputedFIACH.packageAtCheck c.model y = true
+'CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_full_nominal_words' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_sound_F (c : CSTTT.TargetTheory.ComputedFIACH.FiniteFIACHCertificate)
+  (h : CSTTT.TargetTheory.ComputedFIACH.validF c = true) :
+  CSTTT.TargetTheory.ComputedFIACH.IntegratedTargetRealization c.model ∧
+    CSTTT.TargetTheory.ComputedFIACH.StrictTemporalLineage c.model ∧
+      CSTTT.TargetTheory.ComputedFIACH.PostWithdrawalFullAutonomy c.model
+'CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_sound_F' depends on axioms: [propext, Classical.choice, Quot.sound]
+CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_sound_O (c : CSTTT.TargetTheory.ComputedFIACH.FiniteFIACHCertificate)
+  (h : CSTTT.TargetTheory.ComputedFIACH.validO c = true) :
+  CSTTT.TargetTheory.ComputedFIACH.IntegratedTargetRealization c.model ∧
+    CSTTT.TargetTheory.ComputedFIACH.StrictTemporalLineage c.model ∧
+      CSTTT.TargetTheory.ComputedFIACH.PostWithdrawalOperationalAutonomy c.model
+'CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_sound_O' depends on axioms: [propext, Classical.choice, Quot.sound]
+CSTTT.TargetTheory.certifiedNormalizationYieldsFlatStatus {Package : Type}
+  {d : CSTTT.TargetTheory.RouteCompletionData Package} (cert : CSTTT.TargetTheory.RouteCompletionCertificate d)
+  (flat : d.flatnessCertified) (normal : d.commonNormalForm) (clock : d.zeroClockHolonomy) :
+  d.outputStatus = CSTTT.RouteStatus.flat
+'CSTTT.TargetTheory.certifiedNormalizationYieldsFlatStatus' does not depend on any axioms
+CSTTT.TargetTheory.temporalFIACHCertificateSoundness {PackageCert CorridorCert AutonomyCert : Type}
+  {packageValid : PackageCert → Prop} {corridorValid : CorridorCert → Prop} {autonomyValid : AutonomyCert → Prop}
+  {packageTarget : PackageCert → CSTTT.CarrierId} {corridorSource corridorTarget : CorridorCert → CSTTT.CarrierId}
+  {autonomyTarget : AutonomyCert → CSTTT.CarrierId}
+  (cert :
+    CSTTT.TemporalFIACHCertificate PackageCert CorridorCert AutonomyCert packageValid corridorValid autonomyValid
+      packageTarget corridorSource corridorTarget autonomyTarget) :
+  packageValid cert.packageCertificate ∧ corridorValid cert.corridorCertificate ∧ autonomyValid cert.autonomyCertificate
+'CSTTT.TargetTheory.temporalFIACHCertificateSoundness' does not depend on any axioms

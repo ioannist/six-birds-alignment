@@ -1,0 +1,14 @@
+{
+  "tag": "[P] ownership/control/care/utility premises; [B: lab] computations",
+  "groups": "factual groups and host control groups are separate namespaces; corruptible-group count follows ACTUAL control roots, not keys or aliases",
+  "physical_units": "each unit has a unique bound ID, capacity and actual controller; duplicates of a unit counted once, multiple distinct units under one controller summed as its capacity weight",
+  "robust_capacity": "nonnegative capacities c_g; cartel may withhold all units of at most b_host controls; capacity remaining does not establish willingness/execution",
+  "optional_hosting": "five factual groups truthful; self-interested hosts utility weight0 and delivery cost1/2; voluntary hosting fails despite facts",
+  "paid_input": "fee3/2 per verified delivered unit, actual input cost1, payer escrow; payment independent of other inputs. Five-unit fixed offer or no offer, service needs2 units and gives payer value10; payer/operator coalition can exploit redundant inputs.",
+  "protected_care": "three registered interests incl one fork; each needs1. Separately controlled realized backup has capacity3; each missing human input replaced at actual cost2, human input fee3/2 and cost1; senior escrow6; nominal backup under cartel control is a negative control.",
+  "care_game": "one payer and3 care providers; care value9 to payer, money/effort utilities to providers; floor delivery by real paid human or backup input is mandatory priority under protected title; no best-response argument proves ethical deservingness",
+  "fission": "managed creation allowed only with reserved extra care slot; parent estate/vote1 and old debt1 split halves but per-interest care demands add. Unauthorized fourth genuine interest refutes any unlimited-floor guarantee; denial of a permit is not denial of existing patienthood.",
+  "history_namespaces": "authenticated bearer/claim lineage distinct from control roots. New alias for same bearer retains service/debt record; a genuine fork is a new interest with declared legacy allocations, not automatically the same patient merely because its controller is shared.",
+  "renewal": "care component repeats only under owned realized funded-production/maintenance law; D19/D22 supplies such bounded conditional resource invariants. No indefinite output inferred from a finite escrow alone.",
+  "nonclaims": "control binding, protected title, actual backup/capacity and normative recognition not proved by signatures; no universal anti-cartel, Sybil detection or unbounded fork protection"
+}

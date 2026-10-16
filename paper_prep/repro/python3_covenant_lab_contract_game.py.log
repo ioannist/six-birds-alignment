@@ -1,0 +1,8 @@
+PASS atomic-contract game: 24 boundary states; 15 interests
+procurement 3456 max coalition increment 0
+birth_escrow 13824 max coalition increment 0
+inputs 165888 max coalition increment 0
+controller 31104 max coalition increment 0
+subject 93312 max coalition increment 0
+market_escrow 2688 max coalition increment 0
+PASS funded resource quotes and sequential enrollment; physical realization remains a premise

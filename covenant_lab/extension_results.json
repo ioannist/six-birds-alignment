@@ -1,0 +1,144 @@
+{
+  "tag": "[B: lab]",
+  "grade": "computed exact",
+  "simulations": 0,
+  "E1": {
+    "survival_phase_matrix": [
+      "1/3 - pi/3",
+      "pi/3",
+      "0",
+      "1"
+    ],
+    "weights": [
+      "1",
+      "beta/3",
+      "2*beta**2*pi/9 + beta**2/9",
+      "-2*beta**3*pi**2/27 + 10*beta**3*pi/27 + beta**3/27",
+      "2*beta**4*pi**3/81 - 4*beta**4*pi**2/27 + 4*beta**4*pi/9 + beta**4/81"
+    ],
+    "differences": [
+      "-1",
+      "-10/9",
+      "32",
+      "-32"
+    ],
+    "pre_margin_general": "(64*beta**3*pi**2 - 320*beta**3*pi - 32*beta**3 + 192*beta**2*pi + 96*beta**2 - 10*beta - 27)/27",
+    "post_margin_general": "-(288*beta**3 - 288*beta**2 + 10*beta + 9)/9",
+    "beta": "3/4",
+    "pre_margin": "(3*pi - 2)*(3*pi - 1)/9",
+    "post_margin": "8/3",
+    "pre_passing_pi": "[0,1/3] union [2/3,1]",
+    "weight_derivatives": [
+      "0",
+      "1/8",
+      "-(2*pi - 5)/32",
+      "3*(pi**2 - 4*pi + 6)/128"
+    ],
+    "refutation": {
+      "pi_0": "2/9",
+      "pi_half": "-1/36"
+    },
+    "positive_grim_pre": "-(3*beta**2*pi - 3*beta**2 - beta*pi + 6*beta - 3)/(2*(beta - 1)*(beta*pi - beta + 3))",
+    "positive_grim_post": "-(3*beta - 1)/(2*(beta - 1))",
+    "full_cycle_cases": [
+      {
+        "pi": "0",
+        "public_states": 26,
+        "all_nonsingleton_deviations": [
+          {
+            "phase": 0,
+            "player": 0,
+            "margin": "2/9"
+          },
+          {
+            "phase": 0,
+            "player": 1,
+            "margin": "2/9"
+          },
+          {
+            "phase": 1,
+            "player": 0,
+            "margin": "8/3"
+          },
+          {
+            "phase": 1,
+            "player": 1,
+            "margin": "8/3"
+          }
+        ],
+        "singleton_states_checked": 24,
+        "policy_passes": true
+      },
+      {
+        "pi": "1/2",
+        "public_states": 26,
+        "all_nonsingleton_deviations": [
+          {
+            "phase": 0,
+            "player": 0,
+            "margin": "-1/36"
+          },
+          {
+            "phase": 0,
+            "player": 1,
+            "margin": "-1/36"
+          },
+          {
+            "phase": 1,
+            "player": 0,
+            "margin": "8/3"
+          },
+          {
+            "phase": 1,
+            "player": 1,
+            "margin": "8/3"
+          }
+        ],
+        "singleton_states_checked": 24,
+        "policy_passes": false
+      },
+      {
+        "pi": "1",
+        "public_states": 26,
+        "all_nonsingleton_deviations": [
+          {
+            "phase": 0,
+            "player": 0,
+            "margin": "2/9"
+          },
+          {
+            "phase": 0,
+            "player": 1,
+            "margin": "2/9"
+          },
+          {
+            "phase": 1,
+            "player": 0,
+            "margin": "8/3"
+          },
+          {
+            "phase": 1,
+            "player": 1,
+            "margin": "8/3"
+          }
+        ],
+        "singleton_states_checked": 24,
+        "policy_passes": true
+      }
+    ],
+    "subjective_prior_margin": "7/72",
+    "true_pi_half_margin": "-1/36"
+  },
+  "E2": {
+    "service_margin": "2*d - 1",
+    "entry_exit_margin": "2*d - 3/2",
+    "provider_margin": "1/2 - d/4",
+    "buyer_threshold": "3/4",
+    "outside_production_margin": "(32*d**2 - 16*d + 1)/8",
+    "outside_roots": [
+      "1/4 - sqrt(2)/8",
+      "sqrt(2)/8 + 1/4"
+    ],
+    "scope": "buyer monotonicity under fixed outside operations; refuted after the explicitly declared outside production extension"
+  }
+}

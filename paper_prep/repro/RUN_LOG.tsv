@@ -1,0 +1,36 @@
+start	end	exit	command	last_line
+2026-10-08T09:39:12+00:00	2026-10-08T09:39:12+00:00	0	python3 covenant_lab/model.py	grim 1 0 0 99/100 True 0.9
+2026-10-08T09:39:12+00:00	2026-10-08T09:39:18+00:00	0	python3 covenant_lab/symbolic.py	Bonus derivative certificates: 13 13
+2026-10-08T09:39:18+00:00	2026-10-08T09:39:23+00:00	0	python3 covenant_lab/verify.py	{'k': 2, 'stationary_law': ['60654859/73455200', '152361/3672760', '160019/3672760', '152361/3672760', '137541/73455200', '19/183638', '160019/3672760', '19/183638', '381/183638'], 'GG_mass': '6065485
+2026-10-08T09:39:23+00:00	2026-10-08T09:39:25+00:00	0	python3 covenant_lab/r2_models.py	hosting 13/16 47/128
+2026-10-08T09:39:25+00:00	2026-10-08T09:39:25+00:00	0	python3 covenant_lab/r2_verify.py	r2_verify.py PASS: 1296 graded deviations; 7776 hosting profiles; 5 targets exact.
+2026-10-08T09:39:25+00:00	2026-10-08T09:39:41+00:00	0	python3 covenant_lab/audit.py	PASS 12007 exact comparisons; no simulations
+2026-10-08T09:39:41+00:00	2026-10-08T09:39:41+00:00	0	python3 covenant_lab/extensions.py	PASS E1: grim positive family and Bayesian mismatch; E2: threshold and disconnected control
+2026-10-08T09:39:41+00:00	2026-10-08T09:39:41+00:00	0	python3 covenant_lab/carriers.py	PASS exact declared carriers: C13, C2, C3, C5, C4, C14, C6, C7, C8, C9, C10, D14, D20, D22, D23
+2026-10-08T09:39:41+00:00	2026-10-08T09:41:15+00:00	0	python3 covenant_lab/gates.py	PASS 2768896 control frames; 11075584 private extensions; 8192 worlds; 169 macros/date
+2026-10-08T09:41:15+00:00	2026-10-08T09:41:15+00:00	0	python3 covenant_lab/integrated.py	OPEN repaired full joint-game certificate; no self-carrying claim
+2026-10-08T09:41:15+00:00	2026-10-08T09:41:26+00:00	0	python3 covenant_lab/integrated_game.py	PASS resource quote: 96 branches; no self-carrying claim
+2026-10-08T09:41:26+00:00	2026-10-08T09:41:40+00:00	0	python3 covenant_lab/integrated_coalitions.py	REFUTED every-phase coalition resistance: {'financier': Fraction(45, 2), 'controller': Fraction(1, 2)}
+2026-10-08T09:41:40+00:00	2026-10-08T09:41:55+00:00	0	python3 covenant_lab/integrated_priority.py	REFUTED zero-grade purchase phase: {'host0': Fraction(3, 16), 'host1': Fraction(3, 16), 'host2': Fraction(1, 8), 'client': Fraction(3, 2)}
+2026-10-08T09:41:55+00:00	2026-10-08T09:41:55+00:00	0	python3 covenant_lab/atomic_service.py	CONTROL: all-exit also equilibrium; non-atomic deviation gain 9/8
+2026-10-08T09:41:55+00:00	2026-10-08T09:44:27+00:00	0	python3 covenant_lab/contract_game.py	PASS funded resource quotes and sequential enrollment; physical realization remains a premise
+2026-10-08T09:44:27+00:00	2026-10-08T09:44:31+00:00	0	python3 covenant_lab/assessment_games.py	threshold numerator -823*d**2 + 1780*d - 800
+2026-10-08T09:44:31+00:00	2026-10-08T09:44:31+00:00	0	python3 covenant_lab/role_privacy.py	CONTROLS: future interface exposes h; singleton fibers vacuous; full-support statistical guess3/4
+2026-10-08T09:44:31+00:00	2026-10-08T09:44:31+00:00	0	python3 covenant_lab/control_groups.py	REFUTED unlimited fork floor; no recognition inferred from group/grade fields
+2026-10-08T09:44:31+00:00	2026-10-08T09:44:34+00:00	0	python3 covenant_lab/type_evidence.py	PASS finite posterior repair: 8190 word checks; forecast error <= 123/3364 ; genuine merger stored
+2026-10-08T09:44:34+00:00	2026-10-08T09:44:35+00:00	0	python3 covenant_lab/adoption_population.py	CONTROLS: high-entry partial absorption; license loss collapse; trembles remove permanent adoption
+2026-10-08T09:44:35+00:00	2026-10-08T09:46:08+00:00	0	python3 covenant_lab/corridor_game.py	corridor K 8 d 1 Nash minimum 0 binding minimum -1/4
+2026-10-08T09:46:08+00:00	2026-10-08T09:46:08+00:00	0	python3 math/c15_sources.py	PASS conditional factual-bit decoder; WITNESSED FAILURE public-grade C4 hiddenness; both lab scopes explicit
+2026-10-08T09:46:08+00:00	2026-10-08T09:47:18+00:00	0	python3 lean/bootstrap_cache.py	Copied 2111 modules; Mathlib 8f9d9cff6bd728b17a24e163c9402775d9e6a365 offline
+2026-10-08T09:47:18+00:00	2026-10-08T09:47:18+00:00	0	python3 math/update_axiom_audit.py	Generated checks for 127 local theorems
+2026-10-08T09:47:18+00:00	2026-10-08T09:47:36+00:00	0	bash lean/build.sh	PASS: build and axiom audit
+2026-10-08T09:47:36+00:00	2026-10-08T09:47:53+00:00	0	python3 covenant_lab/audit.py	PASS 12007 exact comparisons; no simulations
+2026-10-08T09:47:53+00:00	2026-10-08T09:47:53+00:00	0	python3 math/validate_delivery.py	PASS: ratified/source hashes, exact edit cells, all target files, 127 theorem mappings/axiom receipts
+2026-10-08T09:47:53+00:00	2026-10-08T09:47:54+00:00	0	python3 math/b4_prepare.py	Existing source-frozen scratch retained; use b4_audit.py to compare the corpus
+2026-10-08T09:47:54+00:00	2026-10-08T09:47:55+00:00	0	cd lean/corpus_scratch/transcendence/lean && lake build	Build completed successfully (375 jobs).
+2026-10-08T09:47:55+00:00	2026-10-08T09:48:01+00:00	0	python3 math/b4_audit.py	PASS B4: 39 declarations; 499 frozen source hashes; nonstandard axioms: []
+# addendum 2026-10-14 (D20 source reconciliation)
+2026-10-14T12:44:03+00:00	2026-10-14T12:44:03+00:00	0	python3 math/c15_sources.py	PASS conditional factual-bit decoder; WITNESSED FAILURE public-grade C4 hiddenness; both lab scopes explicit
+2026-10-14T12:44:03+00:00	2026-10-14T12:44:07+00:00	0	python3 covenant_lab/verify.py	{'k': 2, 'stationary_law': ['60654859/73455200', '152361/3672760', '160019/3672760', '152361/3672760', '137541/73455200', '19/183638', '160019/3672760', '19/183
+2026-10-14T12:44:07+00:00	2026-10-14T12:44:21+00:00	0	python3 covenant_lab/audit.py	PASS 12007 exact comparisons; no simulations
+2026-10-14T12:44:21+00:00	2026-10-14T12:44:21+00:00	0	python3 math/validate_delivery.py	PASS: ratified/source hashes, exact edit cells, all target files, 127 theorem mappings/axiom receipts

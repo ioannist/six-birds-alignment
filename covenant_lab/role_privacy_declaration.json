@@ -1,0 +1,11 @@
+{
+  "tag": "[P] carrier/interface/prior; [B: lab] new mathematics",
+  "carrier": "M=(action a, hidden h), full Boolean product as realized support",
+  "current_channels": "constants and action readout a; authoritative observer can recover contracted action",
+  "C4prime": "on each fixed-action fiber, no nonconstant private h readout is recoverable through an admitted current channel; this product-carrier predicate differs from original C4",
+  "future": "native step F(a,h)=(a XOR h,h); future public action sequence first two steps is (a XOR h,a), injective and makes M genuinely predictive",
+  "connector": "authorized private toggle(a,h)=(a,1-h) preserves current action and changes predictive class",
+  "controls": "publish h or next action; restrict to constant channels; singleton action fibers; correlated full-support prior diagonal3/8/off-diagonal1/8",
+  "package": "unchanged full C-package includes original C4; replacing C4 by C4prime requires a new contract and soundness bridge, not a source-grade promotion",
+  "nonclaims": "current conditional structural privacy is not global statistical secrecy, future transcript secrecy, consciousness or patienthood"
+}

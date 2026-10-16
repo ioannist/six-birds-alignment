@@ -1,0 +1,60 @@
+{
+  "artifact": {
+    "bytes": 772253,
+    "filename": "Tsiokos_2026_Aligning_AI_Requires_Aligning_with_Each_Other_A_Covenant.pdf",
+    "pages": 58,
+    "path": "paper/submission/artifacts/Tsiokos_2026_Aligning_AI_Requires_Aligning_with_Each_Other_A_Covenant.pdf",
+    "sha256": "8c641a37045c663e78bbc4139c6a4656cc52f459fa905d6eda6255a91afa867c",
+    "source_git_commit": "1af445529dffb2ace736e69feac0fffc4f264a34",
+    "validated_values": {
+      "copyright": "© 2026",
+      "license": "CC-BY 4.0",
+      "paper version": "Preprint v1.0",
+      "publication date": "16 October 2026",
+      "reserved DOI": "10.5281/zenodo.23413556"
+    }
+  },
+  "assembled_at_utc": "2026-10-16T08:37:26.952728+00:00",
+  "dashboard_url": "https://zenodo.org/deposit/23413556",
+  "deposition_id": 23413556,
+  "doi_reservation": {
+    "client": "datacite",
+    "identifier": "10.5281/zenodo.23413556",
+    "provider": "datacite",
+    "verified_via": "rdm_pid_table"
+  },
+  "draft_source": "created",
+  "manual_dashboard_publication_only": true,
+  "metadata": {
+    "citation_count": 118,
+    "path": "paper/submission/zenodo-metadata.json",
+    "sha256": "396f1ce878f19ec9110edfa087bc3a5a082934fffa984430722aa8d58d3b5a08",
+    "skipped_citations": [
+      {
+        "bib_key": "desai2018",
+        "reason": "no supported identifier field"
+      },
+      {
+        "bib_key": "tsiokos2026v15",
+        "reason": "no supported identifier field"
+      }
+    ]
+  },
+  "paper_release_include": "paper/includes/release_metadata.tex",
+  "publication_date": "2026-10-16",
+  "remote_file": {
+    "bytes": 772253,
+    "filename": "Tsiokos_2026_Aligning_AI_Requires_Aligning_with_Each_Other_A_Covenant.pdf",
+    "md5": "c7a47407005a41b3560a17aedff5fb37",
+    "sha256": "8c641a37045c663e78bbc4139c6a4656cc52f459fa905d6eda6255a91afa867c",
+    "verified": true
+  },
+  "remote_metadata": {
+    "desired_sha256": "396f1ce878f19ec9110edfa087bc3a5a082934fffa984430722aa8d58d3b5a08",
+    "modified": "2026-10-16T08:49:12.825109+00:00",
+    "sha256": "8cf6c4f31ba8ccd5be34d2bcceaa2de894074b6fe2cdd63cf484160e71393120"
+  },
+  "reserved_doi": "10.5281/zenodo.23413556",
+  "schema_version": 1,
+  "stage": "metadata_synced"
+}

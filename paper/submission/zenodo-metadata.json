@@ -1,0 +1,649 @@
+{
+  "metadata": {
+    "access_right": "open",
+    "creators": [
+      {
+        "affiliation": "Automorph Inc.",
+        "name": "Tsiokos, Ioannis",
+        "orcid": "0009-0009-7659-5964"
+      }
+    ],
+    "custom": {
+      "code:codeRepository": "https://github.com/ioannist/six-birds-alignment",
+      "code:programmingLanguage": [
+        {
+          "id": "lean",
+          "title": {
+            "en": "Lean"
+          }
+        },
+        {
+          "id": "python",
+          "title": {
+            "en": "Python"
+          }
+        },
+        {
+          "id": "tex",
+          "title": {
+            "en": "TeX"
+          }
+        }
+      ]
+    },
+    "description": "<p>When an AI system acts for some people but binds others, obedience no longer settles whether it acts rightly. I argue that alignment is then a relation among three bodies: the system, its principals and the people its acts bind. Three theses follow, under stated premises. Completing alignment requires valid authorization covering the system's binding acts, so aligning AI requires humans to align with each other, through authorization and coordination, which existing institutions may already supply, not shared values. Alignment is judged over time, not by a snapshot lacking required history; a description that predicts well can lose who is owed what. Evaluating any alignment scheme rests on normative choices, which I itemize as an invoice: any entry may be refused, but refusal cannot supply a missing proof. Scoped formal results show other shortcuts failing: agreeing parts need not make an acceptable whole, and the auditors studied cannot fully certify themselves. The roles alignment needs do not require the AI to be conscious. Consciousness bears instead on whom alignment serves, and a candidate subject can be protected while its consciousness is unproved. I propose a covenant between humans and AI systems: duties of aid and protection, and care that does not depend on one's service record. On finite models, a good record need not mean accepting interruption, and the covenant's upkeep, modelled among humans, holds under stated premises, not shown to sustain itself in practice. I settle neither how to complete alignment nor whether any AI system is conscious.</p>\n<p>Code, exact result data, the Lean development and the mathematical notes: <a href=\"https://github.com/ioannist/six-birds-alignment\">https://github.com/ioannist/six-birds-alignment</a> (release v1.0).</p>",
+    "imprint_publisher": "Zenodo",
+    "keywords": [
+      "AI alignment",
+      "multi-principal alignment",
+      "social choice",
+      "indirect reciprocity",
+      "moral status",
+      "formal methods",
+      "Six Birds Theory",
+      "emergence calculus"
+    ],
+    "language": "eng",
+    "license": "cc-by-4.0",
+    "prereserve_doi": {
+      "doi": "10.5281/zenodo.23413556",
+      "recid": 23413556
+    },
+    "publication_date": "2026-10-16",
+    "publication_type": "preprint",
+    "related_identifiers": [
+      {
+        "identifier": "10.1007/s11023-020-09539-2",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1145/3306618.3314250",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "arXiv:2006.04948",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.1007/s13347-023-00606-x",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/s11098-025-02300-4",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "arXiv:2012.08630",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.1017/S0266267102001098",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "arXiv:2404.10271",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.1007/s00146-017-0760-1",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/s11098-024-02224-5",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/s10676-010-9235-5",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.7551/mitpress/11444.001.0001",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1007/s11948-019-00119-x",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/s10806-013-9486-3",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1111/misp.12032",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1023/B:MIND.0000035461.63578.9d",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "arXiv:2308.08708",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "arXiv:2411.00986",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.1007/s10676-017-9430-8",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "arXiv:1701.01302",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.1145/3287560.3287598",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.1007/978-3-030-30371-6",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1007/s11098-024-02249-w",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/s11229-023-04367-0",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1038/s41562-022-01383-x",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.24963/ijcai.2017/32",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "9780631144496",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.2307/2297925",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1038/31225",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1016/j.jtbi.2004.06.005",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1016/j.jtbi.2005.08.008",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1073/pnas.1810565115",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.7554/eLife.44269",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.2307/1911307",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "9780465021215",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1093/acprof:oso/9780195300796.001.0001",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1016/0022-5193(64)90038-4",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1016/0022-5193(64)90039-6",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.2307/2234133",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1016/0047-2727(84)90023-9",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "9780316489362",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1017/S0043887100020013",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1017/CBO9780511807763",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1017/CBO9781139165228",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.2307/2951491",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "arXiv:1712.06365",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "https://intelligence.org/files/Corrigibility.pdf",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.1023/A:1010388907793",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.52202/068431-2011",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "arXiv:2212.08073",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "https://intelligence.org/files/CEV.pdf",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "arXiv:1805.00899",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "arXiv:2312.09390",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "arXiv:1810.08575",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "arXiv:2209.10652",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "arXiv:1606.03137",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.1145/3630106.3658979",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.5281/zenodo.18365949",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23118272",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23233137",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23233188",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23096391",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23087000",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23187549",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23097905",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23097908",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23097917",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23097919",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23097922",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23097934",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23097936",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23097938",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23097945",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23118261",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.5281/zenodo.23184176",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "https://ai-alignment.com/clarifying-ai-alignment-cec47cd69dd6",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "arXiv:1811.07871",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "arXiv:2209.00626",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "9780525558613",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "arXiv:2404.16244",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "https://cdn.aaai.org/AAAI/1996/AAAI96-172.pdf",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "https://proceedings.mlr.press/v80/icarte18a.html",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "arXiv:1906.01820",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "arXiv:2401.05566",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "arXiv:2412.14093",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "https://docs.google.com/document/d/1WwsnJQstPq91_Yh-Ch2XRL8H_EpsnjrC1dwZXR37PC8",
+        "relation": "cites",
+        "resource_type": "publication-report"
+      },
+      {
+        "identifier": "10.1515/9781400882618-006",
+        "relation": "cites",
+        "resource_type": "publication-section"
+      },
+      {
+        "identifier": "10.1002/j.1538-7305.1950.tb00463.x",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1007/3-540-27659-9",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1088/1367-2630/13/11/113036",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1002/047174882X",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1086/257678",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "arXiv:2312.08358",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "https://ebooks.iospress.nl/volumearticle/4114",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "https://www.auai.org/uai2016/proceedings/papers/68.pdf",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.1145/3278721.3278750",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "arXiv:1912.01683",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.1007/s11098-024-02153-3",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "arXiv:2312.06942",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "https://virginialawreview.org/articles/ai-rights-for-human-safety/",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "https://intelligence.org/files/TilingAgentsDraft.pdf",
+        "relation": "cites",
+        "resource_type": "publication-report"
+      },
+      {
+        "identifier": "https://intelligence.org/files/VingeanReflection.pdf",
+        "relation": "cites",
+        "resource_type": "publication-report"
+      },
+      {
+        "identifier": "arXiv:2311.14125",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.52202/085713-4186",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "arXiv:2412.19010",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.1073/pnas.2213709120",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.52202/068431-2766",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "10.1126/science.adq2852",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1145/3799709",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.52202/079017-2557",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "arXiv:2404.13038",
+        "relation": "cites",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "identifier": "10.1201/9781351251389-21",
+        "relation": "cites",
+        "resource_type": "publication-section"
+      },
+      {
+        "identifier": "10.1609/aaai.v37i13.26791",
+        "relation": "cites",
+        "resource_type": "publication-conferencepaper"
+      },
+      {
+        "identifier": "arXiv:2502.14143",
+        "relation": "cites",
+        "resource_type": "publication-report"
+      },
+      {
+        "identifier": "9780198247722",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1515/9780691213248",
+        "relation": "cites",
+        "resource_type": "publication-book"
+      },
+      {
+        "identifier": "10.1017/S1352325200000434",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      },
+      {
+        "identifier": "10.1111/j.1467-9248.2010.00845.x",
+        "relation": "cites",
+        "resource_type": "publication-article"
+      }
+    ],
+    "title": "Aligning AI Requires Aligning with Each Other: A Covenant",
+    "upload_type": "publication"
+  }
+}

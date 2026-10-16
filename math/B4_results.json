@@ -1,0 +1,426 @@
+{
+  "scope": "declarations actually checked in a copied current source snapshot, not automatic full row promotion",
+  "toolchain": "Lean (version 4.28.0, x86_64-unknown-linux-gnu, commit 7e01a1bf5c70fc6167d49c345d3bf80596e9a79b, Release)",
+  "current_inventory_rows": [
+    {
+      "row_id": "TTH-05",
+      "status": "proved",
+      "exact_statement": "Within the declared finite model, a target-owned response law that keeps every disturbed state inside the controlled invariant yields post-withdrawal finite-horizon package preservation.",
+      "claim_ceiling": "model-relative autonomy only",
+      "cst_tt_08_status": "conditional",
+      "l3_verdict": "FAITHFUL",
+      "delta_rationale": "L3 FAITHFUL: postWithdrawalFiniteHorizonInvariance proves conditional, model-relative preservation from an ExactAutonomyCertificate. POS-04 proves a related funded target-only C8 viability result, but no POS-04 ExactAutonomyCertificate instantiates this theorem: the declared POS-04 data do not supply its disturbance class, response relation, full-state package closure, and anti-stall obligations.",
+      "declarations": [
+        "CSTTT.AutonomyTheory.postWithdrawalFiniteHorizonInvariance"
+      ]
+    },
+    {
+      "row_id": "TTH-06",
+      "status": "conditional",
+      "exact_statement": "A valid Temporal-FIACH certificate entails, as separate fields, integrated target realization, strict temporal lineage, and post-withdrawal autonomy; none of the three is inferred from either of the others.",
+      "claim_ceiling": "POS-04-family evidence: arbitrary assignments within the fixed typed POS-04 interface, carrier family, stage, cover and audit domain; nominal disturbance words with all-support branch robustness, no resource-shock robustness; C4\u2013C7 surrogate clause content; F proof-structural lane separation with AF \u21d2 P disclosed; supplementary O operational autonomy (N3) with logical independence",
+      "cst_tt_08_status": "conditional",
+      "l3_verdict": "PROJECTION",
+      "delta_rationale": "G6c supplies substantive POS-04-family evidence: computed P/L/AF/AO, assignment-owned G4/G1c adapters, TTH-05 transport from every activated phase-2 entry, valid positive instances and registered control vectors. The soundness theorems quantify over arbitrary assignments only within the fixed POS-04 interface, carrier family, stage, cover and four-snapshot audit domain; they do not discharge the broader G0 RawHandoff contract. TTH-06 therefore remains conditional without narrowing or splitting its exact statement. Generalization remains to raw component interfaces over finite carriers, cells, actions, events and routes, together with arbitrary checked stage and cover data. F none-inferred is proof-structural with AF \u21d2 P disclosed; O proves logical independence of the named readout propositions as well as acceptance predicates; F/O readout control vectors have directly proved negative cases (missing total-map cell, missing atomic audit vertex, and AF/AO readout obligations). C4\u2013C7 and nominal/no-resource-shock limitations remain explicit. New declarations are retained as POS-04-family evidence; original schema theorem is retained.",
+      "declarations": [
+        "CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_sound_F",
+        "CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_sound_O",
+        "CSTTT.TargetTheory.ComputedFIACH.baseline_valid_F",
+        "CSTTT.TargetTheory.ComputedFIACH.baseline_valid_O",
+        "CSTTT.TargetTheory.ComputedFIACH.fullAutonomy_implies_package",
+        "CSTTT.TargetTheory.ComputedFIACH.AF_each_entry_exact_autonomy",
+        "CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_full_nominal_words",
+        "CSTTT.TargetTheory.ComputedFIACH.F_control_vectors",
+        "CSTTT.TargetTheory.ComputedFIACH.O_control_vectors",
+        "CSTTT.TargetTheory.ComputedFIACH.operational_lanes_logically_independent",
+        "CSTTT.TargetTheory.ComputedFIACH.F_readout_control_vectors",
+        "CSTTT.TargetTheory.ComputedFIACH.O_readout_control_vectors",
+        "CSTTT.TargetTheory.ComputedFIACH.operational_readouts_logically_independent"
+      ]
+    },
+    {
+      "row_id": "TTH-08",
+      "status": "conditional",
+      "exact_statement": "A symmetric valid fork is relation-valued: one source may stand in the structural continuation relation to two swap-related autonomous targets, without an invariant singleton selector.",
+      "claim_ceiling": "no unique identity conclusion",
+      "cst_tt_08_status": "conditional",
+      "l3_verdict": "WEAKER",
+      "delta_rationale": "Status retained. L3 WEAKER; Related/valid arbitrary; nonselection only excludes fixed points at two targets.",
+      "declarations": [
+        "CSTTT.CorridorTheory.relationValuedTemporalFission",
+        "CSTTT.CorridorTheory.targetSwapPreservesFissionValidity",
+        "CSTTT.CorridorTheory.targetSwapSymmetryNonselection"
+      ]
+    },
+    {
+      "row_id": "TTH-09",
+      "status": "proved",
+      "exact_statement": "Two admissible same-boundary routes have equal temporal endpoints when an explicit nonvacuous flatness, normalization, or confluence certificate licenses their comparison.",
+      "claim_ceiling": "structural endpoint sufficiency on a declared raw-path comparison domain; stronger adopted flatness license",
+      "cst_tt_08_status": "conditional",
+      "l3_verdict": "WEAKER",
+      "delta_rationale": "G3c (b), forced narrowing N6. Original CST-TT-08 exact_statement: \"Two admissible routes with the same boundary have the same temporal endpoint only under an explicit flatness, normalization, or confluence certificate.\" Kernel-checked raw event/action execution with three generic sufficient-license theorems replaces literal necessity. The fixed three-route necessity control has DomainCheck, equal endpoints for r0/r1, and no normalization, flatness, or confluence license on D. Positive raw control has all three licenses on each of two nonempty same-boundary domains and nonconstant endpoints across boundaries and input bits. Raw path identity, rewrites, ranks, critical coverage, completion paths/normal forms/connectivity, and clocks are checked; no endpoint factorization or status label is supplied. Flatness includes the stronger adopted G3a completion-rank/shared unique-normal-form checks beyond G0. Old declarations retained unchanged; no claim of necessity on every smaller or alternative domain.",
+      "declarations": [
+        "CSTTT.RouteLicenses.normalization_sufficient",
+        "CSTTT.RouteLicenses.flatness_sufficient",
+        "CSTTT.RouteLicenses.confluence_sufficient",
+        "CSTTT.RouteLicenses.routeIndependentEndpoint_generic",
+        "CSTTT.RouteLicenses.Models.necessity_domain",
+        "CSTTT.RouteLicenses.Models.necessity_equal",
+        "CSTTT.RouteLicenses.Models.necessity_nonzero_holonomy",
+        "CSTTT.RouteLicenses.Models.endpoint_coincidence_does_not_license",
+        "CSTTT.RouteLicenses.Models.literal_necessity_false",
+        "CSTTT.RouteLicenses.Models.positive_normalization",
+        "CSTTT.RouteLicenses.Models.positive_flatness",
+        "CSTTT.RouteLicenses.Models.positive_confluence",
+        "CSTTT.RouteLicenses.Models.positive_nonconstant",
+        "CSTTT.RouteLicenses.Models.positive_functions_nonconstant"
+      ]
+    },
+    {
+      "row_id": "TTS-01",
+      "status": "conditional",
+      "exact_statement": "Strict-overlap and direct-successor legs each embed into a generalized structural-continuity path class, and compatible mixed-mode legs compose there without broadening strict Temporal-FIACH.",
+      "claim_ceiling": "broader structural lineage vocabulary only; strict FIACH unchanged",
+      "cst_tt_08_status": "conditional",
+      "l3_verdict": "WEAKER",
+      "delta_rationale": "Status retained. L3 WEAKER; Mode list lacks per-leg certificates; mixed composition conjoins arbitrary flags.",
+      "declarations": [
+        "CSTTT.StrengtheningTheory.overlapEmbedsGeneralized",
+        "CSTTT.StrengtheningTheory.directEmbedsGeneralized",
+        "CSTTT.StrengtheningTheory.generalizedStrictlyBroaderThanOverlap",
+        "CSTTT.StrengtheningTheory.generalizedPathComposition"
+      ]
+    },
+    {
+      "row_id": "TTS-04",
+      "status": "conditional",
+      "exact_statement": "A total target-owned policy on the exact finite controlled invariant defines a model-relative infinite run that preserves package integrity, progress, record advancement, ownership, and solvency for every admissible disturbance stream.",
+      "claim_ceiling": "infinite run inside the exact finite controlled model; no physical persistence theorem",
+      "cst_tt_08_status": "conditional",
+      "l3_verdict": "WEAKER",
+      "delta_rationale": "Status retained. L3 WEAKER; Infinite run real, but antiStall and budgetSolvent arbitrary and no numeric progress/record advance.",
+      "declarations": [
+        "CSTTT.AutonomyTheory.modelRelativeUnboundedControlledInvariant"
+      ]
+    }
+  ],
+  "historical_registry_rows": [
+    {
+      "theorem_id": "TTH-05",
+      "name": "Post-withdrawal finite-horizon invariance",
+      "family": "primary",
+      "kind": "constructive",
+      "final_status": "conditional",
+      "exact_statement": "Within the declared finite model, a target-owned response law that keeps every disturbed state inside the controlled invariant yields post-withdrawal finite-horizon package preservation.",
+      "claim_lanes": "A",
+      "dependencies": "TTH-02",
+      "toy_dependencies": "TTM-01;TTM-04;TTM-09;TTM-10",
+      "assumption_ids": "AS-01;AS-17;AS-20;AS-21;AS-22",
+      "formal_declarations": "CSTTT.AutonomyTheory.postWithdrawalFiniteHorizonInvariance",
+      "declaration_refs": "CSTTT/Autonomy/FiniteAutonomy.lean:87",
+      "declarations_found": "true",
+      "missing_declarations": "",
+      "placeholder_free_repository": "true",
+      "kernel_compile_status": "unavailable-in-execution-environment",
+      "evidence_refs": "formal/certificates/autonomy/AUT-POS-01.certificate.json;formal/certificates/composition/autonomy/AUT-COMP-A.certificate.json;formal/certificates/composition/autonomy/AUT-COMP-B.certificate.json;formal/certificates/composition/autonomy/AUT-COMP-OUTER.certificate.json;formal/certificates/composition/fiach/FIACH-COMP-A.certificate.json;formal/certificates/composition/fiach/FIACH-COMP-B.certificate.json;formal/certificates/composition/fiach/FIACH-COMP-OUTER.certificate.json;formal/certificates/fiach/FIACH-POS-01.certificate.json;formal/certificates/fission/autonomy/AUT-FIS-LEFT.certificate.json;formal/certificates/fission/autonomy/AUT-FIS-RIGHT.certificate.json;formal/certificates/fission/fiach/FIACH-FIS-LEFT.certificate.json;formal/certificates/fission/fiach/FIACH-FIS-RIGHT.certificate.json",
+      "evidence_count": "12",
+      "status_basis": "placeholder-free Lean proof source and exact finite evidence are present; promotion to proved requires the pinned Lean kernel build",
+      "promotion_condition": "run `lake build` on CST-TT-08-v1 and require success",
+      "claim_ceiling": "model-relative autonomy only",
+      "legacy_provenance_ids": "PTH-04"
+    },
+    {
+      "theorem_id": "TTH-06",
+      "name": "Temporal-FIACH certificate soundness",
+      "family": "primary",
+      "kind": "constructive",
+      "final_status": "conditional",
+      "exact_statement": "A valid Temporal-FIACH certificate entails, as separate fields, integrated target realization, strict temporal lineage, and post-withdrawal autonomy; none of the three is inferred from either of the others.",
+      "claim_lanes": "S-R;S-L;A",
+      "dependencies": "TTH-02;TTH-04;TTH-05",
+      "toy_dependencies": "TTM-01;TTM-02;TTM-04;TTM-11",
+      "assumption_ids": "AS-01;AS-02;AS-03;AS-14;AS-18;AS-19;AS-20;AS-21;AS-22",
+      "formal_declarations": "CSTTT.TargetTheory.temporalFIACHCertificateSoundness",
+      "declaration_refs": "CSTTT/Targets/FiniteTemporalFIACH.lean:8",
+      "declarations_found": "true",
+      "missing_declarations": "",
+      "placeholder_free_repository": "true",
+      "kernel_compile_status": "unavailable-in-execution-environment",
+      "evidence_refs": "formal/certificates/composition/fiach/FIACH-COMP-A.certificate.json;formal/certificates/composition/fiach/FIACH-COMP-B.certificate.json;formal/certificates/composition/fiach/FIACH-COMP-OUTER.certificate.json;formal/certificates/fiach/FIACH-POS-01.certificate.json;formal/certificates/fission/fiach/FIACH-FIS-LEFT.certificate.json;formal/certificates/fission/fiach/FIACH-FIS-RIGHT.certificate.json",
+      "evidence_count": "6",
+      "status_basis": "placeholder-free Lean proof source and exact finite evidence are present; promotion to proved requires the pinned Lean kernel build",
+      "promotion_condition": "run `lake build` on CST-TT-08-v1 and require success",
+      "claim_ceiling": "structural precursor only",
+      "legacy_provenance_ids": "PTH-05"
+    },
+    {
+      "theorem_id": "TTH-08",
+      "name": "Relation-valued temporal fission",
+      "family": "primary",
+      "kind": "boundary",
+      "final_status": "conditional",
+      "exact_statement": "A symmetric valid fork is relation-valued: one source may stand in the structural continuation relation to two swap-related autonomous targets, without an invariant singleton selector.",
+      "claim_lanes": "S-L",
+      "dependencies": "TTH-04;TTN-11",
+      "toy_dependencies": "TTM-07",
+      "assumption_ids": "AS-01;AS-18;AS-19",
+      "formal_declarations": "CSTTT.CorridorTheory.relationValuedTemporalFission;CSTTT.CorridorTheory.targetSwapPreservesFissionValidity;CSTTT.CorridorTheory.targetSwapSymmetryNonselection",
+      "declaration_refs": "CSTTT/Corridor/Fission.lean:27;CSTTT/Corridor/Fission.lean:35;CSTTT/Corridor/Fission.lean:44",
+      "declarations_found": "true",
+      "missing_declarations": "",
+      "placeholder_free_repository": "true",
+      "kernel_compile_status": "unavailable-in-execution-environment",
+      "evidence_refs": "formal/certificates/composition/corridors/COR-POS-03-FULL-COMPOSITE.certificate.json;formal/certificates/composition/fiach/FIACH-COMP-A.certificate.json;formal/certificates/composition/fiach/FIACH-COMP-B.certificate.json;formal/certificates/composition/fiach/FIACH-COMP-OUTER.certificate.json;formal/certificates/fission/FISSION-POS-01.certificate.json;formal/certificates/fission/corridors/COR-FIS-LEFT.certificate.json;formal/certificates/fission/corridors/COR-FIS-RIGHT.certificate.json;formal/certificates/fission/fiach/FIACH-FIS-LEFT.certificate.json;formal/certificates/fission/fiach/FIACH-FIS-RIGHT.certificate.json;formal/certificates/fusion/corridors/COR-FUS-LEFT.certificate.json;formal/certificates/fusion/corridors/COR-FUS-RIGHT.certificate.json",
+      "evidence_count": "11",
+      "status_basis": "placeholder-free Lean proof source and exact finite evidence are present; promotion to proved requires the pinned Lean kernel build",
+      "promotion_condition": "run `lake build` on CST-TT-08-v1 and require success",
+      "claim_ceiling": "no unique identity conclusion",
+      "legacy_provenance_ids": "PTH-07"
+    },
+    {
+      "theorem_id": "TTH-09",
+      "name": "Route-independent endpoint under flatness",
+      "family": "primary",
+      "kind": "constructive",
+      "final_status": "conditional",
+      "exact_statement": "Two admissible routes with the same boundary have the same temporal endpoint only under an explicit flatness, normalization, or confluence certificate.",
+      "claim_lanes": "S-T",
+      "dependencies": "TTN-04;TTN-05",
+      "toy_dependencies": "TTM-05;TTM-06",
+      "assumption_ids": "AS-01;AS-09;AS-10;AS-12",
+      "formal_declarations": "CSTTT.RouteTheory.routeIndependentEndpointUnderNormalization;CSTTT.TargetTheory.certifiedNormalizationYieldsFlatStatus",
+      "declaration_refs": "CSTTT/Targets/RouteCompletion.lean:45;CSTTT/Transport/RouteDiscipline.lean:121",
+      "declarations_found": "true",
+      "missing_declarations": "",
+      "placeholder_free_repository": "true",
+      "kernel_compile_status": "unavailable-in-execution-environment",
+      "evidence_refs": "formal/certificates/route_completion/ROUTE-COMP-FLAT-01.certificate.json;formal/certificates/route_completion/ROUTE-COMP-INDEXED-01.certificate.json;formal/certificates/transport/TR-POS-02-FLAT.certificate.json",
+      "evidence_count": "3",
+      "status_basis": "placeholder-free Lean proof source and exact finite evidence are present; promotion to proved requires the pinned Lean kernel build",
+      "promotion_condition": "run `lake build` on CST-TT-08-v1 and require success",
+      "claim_ceiling": "route independence only under premises",
+      "legacy_provenance_ids": "PTH-11"
+    },
+    {
+      "theorem_id": "TTS-01",
+      "name": "Generalized temporal-continuity path class",
+      "family": "primary-strengthening",
+      "kind": "boundary",
+      "final_status": "conditional",
+      "exact_statement": "Strict-overlap and direct-successor legs each embed into a generalized structural-continuity path class, and compatible mixed-mode legs compose there without broadening strict Temporal-FIACH.",
+      "claim_lanes": "S-L",
+      "dependencies": "TTH-04;TTD-01;TTD-02",
+      "toy_dependencies": "TTM-01;TTM-03;TTM-20",
+      "assumption_ids": "AS-01;AS-18;AS-19;AS-23",
+      "formal_declarations": "CSTTT.StrengtheningTheory.overlapEmbedsGeneralized;CSTTT.StrengtheningTheory.directEmbedsGeneralized;CSTTT.StrengtheningTheory.generalizedStrictlyBroaderThanOverlap;CSTTT.StrengtheningTheory.generalizedPathComposition",
+      "declaration_refs": "CSTTT/Strengthening/ContinuityClass.lean:122;CSTTT/Strengthening/ContinuityClass.lean:16;CSTTT/Strengthening/ContinuityClass.lean:25;CSTTT/Strengthening/ContinuityClass.lean:62",
+      "declarations_found": "true",
+      "missing_declarations": "",
+      "placeholder_free_repository": "true",
+      "kernel_compile_status": "unavailable-in-execution-environment",
+      "evidence_refs": "formal/certificates/strengthenings/continuity/GCP-DIRECT-01.certificate.json;formal/certificates/strengthenings/continuity/GCP-MIXED-01.certificate.json;formal/certificates/strengthenings/continuity/GCP-OVERLAP-01.certificate.json;formal/certificates/strengthenings/continuity/ODR-01.certificate.json;formal/certificates/strengthenings/direct/DS-POS-03-MIXED-MODE.certificate.json",
+      "evidence_count": "5",
+      "status_basis": "placeholder-free Lean proof source and exact finite evidence are present; promotion to proved requires the pinned Lean kernel build",
+      "promotion_condition": "run `lake build` on CST-TT-08-v1 and require success",
+      "claim_ceiling": "broader structural lineage vocabulary only; strict FIACH unchanged",
+      "legacy_provenance_ids": ""
+    },
+    {
+      "theorem_id": "TTS-04",
+      "name": "Model-relative unbounded controlled invariant",
+      "family": "primary-strengthening",
+      "kind": "constructive",
+      "final_status": "conditional",
+      "exact_statement": "A total target-owned policy on the exact finite controlled invariant defines a model-relative infinite run that preserves package integrity, progress, record advancement, ownership, and solvency for every admissible disturbance stream.",
+      "claim_lanes": "A",
+      "dependencies": "TTH-05;TTN-12",
+      "toy_dependencies": "TTM-23;TTM-24",
+      "assumption_ids": "AS-01;AS-20;AS-21;AS-22;AS-34",
+      "formal_declarations": "CSTTT.AutonomyTheory.modelRelativeUnboundedControlledInvariant",
+      "declaration_refs": "CSTTT/Autonomy/UnboundedInvariant.lean:50",
+      "declarations_found": "true",
+      "missing_declarations": "",
+      "placeholder_free_repository": "true",
+      "kernel_compile_status": "unavailable-in-execution-environment",
+      "evidence_refs": "formal/certificates/strengthenings/unbounded/UNB-POS-01.certificate.json",
+      "evidence_count": "1",
+      "status_basis": "placeholder-free Lean proof source and exact finite evidence are present; promotion to proved requires the pinned Lean kernel build",
+      "promotion_condition": "run `lake build` on CST-TT-08-v1 and require success",
+      "claim_ceiling": "infinite run inside the exact finite controlled model; no physical persistence theorem",
+      "legacy_provenance_ids": ""
+    }
+  ],
+  "declarations_checked": [
+    "CSTTT.AutonomyTheory.modelRelativeUnboundedControlledInvariant",
+    "CSTTT.AutonomyTheory.postWithdrawalFiniteHorizonInvariance",
+    "CSTTT.CorridorTheory.relationValuedTemporalFission",
+    "CSTTT.CorridorTheory.targetSwapPreservesFissionValidity",
+    "CSTTT.CorridorTheory.targetSwapSymmetryNonselection",
+    "CSTTT.RouteLicenses.Models.endpoint_coincidence_does_not_license",
+    "CSTTT.RouteLicenses.Models.literal_necessity_false",
+    "CSTTT.RouteLicenses.Models.necessity_domain",
+    "CSTTT.RouteLicenses.Models.necessity_equal",
+    "CSTTT.RouteLicenses.Models.necessity_nonzero_holonomy",
+    "CSTTT.RouteLicenses.Models.positive_confluence",
+    "CSTTT.RouteLicenses.Models.positive_flatness",
+    "CSTTT.RouteLicenses.Models.positive_functions_nonconstant",
+    "CSTTT.RouteLicenses.Models.positive_nonconstant",
+    "CSTTT.RouteLicenses.Models.positive_normalization",
+    "CSTTT.RouteLicenses.confluence_sufficient",
+    "CSTTT.RouteLicenses.flatness_sufficient",
+    "CSTTT.RouteLicenses.normalization_sufficient",
+    "CSTTT.RouteLicenses.routeIndependentEndpoint_generic",
+    "CSTTT.RouteTheory.routeIndependentEndpointUnderNormalization",
+    "CSTTT.StrengtheningTheory.directEmbedsGeneralized",
+    "CSTTT.StrengtheningTheory.generalizedPathComposition",
+    "CSTTT.StrengtheningTheory.generalizedStrictlyBroaderThanOverlap",
+    "CSTTT.StrengtheningTheory.overlapEmbedsGeneralized",
+    "CSTTT.TargetTheory.ComputedFIACH.AF_each_entry_exact_autonomy",
+    "CSTTT.TargetTheory.ComputedFIACH.F_control_vectors",
+    "CSTTT.TargetTheory.ComputedFIACH.F_readout_control_vectors",
+    "CSTTT.TargetTheory.ComputedFIACH.O_control_vectors",
+    "CSTTT.TargetTheory.ComputedFIACH.O_readout_control_vectors",
+    "CSTTT.TargetTheory.ComputedFIACH.baseline_valid_F",
+    "CSTTT.TargetTheory.ComputedFIACH.baseline_valid_O",
+    "CSTTT.TargetTheory.ComputedFIACH.fullAutonomy_implies_package",
+    "CSTTT.TargetTheory.ComputedFIACH.operational_lanes_logically_independent",
+    "CSTTT.TargetTheory.ComputedFIACH.operational_readouts_logically_independent",
+    "CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_full_nominal_words",
+    "CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_sound_F",
+    "CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_sound_O",
+    "CSTTT.TargetTheory.certifiedNormalizationYieldsFlatStatus",
+    "CSTTT.TargetTheory.temporalFIACHCertificateSoundness"
+  ],
+  "axioms": {
+    "CSTTT.RouteLicenses.Models.endpoint_coincidence_does_not_license": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CSTTT.RouteLicenses.Models.literal_necessity_false": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CSTTT.RouteLicenses.Models.necessity_domain": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CSTTT.RouteLicenses.Models.necessity_equal": [
+      "propext"
+    ],
+    "CSTTT.RouteLicenses.Models.necessity_nonzero_holonomy": [
+      "propext"
+    ],
+    "CSTTT.RouteLicenses.Models.positive_confluence": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CSTTT.RouteLicenses.Models.positive_flatness": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CSTTT.RouteLicenses.Models.positive_functions_nonconstant": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CSTTT.RouteLicenses.Models.positive_nonconstant": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CSTTT.RouteLicenses.Models.positive_normalization": [
+      "propext",
+      "Quot.sound"
+    ],
+    "CSTTT.RouteLicenses.flatness_sufficient": [
+      "propext"
+    ],
+    "CSTTT.RouteLicenses.routeIndependentEndpoint_generic": [
+      "propext"
+    ],
+    "CSTTT.StrengtheningTheory.generalizedPathComposition": [
+      "propext"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.AF_each_entry_exact_autonomy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.F_control_vectors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.F_readout_control_vectors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.O_control_vectors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.O_readout_control_vectors": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.baseline_valid_F": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.baseline_valid_O": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.fullAutonomy_implies_package": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.operational_lanes_logically_independent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.operational_readouts_logically_independent": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_full_nominal_words": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_sound_F": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.TargetTheory.ComputedFIACH.temporalFIACH_sound_O": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "CSTTT.AutonomyTheory.modelRelativeUnboundedControlledInvariant": [],
+    "CSTTT.AutonomyTheory.postWithdrawalFiniteHorizonInvariance": [],
+    "CSTTT.CorridorTheory.relationValuedTemporalFission": [],
+    "CSTTT.CorridorTheory.targetSwapPreservesFissionValidity": [],
+    "CSTTT.CorridorTheory.targetSwapSymmetryNonselection": [],
+    "CSTTT.RouteLicenses.confluence_sufficient": [],
+    "CSTTT.RouteLicenses.normalization_sufficient": [],
+    "CSTTT.RouteTheory.routeIndependentEndpointUnderNormalization": [],
+    "CSTTT.StrengtheningTheory.directEmbedsGeneralized": [],
+    "CSTTT.StrengtheningTheory.generalizedStrictlyBroaderThanOverlap": [],
+    "CSTTT.StrengtheningTheory.overlapEmbedsGeneralized": [],
+    "CSTTT.TargetTheory.certifiedNormalizationYieldsFlatStatus": [],
+    "CSTTT.TargetTheory.temporalFIACHCertificateSoundness": []
+  },
+  "nonstandard_axioms": [],
+  "vendor_nonstandard_axiom_outside_audited_chains": "SixBirdsMetaMath.FoundationsIV.Access.HiddennessNormalForm.hiddenness_pending",
+  "sources_unchanged": 499,
+  "snapshot_inventory_sha256": "6e8092fc56be89747cbcf4267de400482b364a3df6cf4ee91de964de4050d908"
+}

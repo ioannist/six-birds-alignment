@@ -1,0 +1,20 @@
+{
+  "tag": "[P] matching/update/cost/control/funding hypotheses; [B: lab] mathematics",
+  "population": "N fixed productive/self-supported actors, binary participation, each other actor equally likely match; no self match; care/protected outsider support independent of optional participation and founder subsidy",
+  "stage_payoff": "adopter matched to adopter gets a, participation costs c, founder subsidy s per active adopter/date; nonadopter0; new participation additionally pays entry fee e once, exit0, re-entry pays e again",
+  "timing": "uniform random focal actor first compares current expected matching payoff with a unilateral change, then next membership counted; tie retains membership; matching/noise/utility are not inferred from SBT labels",
+  "choice": "myopic expected one-date strict best response; future known withdrawal/discounted learning not considered by this update. Not a Markov-perfect or empirical learning theorem.",
+  "margins": "incumbent keep-minus-exit = a*(k-1)/(N-1)-c+s; outsider join-minus-stay = a*k/(N-1)-c+s-e; entry and participation costs separate",
+  "noise": "optional independent choice tremble zeta1/100 flips selected actor preferred keep/change; type-change rho and repair gamma are separate quantities",
+  "founder": "subsidy1/2 lasts a declared T updates; worst budget N*s*T pre-reserved from founder cash32 for T<=8, pay on actual resulting memberships; funded schedule is a premise, not a financer best response",
+  "control": "withdrawal may only stop subsidy (benefit continues under independent protocol) or may also revoke a founder-exclusive operational license (benefit becomes0). Care/protection unchanged in either case; actual title/maintenance realization needs its own evidence.",
+  "parameters": {
+    "N": 6,
+    "a": "2",
+    "c": "1",
+    "entry": "1/10",
+    "subsidy": "0 or1/2",
+    "stay_on_ties": true
+  },
+  "nonclaims": "no strategic population equilibrium/ESS, compulsory dependence, actual-human tipping, full X/Y or physical self-carriage. Population probabilities differ from equilibrium existence/host selection."
+}

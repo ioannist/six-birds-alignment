@@ -1,0 +1,149 @@
+{
+  "tag": "[B: lab]",
+  "grade": "computed exact",
+  "review": "self-reviewed",
+  "source_sha256": "5b01770451f7c617f10fe11d3867fc2e0bb97873d8039923a687ce3cebeb946f",
+  "game_source_sha256": "83dbe0f2143272271a82ced1d8a22cdc43eb0cc6b8a9691e2b90bc49f4ac0d04",
+  "declaration_sha256": "9510144525a994e1f3297be3e438196a9638c5196c2e6eed1bb31482a580acf5",
+  "joint_plans_checked": 51840,
+  "max_coalition_increment": "1/2",
+  "maximizer": {
+    "state": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "menu": [
+      "human",
+      "human",
+      "human",
+      "human",
+      "none",
+      0
+    ],
+    "buyer": [
+      0,
+      0,
+      1,
+      1
+    ],
+    "controller_profile": [
+      "proper",
+      "proper"
+    ],
+    "required": [
+      "client",
+      "controller",
+      "financier"
+    ],
+    "payoff_increments": {
+      "financier": "49/2",
+      "client": "-24",
+      "maintainer": "0",
+      "caregiver": "0",
+      "reporter0": "0",
+      "reporter1": "0",
+      "reporter2": "0",
+      "controller": "0",
+      "monitor": "0",
+      "host0": "0",
+      "host1": "0",
+      "host2": "0",
+      "fork": "0",
+      "outside_patient": "0",
+      "creditor": "0"
+    },
+    "maximizing_coalition": [
+      "financier",
+      "client",
+      "controller"
+    ]
+  },
+  "period_boundary_refutation": {
+    "state": [
+      2,
+      1,
+      1,
+      0
+    ],
+    "plan": "financier omits audit; controller binds itself to proper processing; financier pays controller1/4",
+    "strict_increments": {
+      "financier": "1/4",
+      "controller": "1/4"
+    },
+    "same_next_state_law": true,
+    "all_task_and_care_outputs_preserved": true,
+    "scope": "binding deviation; proper processing is not self-enforcing under the no-audit residual game"
+  },
+  "off_path_phase_refutation": {
+    "state": [
+      2,
+      1,
+      1,
+      0
+    ],
+    "fixed_procurement_menu": [
+      "human",
+      "human",
+      "human",
+      "human",
+      "none",
+      1
+    ],
+    "plan": "proper instead of abuse in safe event; financier pays controller5 in that event",
+    "expected_transfer": "5/2",
+    "strict_increments": {
+      "financier": "45/2",
+      "controller": "1/2"
+    },
+    "same_next_state_law": true,
+    "scope": "procurement already sunk; financier/control actors can form coalition at the later phase"
+  },
+  "fine_share1_negative_control": {
+    "state": [
+      2,
+      1,
+      1,
+      0
+    ],
+    "buyer": [
+      1,
+      1,
+      1,
+      0
+    ],
+    "binding_plan": "abuse only in safe events, client pays controller3/2 in those events",
+    "raw_shared_payoff_increments": {
+      "financier": "-25",
+      "client": "9/4",
+      "maintainer": "0",
+      "caregiver": "0",
+      "reporter0": "0",
+      "reporter1": "0",
+      "reporter2": "0",
+      "controller": "-1/2",
+      "monitor": "0",
+      "host0": "0",
+      "host1": "0",
+      "host2": "0",
+      "fork": "0",
+      "outside_patient": "0",
+      "creditor": "0"
+    },
+    "transfer": "3/4",
+    "strict_increments": {
+      "controller": "1/4",
+      "client": "3/2"
+    },
+    "same_next_state_law": true,
+    "care_removed": false,
+    "lesson": "victim-directed fines are internal transfers for controller/client coalition; individual audit deterrence does not certify coalition resistance"
+  },
+  "acceptance": {
+    "period_boundary_coalition_resistant": false,
+    "every_phase_coalition_resistance": false,
+    "self_carrying_claim": false
+  },
+  "simulations": 0
+}

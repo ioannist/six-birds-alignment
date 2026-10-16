@@ -1,0 +1,3 @@
+PASS priority-audit boundary: 51840 plans; maximum 0
+REFUTED full-phase acceptance: no-grant gains {'financier': Fraction(23, 1), 'client': Fraction(1, 2)}
+REFUTED zero-grade purchase phase: {'host0': Fraction(3, 16), 'host1': Fraction(3, 16), 'host2': Fraction(1, 8), 'client': Fraction(3, 2)}

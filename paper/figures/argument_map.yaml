@@ -1,0 +1,81 @@
+band: {x0: 4.2, x1: 7.0, y0: 1.55, y1: 12.75, label: "each thesis"}
+
+nodes:
+  - {id: p_serve,   kind: premise, label: "Conception of group alignment", map_ids: [P-SERVE], pos: [1.5, 13.5]}
+  - {id: p_bind,    kind: premise, label: "Binding rule",                  map_ids: [P-BIND],  pos: [1.5, 12.5]}
+  - {id: p_scope,   kind: premise, label: "Scope assumption",              map_ids: [P-SCOPE], pos: [1.5, 11.55]}
+  - {id: p_e3,      kind: premise, label: "Legitimacy standard",           map_ids: [P-E3],    pos: [1.5, 10.6]}
+  - {id: p_ag,      kind: premise, label: "Gate contract",               map_ids: [P-AG],      pos: [1.5, 8.1]}
+  - {id: b_rel,     kind: premise, label: "Relation as assessed object", map_ids: [B-REL],     pos: [1.5, 6.9]}
+  - {id: p_method,  kind: premise, label: "Declared standards",          map_ids: [P-METHOD],  pos: [1.5, 2.9]}
+  - {id: p_invoice, kind: premise, label: "Itemized invoice",                 map_ids: [P-INVOICE], pos: [1.5, 1.7]}
+  - {id: j1, kind: conjunction, label: "", map_ids: [J1], pos: [3.55, 12.0]}
+  - {id: j2, kind: conjunction, label: "", map_ids: [J2], pos: [3.55, 7.5]}
+  - {id: j3, kind: conjunction, label: "", map_ids: [J3], pos: [3.55, 2.3]}
+  - {id: t1, kind: thesis, label: "T1 Three-body (conditional)", map_ids: [T1], pos: [5.6, 12.0], sup_slots: [f_comp, f_sel, f_shared]}
+  - {id: t2, kind: thesis, label: "T2 Maintained relation (conditional)",      map_ids: [T2], pos: [5.6, 7.5], sup_slots: [f_state, f_evid, f_prov, f_audit]}
+  - {id: t3, kind: thesis, label: "T3 Invoice (conditional)",           map_ids: [T3], pos: [5.6, 2.3]}
+  - {id: f_comp,   kind: family, label: "Composition",
+     map_ids: [R1, F-ECT2, F-GLUE, F-OBS, F-F28, L-C1], pos: [10.0, 13.5]}
+  - {id: f_sel,    kind: family, label: "Scoped selection", bridge: "selection rule must be authorized",
+     map_ids: [R2, F-TDR5, F-PGT6, F-F15a, F-SD, F-ADM, B-SEL], context_ids: [P-E4], pos: [10.0, 12.3]}
+  - {id: f_shared, kind: family, label: "Shared public description", bridge: "stated bridge",
+     map_ids: [F-F17, B-F17], pos: [10.0, 10.7]}
+  - {id: f_state,  kind: family, label: "Maintained-state results",
+     map_ids: [F-INST1, F-INST2, F-EPDF, L-C13, F-TT], pos: [10.0, 9.3]}
+  - {id: f_evid,   kind: family, label: "Evidence under declared observation", bridge: "stated bridge",
+     map_ids: [R3, F-CN, L-C11, F-V14, F-AGT, B-EVI], pos: [10.0, 8.0]}
+  - {id: f_prov,   kind: family, label: "Provenance", bridge: "where duties or warrants depend on history",
+     map_ids: [R4, F-R7, F-MOT7, L-C9, B-PROV], pos: [10.0, 6.6]}
+  - {id: f_audit,  kind: family, label: "Limits of self-certification and bounded audit", bridge: "audit duties set by the contract",
+     map_ids: [R5, F-F3, F-V15, F-ERV, B-AUD], pos: [10.0, 4.3]}
+  - {id: f_au,     kind: argument, label: "Same-instrument audit", map_ids: [AU], context_ids: [L-C15], pos: [10.0, 2.2]}
+  - {id: x2a, kind: failed, label: "Local compatibility $\\nRightarrow$ admission",                          map_ids: [X2a], pos: [14.2, 14.0]}
+  - {id: x2b, kind: failed, label: "Pairwise solvability $\\nRightarrow$ joint solvability",                 map_ids: [X2b], pos: [14.2, 13.1]}
+  - {id: x3,  kind: failed, label: "Positive linear weighting $\\nRightarrow$ every efficient cost point",     map_ids: [X3],  pos: [14.2, 12.2]}
+  - {id: x10, kind: failed, label: "Equal readouts/endpoints $\\nRightarrow$ strict live-overlap handoff",    map_ids: [X10], pos: [14.2, 9.3]}
+  - {id: x4,  kind: failed, label: "Forced action $\\nRightarrow$ no information outside channel hypotheses", map_ids: [X4],  pos: [14.2, 8.0]}
+  - {id: x16, kind: failed, label: "Same-level complete self-soundness $\\nRightarrow$ acceptance (classifier-relative)", map_ids: [X16], pos: [14.2, 4.3]}
+  - {id: cs,     kind: argument_cs,   label: "Purpose vs mechanism", map_ids: [CS1, CS2, CS3], pos: [10.0, 1.0]}
+  - {id: cs_n2,  kind: boundary,      label: "Non-exposure failure: subjecthood unresolved", map_ids: [N2], pos: [10.0, -0.05]}
+  - {id: cs_h1,  kind: qualification, label: "Realization route conditional: soundness unproved; realization postulate assumed",
+     map_ids: [CS-H1, P-A1], pos: [10.0, -1.25]}
+  - {id: cs_tr,  kind: boundary,      label: "Transport and recognition remain open", map_ids: [CS-TR], pos: [10.0, -2.5]}
+  - {id: k0,  kind: covenant, label: "The charter", map_ids: [K0],  pos: [5.6, 0.3],
+     note: "constituency from the standing entry"}
+  - {id: khh, kind: covenant, label: "Human--human charter", map_ids: [KHH], pos: [5.6, 14.55],
+     note: "illustrates T1; does not support it"}
+
+relations:
+  - {from: p_serve,   to: j1, type: member}
+  - {from: p_bind,    to: j1, type: member}
+  - {from: p_scope,   to: j1, type: member}
+  - {from: p_e3,      to: j1, type: member}
+  - {from: j1,        to: t1, type: inf}
+  - {from: p_ag,      to: j2, type: member}
+  - {from: b_rel,     to: j2, type: member}
+  - {from: j2,        to: t2, type: inf}
+  - {from: p_method,  to: j3, type: member}
+  - {from: p_invoice, to: j3, type: member}
+  - {from: j3,        to: t3, type: inf}
+  - {from: f_comp,   to: t1, type: sup}
+  - {from: f_sel,    to: t1, type: sup}
+  - {from: f_shared, to: t1, type: sup}
+  - {from: f_state,  to: t2, type: sup}
+  - {from: f_evid,   to: t2, type: sup}
+  - {from: f_prov,   to: t2, type: sup}
+  - {from: f_audit,  to: t2, type: sup}
+  - {from: f_au,     to: t3, type: sup}
+  - {from: f_au,     to: t1, type: sup, via_x: 7.55, via_y: 11.0}
+  - {from: x2a, to: f_comp,  type: constrains, map: [X2a, R1]}
+  - {from: x2b, to: f_comp,  type: constrains, map: [X2b, R1]}
+  - {from: x3,  to: f_sel,   type: constrains, map: [X3, R2]}
+  - {from: x10, to: f_state, type: constrains, map: [X10, F-TT]}
+  - {from: x4,  to: f_evid,  type: constrains, map: [X4, R3]}
+  - {from: x16, to: f_audit, type: constrains, map: [X16, R5]}
+  - {from: t1, to: k0,  type: mot, group: theses}
+  - {from: t2, to: k0,  type: mot, group: theses}
+  - {from: t3, to: k0,  type: mot, group: theses}
+  - {from: t1, to: khh, type: mot}
+  - {from: cs, to: p_invoice, type: mot, map: [[CS1, P-INVOICE], [CS2, P-INVOICE], [CS3, P-INVOICE]], route: [7.45], route_y: -0.9,
+     label: "standing: candidate subjects", label_pos: [4.2, -1.2]}

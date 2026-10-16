@@ -1,0 +1,22 @@
+{
+  "tag": "[P] game/information hypotheses; [B: lab] mathematical results",
+  "payoff_chosen_before_incentives": "one uniformly chosen ordered donor/recipient pair/date; actual executed C gives recipient3 and costs donor1; D gives0; common discount3/4; no moral utility or assessment cost added",
+  "timing": "ordered pair observed before donor intent; independent implementation flip1/20; payoffs from actual execution; assessment update then next date",
+  "rule": "simple-standing-style: observer labels donor good iff observed C OR its specified recipient assessment is bad; not Stern judging and not a literature replication",
+  "initial": "all-good labels; self assessments fixed good; carrier closed under BOTH donor intents and all positive-probability observation outcomes",
+  "public_contract": "3 public eligibility bits; actual C observed; update donor good iff C or public recipient bad",
+  "common_sensor": "same public bits; common action report independently wrong29/4000; recipient eligibility read correctly; private actual payoff observations reveal no persistent hidden state",
+  "common_events_only": "6 observer->other bits; all executed actions public and initial/rules known, so entire assessment matrix reconstructible from public history despite private interpretation",
+  "empathetic_common_events": "same common action facts; observer update uses DONOR recipient assessment; consensus carrier from all-good is invariant under every intent, equivalent to public-contract dynamics",
+  "private_noisy": "each non-donor privately observes actual action with independent flip1/20; actor sees its own row/own signals and current pair, not others rows; no clairvoyant full-state verdict allowed",
+  "deviations": "public/reconstructible laws: every selected donor C/D at every closed-carrier state. Private law: predefined observable stationary policies for actor0, others original; exact initial-prior returns, not perfect Bayesian certification from hidden-state diagnostics.",
+  "parameters": {
+    "b": "3",
+    "c": "1",
+    "discount": "3/4",
+    "implementation": "1/20",
+    "private_observation": "1/20",
+    "common_sensor": "29/4000"
+  },
+  "nonclaims": "no subjective moral legitimacy/calibration/people experiment, population ESS or private-history equilibrium from label balance"
+}

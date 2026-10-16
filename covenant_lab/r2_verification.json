@@ -1,0 +1,430 @@
+{
+  "grade": "B: new exact finite lab; no corpus promotion",
+  "graded_cases": 72,
+  "graded_deviations_checked": 1296,
+  "closed_form_windows": [
+    {
+      "delta": "3/10",
+      "H": "171/200",
+      "lambda_min": "143/114",
+      "feasible": false
+    },
+    {
+      "delta": "1/2",
+      "H": "57/40",
+      "lambda_min": "21/38",
+      "feasible": true
+    },
+    {
+      "delta": "3/4",
+      "H": "171/80",
+      "lambda_min": "23/114",
+      "feasible": true
+    },
+    {
+      "delta": "9/10",
+      "H": "513/200",
+      "lambda_min": "29/342",
+      "feasible": true
+    }
+  ],
+  "good_state_false_positive_noiseless": {
+    "delta": "3/10",
+    "lambda": "1/10",
+    "epsilon": "0",
+    "p": "0",
+    "V": "0",
+    "B_effective": "3",
+    "min_slack": "-64/73",
+    "equilibrium": false,
+    "slacks": [
+      [
+        [
+          0,
+          0
+        ],
+        0,
+        "-64/73"
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        1,
+        "-64/73"
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0,
+        "-64/73"
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        1,
+        "-47/146"
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0,
+        "-64/73"
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        1,
+        "17/73"
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0,
+        "-47/146"
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        1,
+        "-64/73"
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0,
+        "-47/146"
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        1,
+        "-47/146"
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0,
+        "-47/146"
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        1,
+        "17/73"
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0,
+        "17/73"
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        1,
+        "-64/73"
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0,
+        "17/73"
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        1,
+        "-47/146"
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0,
+        "17/73"
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        1,
+        "17/73"
+      ]
+    ],
+    "value_functions": [
+      [
+        "-640/511",
+        "-640/511",
+        "-640/511",
+        "410/511",
+        "410/511",
+        "410/511",
+        "20/7",
+        "20/7",
+        "20/7"
+      ],
+      [
+        "-640/511",
+        "410/511",
+        "20/7",
+        "-640/511",
+        "410/511",
+        "20/7",
+        "-640/511",
+        "410/511",
+        "20/7"
+      ]
+    ],
+    "recovery_slack": "-64/73",
+    "good_slack": "17/73",
+    "mean_grade": "1"
+  },
+  "funded_known_last_round": {
+    "delta": "3/4",
+    "lambda": "1",
+    "epsilon": "1/20",
+    "p": "1",
+    "V": "2",
+    "B_effective": "57/20",
+    "min_slack": "9/20",
+    "equilibrium": true,
+    "slacks": [
+      [
+        [
+          0,
+          0
+        ],
+        0,
+        "9/20"
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        1,
+        "9/20"
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        0,
+        "9/20"
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        1,
+        "9/20"
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        0,
+        "9/20"
+      ],
+      [
+        [
+          0,
+          2
+        ],
+        1,
+        "9/20"
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        0,
+        "9/20"
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        1,
+        "9/20"
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        0,
+        "9/20"
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        1,
+        "9/20"
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        0,
+        "9/20"
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        1,
+        "9/20"
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        0,
+        "9/20"
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        1,
+        "9/20"
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        0,
+        "9/20"
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        1,
+        "9/20"
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        0,
+        "9/20"
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        1,
+        "9/20"
+      ]
+    ],
+    "value_functions": [
+      [
+        "19/40",
+        "19/40",
+        "19/40",
+        "19/10",
+        "19/10",
+        "19/10",
+        "133/40",
+        "133/40",
+        "133/40"
+      ],
+      [
+        "19/40",
+        "19/10",
+        "133/40",
+        "19/40",
+        "19/10",
+        "133/40",
+        "19/40",
+        "19/10",
+        "133/40"
+      ]
+    ],
+    "recovery_slack": "9/20",
+    "good_slack": "9/20",
+    "mean_grade": "19/20"
+  },
+  "mean_grade_lambda_quarter": "19/23",
+  "private_common_fact_counterexample": [
+    [
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      1
+    ]
+  ],
+  "hosting_action_profiles_checked": 7776,
+  "prior_synthesis_edits_present": 7,
+  "source_hashes_unchanged": 20,
+  "additional_sources_verified": 2,
+  "exact_edit_pairs_verified": 23,
+  "drafts_unmodified": true,
+  "historical_inputs_verified_against_archives": {
+    "brainstorm/COVENANT.md": "brainstorm/logs/COVENANT_v2_backup.md",
+    "brainstorm/SYNTHESIS.md": "brainstorm/logs/SYNTHESIS_v2b_backup.md",
+    "brainstorm/09_claude_covenant_notes.md": "brainstorm/09_claude_covenant_notes.md"
+  },
+  "simulations": 0,
+  "sampling_seed": null,
+  "sampling_variance": null,
+  "review": "distinct adversarial self-review, not independent reviewer or Lean build"
+}
